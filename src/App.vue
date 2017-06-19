@@ -13,6 +13,7 @@
           <short-info></short-info>
           <skills></skills>
           <education></education>
+          <testimonials></testimonials>
           <music></music>
           <books></books>
         </aside>
@@ -49,6 +50,7 @@
   import ShortInfo from './components/ShortInfo.vue';
   import Skills from './components/Skills.vue';
   import Education from './components/Education.vue';
+  import Testimonials from './components/Testimonials.vue';
   import Music from './components/Music.vue';
   import Books from './components/Books.vue';
 
@@ -62,6 +64,7 @@
       ShortInfo,
       Skills,
       Education,
+      Testimonials,
       Music,
       Books
     }
