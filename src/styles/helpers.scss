@@ -1,0 +1,142 @@
+@import 'constants';
+
+/**********
+* Positions
+***********/
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+/**********
+* Display
+***********/
+
+.hide {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.table {
+  display: table;
+  width: 100%;
+
+  &.fixed {
+    table-layout: fixed;
+  }
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: top;
+  width: auto;
+}
+
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+
+.transparent {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+/**********
+* Text
+***********/
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.smaller {
+  font-size: 0.95em;
+}
+
+.bigger {
+  font-size: 1.05em;
+}
+
+.wider {
+  letter-spacing: 1px;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/**********
+* Behaviour
+***********/
+
+.unselectable {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+  max-height: 100%;
+}
+
+/**********
+* Clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
+***********/
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}

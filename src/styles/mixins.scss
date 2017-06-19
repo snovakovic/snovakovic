@@ -1,0 +1,72 @@
+@import 'constants';
+
+@mixin xs-screen {
+  @media screen and (min-width: $xs-screen) {
+    @content;
+  }
+}
+
+@mixin sm-screen {
+  @media screen and (min-width: $sm-screen) {
+    @content;
+  }
+}
+
+@mixin md-screen {
+  @media screen and (min-width: $md-screen) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @media screen and (min-width: $lg-screen) {
+    @content;
+  }
+}
+
+@mixin xl-screen {
+  @media screen and (min-width: $xl-screen) {
+    @content;
+  }
+}
+
+@mixin xxl-screen {
+  @media screen and (min-width: $xxl-screen) {
+    @content;
+  }
+}
+
+@mixin mobile-screen {
+  @media screen and (max-width: $xl-screen - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop-screen {
+  @media screen and (min-width: $xl-screen) {
+    @content;
+  }
+}
+
+
+/******
+* Display
+******/
+
+// Hide element form UI but leave it available for screen readers
+%visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin fixed-element {
+  position: fixed;
+  z-index: $normal-z;
+  background: $bg-color;
+}

@@ -1,0 +1,22 @@
+// Libs
+@import '~pure-css/lib/base.css';
+@import '~pure-css/lib/grids.css';
+
+// Custom
+@import "constants";
+@import "helpers";
+
+body {
+  font-family: 'Lato', arial, sans-serif;
+  color: $txt-color;
+  background-color: $bg-color;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: $header-color;
+}
