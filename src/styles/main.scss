@@ -18,5 +18,33 @@ body {
 h1, h2, h3, h4, h5, h6  {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  color: $dark-txt-color;
   color: $header-color;
+}
+
+p {
+  line-height: 22px;
+}
+
+h1, h2 {
+  color: $dark-txt-color;
+}
+
+.content {
+  max-width: $content-max-width;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: background-color .5s;
+
+  &:hover {
+    background-color: $light-bg-color;
+  }
 }
