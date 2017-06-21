@@ -1,16 +1,13 @@
 <template>
   <header class="cf">
     <div class="content">
-      <img class="profile-img img-responsive" src="https://randomuser.me/api/portraits/women/93.jpg" alt="Stefan Novakovic" />
+      <img class="profile-img img-responsive" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Stefan Novakovic" />
       <div class="profile-content">
         <h1 class="name">{{ name }}</h1>
         <h2 class="desc">{{ desc }}</h2>
-        <ul class="social list-inline">
-          <li><a href="#">t</a></li>
-          <li><a href="#">g</a></li>
-          <li><a href="#">l</a></li>
-          <li><a href="#">g</a></li>
-        </ul>
+      </div>
+      <div class="social pull-right">
+        <social></social>
       </div>
     </div>
   </header>
@@ -52,21 +49,7 @@
   }
 
   .social {
-    a {
-      background: $bg-color;
-      width: 36px;
-      height: 36px;
-      display: inline-block;
-      border-radius: 50%;
-      color: white;
-      text-align: center;
-      font-size: 20px;
-      padding-top: 8px;
-
-      &:hover {
-        background: $dark-bg-color;
-      }
-    }
+    margin-top: 20px;
   }
 
   @include md-screen {
@@ -83,12 +66,17 @@
 
 
 <script>
+  import Social from './Social.vue';
+
   export default {
     data() {
       return {
         name: 'Stefan Novakovic',
         desc: 'Senior Software Developer'
       }
+    },
+    components: {
+      Social
     }
   }
 </script>

@@ -42,17 +42,17 @@
 <script>
   import PageHeader from './components/Header.vue';
 
-  import AboutMe from './components/AboutMe.vue';
-  import CurrentProject from './components/CurrentProject.vue';
-  import Projects from './components/Projects.vue';
-  import WorkHistory from './components/WorkHistory.vue';
+  import AboutMe from './components/cards/AboutMe.vue';
+  import CurrentProject from './components/cards/CurrentProject.vue';
+  import Projects from './components/cards/Projects.vue';
+  import WorkHistory from './components/cards/WorkHistory.vue';
 
-  import ShortInfo from './components/ShortInfo.vue';
-  import Skills from './components/Skills.vue';
-  import Education from './components/Education.vue';
-  import Testimonials from './components/Testimonials.vue';
-  import Music from './components/Music.vue';
-  import Books from './components/Books.vue';
+  import ShortInfo from './components/cards/ShortInfo.vue';
+  import Skills from './components/cards/Skills.vue';
+  import Education from './components/cards/Education.vue';
+  import Testimonials from './components/cards/Testimonials.vue';
+  import Music from './components/cards/Music.vue';
+  import Books from './components/cards/Books.vue';
 
   export default {
     components: {
