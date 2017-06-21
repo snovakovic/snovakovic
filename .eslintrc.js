@@ -2,15 +2,12 @@ module.exports = {
   extends: ['airbnb-base'],
   env: {
     browser: true,
-    node: true,
     es6: true,
-    mocha: true,
-    mongo: true
   },
-  ecmaFeatures: {
-    blockBindings: true,
-    templateStrings: true
-  },
+  // ecmaFeatures: {
+  //   blockBindings: true,
+  //   templateStrings: true
+  // },
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
@@ -27,9 +24,8 @@ module.exports = {
   rules: {
     'no-console': 'error',
     'comma-dangle': ['error', 'never'],
-    'no-underscore-dangle': ['error', { allow: ['_id', '_uid', '__v'] }],
     // Line length
-    'max-len': ['error', 120, 2, { ignoreComments: false }],
+    'max-len': ['error', 80, 2, { ignoreComments: true }],
     // Functions
     'func-names': ['error', 'never'],
     'arrow-parens': ['error', 'always'],
@@ -39,7 +35,7 @@ module.exports = {
   plugins: ['html'],
   settings: {
     'import/resolver': {
-      webpack: { config: './config/bundler/webpack/base.js' }
+      webpack: { config: './webpack.config.js' }
     }
   }
 };

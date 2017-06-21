@@ -73,11 +73,11 @@
       return {
         name: 'Stefan Novakovic',
         desc: 'Senior Software Developer'
-      }
+      };
     },
     components: {
       Social
     }
-  }
+  };
 </script>
 

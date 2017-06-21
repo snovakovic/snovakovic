@@ -68,5 +68,5 @@
       Music,
       Books
     }
-  }
+  };
 </script>
