@@ -1,10 +1,21 @@
 <template>
-  <section class="short-info card">
+  <card class="short-info">
     <p>short info</p>
-  </section>
+  </card>
 </template>
 
 
 <style lang="scss" scoped>
 
 </style>
+
+
+<script>
+  import Card from './Card.vue';
+
+  export default {
+    components: {
+      Card
+    }
+  };
+</script>

@@ -1,11 +1,22 @@
 <template>
-  <section class="education card">
+  <card class="education">
     <h2>Education</h2>
     <p>MSG DSS</p>
-  </section>
+  </card>
 </template>
 
 
 <style lang="scss" scoped>
 
 </style>
+
+
+<script>
+  import Card from './Card.vue';
+
+  export default {
+    components: {
+      Card
+    }
+  };
+</script>
