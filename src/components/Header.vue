@@ -1,7 +1,7 @@
 <template>
   <header class="cf">
     <div class="content">
-      <img class="profile-img img-responsive" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Stefan Novakovic" />
+      <img class="profile-img img-responsive" src="assets/images/logo.png" alt="Stefan Novakovic" />
       <div class="profile-content">
         <h1 class="name">{{ name }}</h1>
         <h2 class="desc">{{ desc }}</h2>
