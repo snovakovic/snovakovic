@@ -10,7 +10,7 @@
           <work-history></work-history>
         </main>
         <aside class="pure-u-1 pure-u-md-1-3">
-          <short-info></short-info>
+          <info></info>
           <skills></skills>
           <education></education>
           <testimonials></testimonials>
@@ -47,7 +47,7 @@
   import Projects from './components/cards/Projects.vue';
   import WorkHistory from './components/cards/WorkHistory.vue';
 
-  import ShortInfo from './components/cards/ShortInfo.vue';
+  import Info from './components/cards/Info.vue';
   import Skills from './components/cards/Skills.vue';
   import Education from './components/cards/Education.vue';
   import Testimonials from './components/cards/Testimonials.vue';
@@ -61,7 +61,7 @@
       CurrentProject,
       Projects,
       WorkHistory,
-      ShortInfo,
+      Info,
       Skills,
       Education,
       Testimonials,

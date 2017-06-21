@@ -74,10 +74,14 @@
   box-shadow: none;
 }
 
+.list-unstyled,
 .list-inline {
   padding-left: 0;
-  margin-left: -5px;
   list-style: none;
+}
+
+.list-inline {
+  margin-left: -5px;
 
   li {
     display: inline-block;
@@ -85,6 +89,7 @@
     padding-left: 5px;
   }
 }
+
 
 /**********
 * Text
