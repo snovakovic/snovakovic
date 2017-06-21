@@ -1,14 +1,14 @@
 <template>
   <header class="cf">
     <div class="content">
-      <img class="profile-img img-responsive" src="assets/images/logo.png" alt="Stefan Novakovic" />
-      <div class="profile-content">
-        <h1 class="name">{{ name }}</h1>
-        <h2 class="desc">{{ desc }}</h2>
-      </div>
-      <div class="social pull-right">
-        <social></social>
-      </div>
+        <img class="profile-img img-responsive" :src="image" :alt="name" />
+        <div class="profile-content">
+          <h1 class="name">{{ name }}</h1>
+          <h2 class="desc">{{ desc }}</h2>
+        </div>
+        <div class="social pull-right">
+          <social></social>
+        </div>
     </div>
   </header>
 </template>
@@ -72,7 +72,8 @@
     data() {
       return {
         name: 'Stefan Novakovic',
-        desc: 'Senior Software Developer'
+        desc: 'Senior Software Developer',
+        image: '/assets/images/profile.jpg'
       };
     },
     components: {
