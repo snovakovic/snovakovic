@@ -1,9 +1,8 @@
 <template>
     <ul class="social list-inline">
-      <li><a href="#">t</a></li>
-      <li><a href="#">g</a></li>
-      <li><a href="#">l</a></li>
-      <li><a href="#">g</a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa fa-github"></i></a></li>
+      <li><a href="#"><i class="fa fa-stack-overflow"></i></a></li>
     </ul>
 </template>
 

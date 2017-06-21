@@ -1,14 +1,14 @@
 <template>
   <card class="testimonials">
     <h2>Testimonials</h2>
-    <div class="item" v-for="testemonial in list">
+    <div v-for="testemonial in list">
       <blockquote class="quote">
-        <p><i class="fa fa-quote-left"></i>{{ testemonial.content }}</p>
+        <i class="fa fa-quote-left"></i>{{ testemonial.content }}
       </blockquote>
-      <p class="source">{{ testemonial.by }}</p>
+      <p class="source smallest">{{ testemonial.by }}</p>
     </div>
     <a class="more-link" :href="source.url">
-      <i class="fa fa-external-link"></i> {{ source.description }}
+      <i class="fa fa-external-link smallest"></i> {{ source.description }}
     </a>
   </card>
 </template>
@@ -18,9 +18,29 @@
   @import '~styles/constants.scss';
 
   .quote {
-    font-size: 16px;
-    margin-bottom: 15px;
     color: $lighter-txt-color;
+
+    i {
+      margin-right: 15px;
+      color: $brand-color;
+    }
+  }
+
+  .source {
+    padding-left: 30px;
+    color: $lightest-txt-color;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  .more-link {
+    margin-top: 30px;
+
+    i {
+      font-size: 0.9em;
+      margin-right: 5px;
+    }
   }
 </style>
 
