@@ -29,14 +29,16 @@
     background: $brand-color;
     transition: background .5s;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.9em;
     cursor: pointer;
+    transition: all .75s;
 
     &:hover {
       background: $darker-brand-color;
+      letter-spacing: 2px;
     }
   }
 </style>
