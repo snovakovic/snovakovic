@@ -9,7 +9,6 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.2.0",
     "pure-css": "^1.0.4",
     "vue": "^2.3.3"
   },
