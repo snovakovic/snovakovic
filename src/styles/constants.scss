@@ -1,6 +1,7 @@
 // Colors
 
 $brand-color: #3AAA64;
+$lighter-brand-color: #9FDEB7;
 $alt-brand-color: #49519A;
 
 $bg-color: #DAE3E7;
@@ -8,8 +9,8 @@ $light-bg-color: #f5f5f5;
 $dark-bg-color: #778492;
 
 $txt-color: #434343;
-$dark-txt-color: #545e69;
-$header-color: #778492;
+$lighter-txt-color: #778492;
+$header-color: #545e69;
 
 // POSITION && SIZES
 
@@ -22,6 +23,10 @@ $big-z: 99;
 $normal-z: 9;
 $small-z: 1;
 
+// Fonts
+$main-font: 'Lato', arial, sans-serif;
+$header-font: 'Montserrat', sans-serif;
+
 // MEDIA QUERIE BREAKPOINTS
 
 $xs-screen: 460px; // >= 28.75em
@@ -30,3 +35,4 @@ $md-screen: 768px; // >= 48em
 $lg-screen: 1024px; // >= 64em
 $xl-screen: 1280px; // >= 80em
 $xxl-screen: 1536px; // >= 96em
+

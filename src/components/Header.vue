@@ -27,11 +27,6 @@
   .profile-img {
     max-width: 150px;
     border-radius: 50%;
-    transition: filter 2s;
-
-    &:hover {
-      filter: grayscale(50%);
-    }
   }
 
   .name {

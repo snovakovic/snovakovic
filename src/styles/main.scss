@@ -7,7 +7,6 @@
 @import "helpers";
 
 body {
-  font-family: 'Lato', arial, sans-serif;
   color: $txt-color;
   background-color: $bg-color;
   font-size: 16px;
@@ -15,11 +14,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body,
+.pure-g [class *= "pure-u"] {
+  font-family: $main-font;
+}
+
 h1, h2, h3, h4, h5, h6  {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: $dark-txt-color;
-  color: $header-color;
+  font-family: $header-font;
+  font-weight: bold;
+  color: $lighter-txt-color;
 }
 
 p {
@@ -27,7 +30,7 @@ p {
 }
 
 h1, h2 {
-  color: $dark-txt-color;
+  color: $header-color;
 }
 
 .content {
@@ -36,4 +39,11 @@ h1, h2 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid $lighter-brand-color;
+  font-style: italic;
 }
