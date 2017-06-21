@@ -1,6 +1,6 @@
 <template>
-  <card class="testemonials">
-    <h2>Testemonials</h2>
+  <card class="testimonials">
+    <h2>Testimonials</h2>
     <div class="item" v-for="testemonial in list">
       <blockquote class="quote">
         <p><i class="fa fa-quote-left"></i>{{ testemonial.content }}</p>
