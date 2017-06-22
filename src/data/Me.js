@@ -1,5 +1,6 @@
-import Social from './Social';
+import Education from './Education';
 import Skills from './Skills';
+import Social from './Social';
 
 const me = {
   firstName: 'Stefan',
@@ -16,18 +17,8 @@ const me = {
   }
 };
 
-const university = 'Technical University of Split';
-me.education = [{
-  title: 'MSc Computer Science',
-  period: '2009-2011',
-  university
-}, {
-  title: 'BSc Computer Science',
-  period: '2006-2009',
-  university
-}];
-
-me.social = Social;
+me.education = Education;
 me.skills = Skills;
+me.social = Social;
 
 export default me;
