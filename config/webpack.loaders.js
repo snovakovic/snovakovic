@@ -3,7 +3,7 @@ module.exports = [{
   loader: 'vue-loader',
   options: {
     loaders: {
-      scss: 'vue-style-loader!css-loader!sass-loader',
+      scss: 'vue-style-loader!css-loader!sass-loader'
     }
   }
 }, {
@@ -17,6 +17,11 @@ module.exports = [{
   test: /\.js$/,
   loader: 'babel-loader',
   exclude: /node_modules/
+}, {
+  test: /node_modules\/js-flock/,
+  loader: 'babel-loader',
+  include: '/',
+  query: { presets: [['es2015', { modules: false }]] }
 }, {
   test: /\.(png|jpg|gif|svg)$/,
   loader: 'file-loader',

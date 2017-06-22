@@ -11,6 +11,7 @@
 
 <style lang="scss" scoped>
   @import '~styles/constants.scss';
+  @import '~styles/mixins.scss';
 
   $size: 45px;
 
@@ -24,15 +25,21 @@
       border-radius: 50%;
       color: white;
       text-align: center;
-      font-size: 20px;
+      font-size: 24px;
 
       &:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 20px;
       }
 
       &:hover {
         background: $dark-bg-color;
       }
+    }
+  }
+
+  @include md-screen {
+    .social a:not(:last-child) {
+      margin-right: 10px;
     }
   }
 </style>
