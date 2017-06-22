@@ -1,10 +1,10 @@
 <template>
   <header class="cf">
     <div class="content">
-        <img class="profile-img img-responsive" :src="image" :alt="name" />
+        <img class="profile-img" :src="$me.profileImage" :alt="$me.fullName" />
         <div class="profile-content">
-          <h1 class="name">{{ name }}</h1>
-          <h2 class="desc">{{ desc }}</h2>
+          <h1 class="name">{{ $me.fullName }}</h1>
+          <h2 class="desc">{{ $me.description }}</h2>
         </div>
         <div class="social pull-right">
           <social></social>
@@ -25,7 +25,8 @@
   }
 
   .profile-img {
-    max-width: 150px;
+    display: block;
+    width: 150px;
     border-radius: 50%;
   }
 
@@ -64,13 +65,6 @@
   import Social from './Social.vue';
 
   export default {
-    data() {
-      return {
-        name: 'Stefan Novakovic',
-        desc: 'Senior Software Developer',
-        image: '/assets/images/profile.jpg'
-      };
-    },
     components: {
       Social
     }
