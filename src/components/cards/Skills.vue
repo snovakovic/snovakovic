@@ -1,7 +1,7 @@
 <template>
   <card class="skills">
     <h2>Skills</h2>
-    <div class="item" v-for="skill in skills">
+    <div class="item" v-for="skill in skills" :key="skill.name">
       <h4 class="level-title">{{ skill.name }}</h4>
       <div class="level-bar">
         <div class="level-bar-inner" :style="getWidth(skill)">

@@ -16,6 +16,17 @@ const me = {
   }
 };
 
+const university = 'Technical University of Split';
+me.education = [{
+  title: 'MSc Computer Science',
+  period: '2009-2011',
+  university
+}, {
+  title: 'BSc Computer Science',
+  period: '2006-2009',
+  university
+}];
+
 me.social = Social;
 me.skills = Skills;
 

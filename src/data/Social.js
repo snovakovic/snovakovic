@@ -7,7 +7,7 @@ export default [{
   link: '#',
   icon: 'fa fa-github'
 }, {
-  name: 'linkedin',
+  name: 'stack-overflow',
   link: '#',
   icon: 'fa fa-stack-overflow'
 }];
