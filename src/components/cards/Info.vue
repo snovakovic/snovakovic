@@ -27,8 +27,13 @@
       width: 35px;
     }
 
-    .fa-map-marker { margin-left: 2px; }
-    li { margin-bottom: 15px; }
+    .fa-map-marker {
+      margin-left: 2px;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
   }
 
   .resume {

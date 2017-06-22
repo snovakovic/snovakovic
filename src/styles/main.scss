@@ -47,6 +47,10 @@ a {
   text-decoration: none;
   transition: color .5s;
 
+  &.dark {
+    color: $txt-color;
+  }
+
   &:hover {
     text-decoration: underline;
     color: $dark-brand-color;

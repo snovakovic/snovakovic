@@ -4,7 +4,9 @@
     <div class="item" v-for="education in $me.education" :key="education.title">
       <h4 class="title">{{ education.title }}</h4>
       <p class="university">
-        <a :href="education.university.link">{{ education.university.name }}</a>
+        <a class="dark" :href="education.university.link">
+          {{ education.university.name }}
+        </a>
         <span class="year">({{ education.period }})</span>
       </p>
     </div>
@@ -28,10 +30,6 @@
     font-weight: bold;
     margin-top: 5px;
     padding-left: 15px;
-
-    a {
-      color: $txt-color;
-    }
 
     .year {
       color: $light-txt-color;
