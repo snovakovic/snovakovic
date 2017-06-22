@@ -6,9 +6,14 @@ const me = {
   lastName: 'Novakovic',
   get fullName() { return `${this.firstName} ${this.lastName}`; },
   userName: 'snovakovic',
+  email: 'stefan.novakovich@gmail.com',
   description: 'Senior Software Developer',
-  subDescription: 'JavaScript enthusiast',
-  profileImage: '/assets/images/profile.jpg'
+  featured: 'JavaScript enthusiast',
+  image: '/assets/images/profile.jpg',
+  location: {
+    name: 'Split, Croatia',
+    link: 'https://goo.gl/maps/kaLwrJyfmGT2'
+  }
 };
 
 me.social = Social;
