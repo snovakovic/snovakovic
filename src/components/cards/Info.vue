@@ -37,7 +37,7 @@
     transition: all .75s;
 
     &:hover {
-      background: $darker-brand-color;
+      background: $dark-brand-color;
       letter-spacing: 2px;
     }
   }

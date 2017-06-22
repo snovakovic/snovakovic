@@ -18,7 +18,7 @@
   @import '~styles/constants.scss';
 
   .quote {
-    color: $lighter-txt-color;
+    color: $txt-color;
 
     i {
       margin-right: 15px;
@@ -28,7 +28,7 @@
 
   .source {
     padding-left: 30px;
-    color: $lightest-txt-color;
+    color: $light-txt-color;
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 30px;

@@ -1,3 +1,6 @@
+import Social from './Social';
+import Skills from './Skills';
+
 const me = {
   firstName: 'Stefan',
   lastName: 'Novakovic',
@@ -8,19 +11,7 @@ const me = {
   profileImage: '/assets/images/profile.jpg'
 };
 
-me.social = [{
-  name: 'linkedin',
-  link: '#',
-  icon: 'fa fa-linkedin'
-}, {
-  name: 'github',
-  link: '#',
-  icon: 'fa fa-github'
-}, {
-  name: 'linkedin',
-  link: '#',
-  icon: 'fa fa-stack-overflow'
-}];
-
+me.social = Social;
+me.skills = Skills;
 
 export default me;
