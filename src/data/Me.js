@@ -2,7 +2,6 @@ import Books from './Books';
 import Education from './Education';
 import Musics from './Musics';
 import Skills from './Skills';
-import Social from './Social';
 import Testimonial from './Testimonial';
 
 const me = {
@@ -24,7 +23,6 @@ me.books = Books;
 me.education = Education;
 me.musics = Musics;
 me.skills = Skills;
-me.social = Social;
 me.testimonial = Testimonial;
 
 export default me;

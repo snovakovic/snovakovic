@@ -1,12 +1,14 @@
 <template>
   <header class="cf">
     <div class="content">
-        <img class="profile-img" :src="$me.image" :alt="$me.fullName" />
+        <img class="profile-img" :src="$me.image" :alt="$me.fullName"></img>
         <div class="profile-content">
           <h1 class="name">{{ $me.fullName }}</h1>
           <h2 class="desc">{{ $me.description }}</h2>
         </div>
-        <div class="social"><social></social></div>
+        <div class="social-wrapper">
+          <social></social>
+        </div>
     </div>
   </header>
 </template>
@@ -42,13 +44,26 @@
     margin-bottom: 15px;
   }
 
-  .social { margin-top: 20px; }
+  .social-wrapper {
+    margin-top: 40px;
+  }
 
   @include md-screen {
-    header { text-align: left; }
-    .profile-img { margin-right: 30px; }
-    .social { float: right; }
-    .name { margin-top: 30px; }
+    header {
+      text-align: left;
+    }
+
+    .profile-img {
+      margin-right: 30px;
+    }
+
+    .social-wrapper {
+      float: right;
+    }
+
+    .name {
+      margin-top: 30px;
+    }
 
     .profile-img,
     .profile-content {

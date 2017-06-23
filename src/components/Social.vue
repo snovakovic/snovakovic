@@ -1,9 +1,13 @@
 <template>
-  <section class="social">
-    <a v-for="social in $me.social"
-      :href="social.link"
-      :title="getTitle($me.social)">
-      <i :class="social.icon"></i>
+  <section class="cf">
+    <a href="#" class="linkedin" :title="getTitle('linkedin')">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="#" class="github" :title="getTitle('github')">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="#" class="stack-overflow" :title="getTitle('stack-overflow')">
+      <i class="fa fa-stack-overflow"></i>
     </a>
   </section>
 </template>
@@ -15,31 +19,44 @@
 
   $size: 45px;
 
-  .social {
-    a {
-      background: $bg-color;
-      width: $size;
-      height: $size;
-      line-height: $size;
-      display: inline-block;
-      border-radius: 50%;
-      color: white;
-      text-align: center;
-      font-size: 24px;
+  a {
+    background: $bg-color;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    display: block;
+    float: left;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    transition: all .3s;
 
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
 
-      &:hover {
-        background: $dark-bg-color;
-      }
+    &:hover {
+      border-radius: 0%;
     }
   }
 
+  .linkedin {
+    background: #0077B5;
+  }
+
+  .github {
+    background: #171515;
+    font-size: 28px;
+  }
+
+  .stack-overflow {
+    background: #F48020;
+  }
+
   @include md-screen {
-    .social a:not(:last-child) {
-      margin-right: 10px;
+    a:not(:last-child) {
+      margin-right: 15px;
     }
   }
 </style>
@@ -48,8 +65,8 @@
 <script>
   export default {
     methods: {
-      getTitle(social) {
-        return `Go to ${social.name} profile`;
+      getTitle(name) {
+        return `Go to ${name} profile`;
       }
     }
   };
