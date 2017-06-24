@@ -18,5 +18,12 @@ export default toEnum({
   ZEROMQ: 'ZeroMQ',
   ELASTICSEARCH: 'Elasticsearch',
   ENTITYFRAMEWORK: 'Entity Framework',
-  PHP: 'PHP'
+  WEBSOCKETS: 'Web Sockets',
+  PHP: 'PHP',
+  WPF: 'WPF',
+  PHONEGAP: 'Phone Gap',
+  BACKBNE: 'Backbone',
+  ADONET: 'ADO.NET',
+  HTML: 'HTML',
+  CSS: 'CSS'
 });

@@ -1,6 +1,14 @@
 <template>
   <card class="projects">
     <h2>Projects</h2>
+    <div class="item">
+      <div class="image">
+
+      </div>
+      <div class="content">
+
+      </div>
+    </div>
   </card>
 </template>
 
