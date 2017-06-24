@@ -101,12 +101,39 @@ const chsGroup = {
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
     tech.HTML, tech.CSS],
   client: {
-    name: 'CHS Group',
-    link: 'http://thechsgroup.us/'
+    name: 'Yellowdot Group',
+    link: 'http://yellowdotgroup.com/'
   },
   description: `Development of WordPress site with custom design
     for NYC Renovation Company.`,
   link: 'http://thechsgroup.us/'
+};
+
+const stellaandruby = {
+  period: '??',
+  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
+    tech.HTML, tech.CSS],
+  client: {
+    name: 'Yellowdot Group',
+    link: 'http://yellowdotgroup.com/'
+  },
+  description: `Development of WordPress site with custom design
+    for Stella & Ruby.`,
+  link: 'http://stellaandruby.com/'
+};
+
+const yellowdot = {
+  period: '??',
+  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
+    tech.HTML, tech.CSS],
+  client: {
+    name: 'Yellowdot Group',
+    link: 'http://yellowdotgroup.com/'
+  },
+  description: 'Updates of existing Wordpress theme for Yellowdot Group.',
+  link: 'http://yellowdotgroup.com/'
 };
 
 const openLooq = {
@@ -255,6 +282,14 @@ const realEstate = {
     for real-estate CMS system`
 };
 
+const playground = {
+  period: '??',
+  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
+  technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
+  description: 'Hobby project. Development of HTML/JS games',
+  duties: 'Creator'
+};
+
 export default [
   notreDame,
   reviews,
@@ -270,5 +305,8 @@ export default [
   openLooq,
   chsGroup,
   thePartnershipResources,
-  jdcDemolition
+  jdcDemolition,
+  stellaandruby,
+  yellowdot,
+  playground
 ];
