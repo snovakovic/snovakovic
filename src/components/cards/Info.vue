@@ -2,15 +2,11 @@
   <card class="info">
     <ul class="list-unstyled">
       <li>
-        <span class="icon">
-          <i class="fa fa-map-marker"></i>
-        </span>
+        <span class="icon"><i class="fa fa-map-marker"></i></span>
         <a :href="location.link">{{ location.name }}</a>
       </li>
       <li>
-        <span class="icon">
-          <i class="fa fa-envelope-o"></i>
-        </span>
+        <span class="icon"><i class="fa fa-envelope-o"></i></span>
         </i><a :href="mailto">{{ email }}</a>
       </li>
     </ul>
