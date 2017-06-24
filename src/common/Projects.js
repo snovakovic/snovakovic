@@ -225,7 +225,9 @@ const zet = {
     and fixing production issues`
 };
 
-const netGiro = {
+const netgiro = {
+  name: 'netgiro',
+  noImages: 5,
   period: '??',
   type: [type.SINGLE, type.MEDIUM, type.FRONTEND],
   tech: [tech.JAVASCRIPT, tech.ANGULAR1, tech.PHONEGAP, tech.HTML, tech.CSS],
@@ -235,6 +237,8 @@ const netGiro = {
 };
 
 const pht = {
+  name: 'pht',
+  noImages: 6,
   period: '??',
   featured: true,
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
@@ -256,6 +260,8 @@ const pht = {
 
 const fsg = {
   period: '??',
+  name: 'fsg',
+  noImages: 8,
   featured: true,
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.CSHARP,
@@ -298,7 +304,7 @@ export default [
   wiggle,
   ellevationEducation,
   zet,
-  netGiro,
+  netgiro,
   pht,
   fsg,
   realEstate,
