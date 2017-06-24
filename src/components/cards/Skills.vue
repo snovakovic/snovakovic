@@ -45,10 +45,10 @@
 
   add(Skill.JAVASCRIPT, 90, true);
   add(Skill.ES6, 90);
-  add(Skill.JQUERY, 85);
   add(Skill.NODE, 85, true);
+  add(Skill.VUE, 85, true);
   add(Skill.HAPI, 80, true);
-  add(Skill.VUE, 80, true);
+  add(Skill.JQUERY, 80);
   add(Skill.CSHARP, 75, true);
   add(Skill.Angular1, 75);
   add(Skill.MSSQL, 70, true);

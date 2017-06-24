@@ -20,7 +20,7 @@
 
   header {
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
     background: $light-bg-color;
     border-top: 10px solid $dark-brand-color;
   }
@@ -45,7 +45,8 @@
   }
 
   .social-wrapper {
-    margin-top: 40px;
+    margin-top: 10px;
+    display: inline-block;
   }
 
   @include md-screen {
@@ -58,6 +59,7 @@
     }
 
     .social-wrapper {
+      margin-top: 40px;
       float: right;
     }
 

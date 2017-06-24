@@ -5,7 +5,6 @@
       <div class="pure-g">
         <main class="pure-u-1 pure-u-md-2-3">
           <about-me></about-me>
-          <current-project></current-project>
           <projects></projects>
           <work-history></work-history>
         </main>
@@ -43,7 +42,6 @@
   import PageHeader from './components/Header.vue';
 
   import AboutMe from './components/cards/AboutMe.vue';
-  import CurrentProject from './components/cards/CurrentProject.vue';
   import Projects from './components/cards/Projects.vue';
   import WorkHistory from './components/cards/WorkHistory.vue';
 
@@ -58,7 +56,6 @@
     components: {
       PageHeader,
       AboutMe,
-      CurrentProject,
       Projects,
       WorkHistory,
       Info,
