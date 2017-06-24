@@ -2,15 +2,19 @@
   <card class="info">
     <ul class="list-unstyled">
       <li>
-        <span class="icon"><i class="fa fa-map-marker" /></span>
-        <a :href="$me.location.link">{{ $me.location.name }}</a>
+        <span class="icon">
+          <i class="fa fa-map-marker"></i>
+        </span>
+        <a :href="location.link">{{ location.name }}</a>
       </li>
       <li>
-        <span class="icon"><i class="fa fa-envelope-o"/></span>
-        </i><a :href="mailto">{{ $me.email }}</a>
+        <span class="icon">
+          <i class="fa fa-envelope-o"></i>
+        </span>
+        </i><a :href="mailto">{{ email }}</a>
       </li>
     </ul>
-    <div class="resume"> Download Resume</div>
+    <div class="resume">Download Resume</div>
   </card>
 </template>
 
@@ -64,8 +68,17 @@
   import Card from './Card.vue';
 
   export default {
+    data() {
+      return {
+        email: 'stefan.novakovich@gmail.com',
+        location: {
+          name: 'Split, Croatia',
+          link: 'https://goo.gl/maps/kaLwrJyfmGT2'
+        }
+      };
+    },
     computed: {
-      mailto() { return `mailto:${this.$me.mail}`; }
+      mailto() { return `mailto:${this.email}`; }
     },
     components: {
       Card

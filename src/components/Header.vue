@@ -1,10 +1,10 @@
 <template>
   <header class="cf">
     <div class="content">
-        <img class="profile-img" :src="$me.image" :alt="$me.fullName"></img>
+        <img class="profile-img" src="/assets/images/profile.jpg" :alt="name"></img>
         <div class="profile-content">
-          <h1 class="name">{{ $me.fullName }}</h1>
-          <h2 class="desc">{{ $me.description }}</h2>
+          <h1 class="name">{{ name }}</h1>
+          <h2 class="desc">{{ description }}</h2>
         </div>
         <div class="social-wrapper">
           <social></social>
@@ -77,6 +77,12 @@
   import Social from './Social.vue';
 
   export default {
+    data() {
+      return {
+        name: 'Stefan Novakovic',
+        description: 'Senior Software Developer'
+      };
+    },
     components: {
       Social
     }

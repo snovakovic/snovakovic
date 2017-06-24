@@ -1,13 +1,13 @@
 <template>
   <card class="education">
     <h2><i class="fa fa-graduation-cap"></i> Education</h2>
-    <div class="item" v-for="education in $me.education" :key="education.title">
-      <h4 class="title">{{ education.title }}</h4>
+    <div class="item" v-for="study in education" :key="study.title">
+      <h4 class="title">{{ study.title }}</h4>
       <p class="university">
-        <a class="dark" :href="education.university.link">
-          {{ education.university.name }}
+        <a class="dark" :href="study.university.link">
+          {{ study.university.name }}
         </a>
-        <span class="year">({{ education.period }})</span>
+        <span class="year">({{ study.period }})</span>
       </p>
     </div>
   </card>
@@ -43,7 +43,26 @@
 <script>
   import Card from './Card.vue';
 
+  const university = {
+    name: 'Technical University of Split',
+    link: 'https://eng.fesb.unist.hr/'
+  };
+
+  const education = [{
+    title: 'MSc Computer Science',
+    period: '2009-2011',
+    university
+  }, {
+    title: 'BSc Computer Science',
+    period: '2006-2009',
+    university
+  }];
+
+
   export default {
+    data() {
+      return { education };
+    },
     components: {
       Card
     }
