@@ -33,7 +33,7 @@
 
 
 <script>
-  import Technology from 'common/Technology';
+  import technology from 'common/technology';
 
   import Card from './Card.vue';
 
@@ -43,24 +43,24 @@
     skills.push({ name, proficiency, featured });
   }
 
-  add(Technology.JAVASCRIPT, 90, true);
-  add(Technology.ES6, 90);
-  add(Technology.NODE, 85, true);
-  add(Technology.VUE, 85, true);
-  add(Technology.HAPI, 80, true);
-  add(Technology.JQUERY, 80);
-  add(Technology.CSHARP, 75, true);
-  add(Technology.Angular1, 75);
-  add(Technology.MSSQL, 70, true);
-  add(Technology.MYSQL, 70);
-  add(Technology.POSTGRESQL, 70);
-  add(Technology.MONGO, 65, true);
-  add(Technology.REDIS, 65, true);
-  add(Technology.ZEROMQ, 60);
-  add(Technology.ELASTICSEARCH, 55);
-  add(Technology.EXPRESS, 55);
-  add(Technology.ENTITYFRAMEWORK, 50);
-  add(Technology.PHP, 35);
+  add(technology.JAVASCRIPT, 90, true);
+  add(technology.ES6, 90);
+  add(technology.NODE, 85, true);
+  add(technology.VUE, 85, true);
+  add(technology.HAPI, 80, true);
+  add(technology.JQUERY, 80);
+  add(technology.CSHARP, 75, true);
+  add(technology.Angular1, 75);
+  add(technology.MSSQL, 70, true);
+  add(technology.MYSQL, 70);
+  add(technology.POSTGRESQL, 70);
+  add(technology.MONGO, 65, true);
+  add(technology.REDIS, 65, true);
+  add(technology.ZEROMQ, 60);
+  add(technology.ELASTICSEARCH, 55);
+  add(technology.EXPRESS, 55);
+  add(technology.ENTITYFRAMEWORK, 50);
+  add(technology.PHP, 35);
 
 
   export default {

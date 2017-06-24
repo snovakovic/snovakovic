@@ -1,7 +1,9 @@
-import type from './ProjectType';
-import tech from './Technology';
+import type from './projectType';
+import tech from './technology';
+
 
 const notreDame = {
+  id: 'notreDame',
   period: 'December 2016 - present',
   featured: true,
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
@@ -25,6 +27,7 @@ const notreDame = {
 };
 
 const reviews = {
+  id: 'reviews',
   period: '??',
   type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE,
@@ -38,6 +41,7 @@ const reviews = {
 };
 
 const QSF = {
+  id: 'qsf',
   period: '??',
   featured: true,
   type: [type.TEAM, type.LARGE, type.FRONTEND],
@@ -57,6 +61,7 @@ const QSF = {
 };
 
 const jsFlock = {
+  id: 'jsFlock',
   period: '??',
   featured: true,
   type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
@@ -68,6 +73,7 @@ const jsFlock = {
 };
 
 const wiggle = {
+  id: 'wiggle',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT],
@@ -78,6 +84,7 @@ const wiggle = {
 };
 
 const addKontrol = {
+  id: 'addKontrol',
   period: '??',
   type: [type.TEAM, type.LARGE, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.Angular1, tech.MYSQL, tech.ADONET,
@@ -96,6 +103,7 @@ const addKontrol = {
 };
 
 const chsGroup = {
+  id: 'chsGroup',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
@@ -110,6 +118,7 @@ const chsGroup = {
 };
 
 const stellaandruby = {
+  id: 'stellaandruby',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
@@ -124,6 +133,7 @@ const stellaandruby = {
 };
 
 const yellowdot = {
+  id: 'yellowdot',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
@@ -137,6 +147,7 @@ const yellowdot = {
 };
 
 const openLooq = {
+  id: 'openLooq',
   period: '??',
   type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
@@ -158,6 +169,7 @@ const openLooq = {
 };
 
 const thePartnershipResources = {
+  id: 'thePartnershipResources',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
@@ -172,6 +184,7 @@ const thePartnershipResources = {
 };
 
 const jdcDemolition = {
+  id: 'jdcDemolition',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
@@ -187,6 +200,7 @@ const jdcDemolition = {
 };
 
 const ellevationEducation = {
+  id: 'ellevationEducation',
   period: '??',
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.CSHARP, tech.MSSQL,
@@ -206,6 +220,7 @@ const ellevationEducation = {
 };
 
 const zet = {
+  id: 'zet',
   period: '??',
   featured: true,
   type: [type.TEAM, type.LARGE, type.SERVERSIDE],
@@ -226,7 +241,7 @@ const zet = {
 };
 
 const netgiro = {
-  name: 'netgiro',
+  id: 'netgiro',
   noImages: 5,
   period: '??',
   type: [type.SINGLE, type.MEDIUM, type.FRONTEND],
@@ -237,7 +252,7 @@ const netgiro = {
 };
 
 const pht = {
-  name: 'pht',
+  id: 'pht',
   noImages: 6,
   period: '??',
   featured: true,
@@ -259,8 +274,8 @@ const pht = {
 };
 
 const fsg = {
+  id: 'fsg',
   period: '??',
-  name: 'fsg',
   noImages: 8,
   featured: true,
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
@@ -276,6 +291,7 @@ const fsg = {
 };
 
 const realEstate = {
+  id: 'realEstate',
   period: '??',
   featured: true,
   type: [type.SINGLE, type.SMALL, type.SERVERSIDE],
@@ -289,6 +305,7 @@ const realEstate = {
 };
 
 const playground = {
+  id: 'playground',
   period: '??',
   type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
   technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
@@ -305,6 +322,7 @@ export default [
   ellevationEducation,
   zet,
   netgiro,
+  addKontrol,
   pht,
   fsg,
   realEstate,
