@@ -25,5 +25,6 @@ export default toEnum({
   BACKBNE: 'Backbone',
   ADONET: 'ADO.NET',
   HTML: 'HTML',
-  CSS: 'CSS'
+  CSS: 'CSS',
+  WORDPRESS: 'WordPress'
 });

@@ -77,6 +77,88 @@ const wiggle = {
   link: 'https://www.npmjs.com/package/wiggle.js'
 };
 
+const addKontrol = {
+  period: '??',
+  type: [type.TEAM, type.LARGE, type.FULLSTACK, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.Angular1, tech.MYSQL, tech.ADONET,
+    tech.HTML, tech.CSS],
+  client: {
+    name: 'Ad Kontrol',
+    link: 'http://adkontrol.com/'
+  },
+  description: `AdKontrol automates the process of logging all
+    on-air occurrences of pre-recorded advertisements on radio and television
+    to produce high-value reporting products for advertisers, agencies,
+    media houses, and regulators.`,
+  duties: `Developing new features for adKontol with main focus on
+    new reporting system`,
+  link: 'http://adkontrol.com/'
+};
+
+const chsGroup = {
+  period: '??',
+  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
+    tech.HTML, tech.CSS],
+  client: {
+    name: 'CHS Group',
+    link: 'http://thechsgroup.us/'
+  },
+  description: `Development of WordPress site with custom design
+    for NYC Renovation Company.`,
+  link: 'http://thechsgroup.us/'
+};
+
+const openLooq = {
+  period: '??',
+  type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
+    tech.HTML, tech.CSS],
+  client: {
+    name: 'Boston Web Developer',
+    link: 'http://www.bostonwebdeveloper.com/'
+  },
+  description: `Developing platform for buying/selling informations.
+    Platform allows administrator to define any data template
+    (People, Places, Companies, etc) with following validation that’s used by
+    platform seller to upload relevant data. Platform allows buyer to search
+    and buy data using build payment system (Authorize.NET).
+    you can access it on on development server
+    <a href="'http://openlooq.bostonwebdeveloper.com/">development server</a>`,
+  duties: `Only developer working on platform from ground up.
+    Development of platform have been stopped after 6months of development
+    due to financial reasons`
+};
+
+const thePartnershipResources = {
+  period: '??',
+  type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
+    tech.HTML, tech.css],
+  client: {
+    name: 'Boston Web Developer',
+    link: 'http://www.bostonwebdeveloper.com/'
+  },
+  description: `Development of custom designed page for The Partnership
+    Resource. Page is build on top of custom made C#(.NET) CMS.`,
+  link: 'http://thepartnershipresource.com/'
+};
+
+const jdcDemolition = {
+  period: '??',
+  type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
+    tech.HTML, tech.css],
+  client: {
+    name: 'Boston Web Developer',
+    link: 'http://www.bostonwebdeveloper.com/'
+  },
+
+  description: `Development of custom designed page for The JDC Demolition
+    Company. Page is build on top of custom made C#(.NET) CMS.`,
+  link: 'http://jdcdemoinc.com/'
+};
+
 const ellevationEducation = {
   period: '??',
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
@@ -184,5 +266,9 @@ export default [
   netGiro,
   pht,
   fsg,
-  realEstate
+  realEstate,
+  openLooq,
+  chsGroup,
+  thePartnershipResources,
+  jdcDemolition
 ];
