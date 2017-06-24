@@ -2,10 +2,14 @@
   <card class="skills">
     <h2>Skills</h2>
     <div class="item" v-for="skill in skills" :key="skill.name">
-      <h4 class="level-title">{{ skill.name }}</h4>
+      <h4 class="level-title">
+        {{ skill.name }}
+        <span class="no-projects">
+          {{ byTechnology(skill.name) }} projects
+        </span>
+      </h4>
       <div class="level-bar">
-        <div class="level-bar-inner" :style="getWidth(skill)">
-        </div>
+        <div class="level-bar-inner" :style="getWidth(skill)"></div>
       </div>
     </div>
   </card>
@@ -17,6 +21,12 @@
 
   .level-title {
     margin-bottom: 5px;
+
+    .no-projects {
+      font-size: 11px;
+      color: $light-txt-color;
+      float: right;
+    }
   }
 
   .level-bar {
@@ -33,7 +43,8 @@
 
 
 <script>
-  import technology from 'common/technology';
+  import projects from 'common/projects';
+  import tech from 'common/technology';
 
   import Card from './Card.vue';
 
@@ -43,24 +54,24 @@
     skills.push({ name, proficiency, featured });
   }
 
-  add(technology.JAVASCRIPT, 90, true);
-  add(technology.ES6, 90);
-  add(technology.NODE, 85, true);
-  add(technology.VUE, 85, true);
-  add(technology.HAPI, 80, true);
-  add(technology.JQUERY, 80);
-  add(technology.CSHARP, 75, true);
-  add(technology.Angular1, 75);
-  add(technology.MSSQL, 70, true);
-  add(technology.MYSQL, 70);
-  add(technology.POSTGRESQL, 70);
-  add(technology.MONGO, 65, true);
-  add(technology.REDIS, 65, true);
-  add(technology.ZEROMQ, 60);
-  add(technology.ELASTICSEARCH, 55);
-  add(technology.EXPRESS, 55);
-  add(technology.ENTITYFRAMEWORK, 50);
-  add(technology.PHP, 35);
+  add(tech.JAVASCRIPT, 90, true);
+  add(tech.ES6, 90);
+  add(tech.NODE, 85, true);
+  add(tech.VUE, 85, true);
+  add(tech.HAPI, 80, true);
+  add(tech.JQUERY, 80);
+  add(tech.CSHARP, 75, true);
+  add(tech.Angular1, 75);
+  add(tech.MSSQL, 70, true);
+  add(tech.MYSQL, 70);
+  add(tech.POSTGRESQL, 70);
+  add(tech.MONGO, 65, true);
+  add(tech.REDIS, 65, true);
+  add(tech.ZEROMQ, 60);
+  add(tech.ELASTICSEARCH, 55);
+  add(tech.EXPRESS, 55);
+  add(tech.ENTITYFRAMEWORK, 50);
+  add(tech.PHP, 35);
 
 
   export default {
@@ -72,6 +83,10 @@
     methods: {
       getWidth(skill) {
         return `width: ${skill.proficiency}%;`;
+      },
+      byTechnology(technology) {
+        return projects.filter((p) =>
+          p.technologies.some((t) => t === technology)).length;
       }
     },
     components: {

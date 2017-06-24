@@ -64,7 +64,7 @@ const jsFlock = {
   id: 'jsFlock',
   period: '??',
   featured: true,
-  type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
+  type: [type.SINGLE, type.SMALLe, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE],
   description: `Gather and polish helper methods created during other projects.
     Code are published on npm under name js-flock.`,
@@ -245,7 +245,7 @@ const netgiro = {
   noImages: 5,
   period: '??',
   type: [type.SINGLE, type.MEDIUM, type.FRONTEND],
-  tech: [tech.JAVASCRIPT, tech.ANGULAR1, tech.PHONEGAP, tech.HTML, tech.CSS],
+  technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.PHONEGAP, tech.HTML, tech.CSS],
   description: `Development of the JavaScript angular mobile application
     that allows NetGiro payment system clients to explore their account
     on mobile device`

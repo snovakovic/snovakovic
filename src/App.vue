@@ -10,6 +10,7 @@
         </main>
         <aside class="pure-u-1 pure-u-md-1-3">
           <info></info>
+          <projects-summary></projects-summary>
           <skills></skills>
           <education></education>
           <testimonials></testimonials>
@@ -43,6 +44,7 @@
 
   import AboutMe from './components/cards/AboutMe.vue';
   import Projects from './components/cards/Projects.vue';
+  import ProjectsSummary from './components/cards/ProjectsSummary.vue';
   import WorkHistory from './components/cards/WorkHistory.vue';
 
   import Info from './components/cards/Info.vue';
@@ -56,6 +58,7 @@
     components: {
       PageHeader,
       AboutMe,
+      ProjectsSummary,
       Projects,
       WorkHistory,
       Info,
