@@ -1,8 +1,10 @@
 <template>
   <section class="pagination">
-    <i class="fa fa-chevron-left" @click="prev"></i>
+    <i class="fa fa-chevron-left"
+      :class="{ inactive: currentPage === 1}" @click="prev"></i>
       <span class="state"> {{ currentPage }} / {{ noPages }} </span>
-    <i class="fa fa-chevron-right" @click="next"></i>
+    <i class="fa fa-chevron-right"
+      :class="{ inactive: currentPage === noPages}" @click="next"></i>
   </section>
 </template>
 
@@ -15,11 +17,18 @@
 
     i {
       font-size: 22px;
-      cursor: pointer;
       transition: .5s color;
 
-      &:hover {
-        color: $brand-color;
+      &.inactive {
+        color: $light-txt-color;
+      }
+
+      &:not(.inactive) {
+        cursor: pointer;
+
+        &:hover {
+          color: $brand-color;
+        }
       }
     }
 

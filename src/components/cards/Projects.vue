@@ -14,9 +14,38 @@
       </div>
       <div class="info">
         <p v-html="project.description"></p>
+        <div class="breakdown">
+          <p>
+            <span class="group">Period:</span>
+            <span>{{ project.period }}</span>
+          </p>
+          <p v-if="project.client">
+            <span class="group">Client:</span>
+            <span>
+              <a href="project.client.link">{{ project.client.name }}</a>
+            </span>
+          </p>
+          <p v-if="project.duties">
+            <span class="group">Duties:</span>
+            <span>{{ project.duties }}</span>
+          </p>
+          <p>
+            <span class="group">Type:</span>
+            <span class="tag" v-for="type in project.type" :key="type">
+              {{ type }}
+            </span>
+          </p>
+          <p>
+            <span class="group">Technologies:</span>
+            <span class="tag"
+              v-for="technology in project.technologies" :key="technology">
+              {{ technology }}
+            </span>
+          </p>
+        </div>
       </div>
     </div>
-    <pagination :items="projects" @change="setItems"></pagination>
+    <pagination :items="projects" @change="setActive"></pagination>
   </card>
 </template>
 
@@ -26,6 +55,7 @@
 
   .item {
     margin-bottom: 30px;
+    border-bottom: 1px solid $bg-color;
   }
 
   .title {
@@ -51,10 +81,30 @@
   }
 
   .info {
-    padding-left: 20px;
+    padding: 10px 30px 0 30px;
 
-    p {
-      margin-top: 5px;
+    .breakdown {
+      p {
+        margin: 5px 0;
+      }
+    }
+
+    .group {
+      text-transform: uppercase;
+      color: $header-color;
+      font-weight: bold;
+      font-size: 13px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 5px;
+      background: $bg-color;
+      padding: 2px 10px;
+      font-size: 12px;
+      border-radius: 5px;
     }
   }
 </style>
@@ -81,7 +131,7 @@
       imagePath(project) {
         return `assets/images/projects/${project.id}/1.png`;
       },
-      setItems(items) {
+      setActive(items) {
         this.activeProjects = items;
       }
     },

@@ -66,7 +66,7 @@ const jsFlock = {
   summary: 'JS utility methods for NODE and Browser',
   period: '??',
   featured: true,
-  type: [type.SINGLE, type.SMALLe, type.OPENSOURCE],
+  type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE],
   description: `Gather and polish helper methods created during other projects.
     Code are published on npm under name js-flock.`,
@@ -227,7 +227,7 @@ const ellevationEducation = {
 
 const zet = {
   title: 'Zagreb Municipal Transit System',
-  summary: 'New business application fro selling e-tickets',
+  summary: 'New business application for selling e-tickets',
   period: '??',
   featured: true,
   type: [type.TEAM, type.LARGE, type.SERVERSIDE],
@@ -267,9 +267,9 @@ const netgiro = {
 const pht = {
   title: 'PHT',
   summary: 'LogPad app for clinical research to ',
-  noImages: 6,
   period: '??',
   featured: true,
+  noImages: 6,
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.BACKBONE, tech.PHONEGAP,
     tech.HTML, tech.CSS],
@@ -293,7 +293,7 @@ const fsg = {
   noImages: 8,
   featured: true,
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.CSHARP,
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.CSHARP,
     tech.MSSQL, tech.ADONET, tech.HTML, tech.CSS],
   client: {
     name: 'Frontier Strategy Group',
