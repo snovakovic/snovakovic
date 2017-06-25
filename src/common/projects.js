@@ -6,8 +6,7 @@ const notreDame = {
   title: 'University of Notre Dame',
   summary: 'Learner dashboard for Notre Dame students',
   period: 'December 2016 - present',
-  featured: true,
-  type: [type.TEAM, type.LARGE, type.FULLSTACK],
+  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE, tech.HAPI, tech.VUE,
     tech.MONGO, tech.REDIS, tech.WEBSOCKETS, tech.ZEROMQ, tech.HTML, tech.CSS],
   client: {
@@ -44,8 +43,7 @@ const reviews = {
 const QSF = {
   title: 'Document Management System',
   period: '??',
-  featured: true,
-  type: [type.TEAM, type.LARGE, type.FRONTEND],
+  type: [type.FEATURED, type.TEAM, type.LARGE, type.FRONTEND],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.ANGULAR1, tech.HTML,
     tech.CSS],
   client: {
@@ -65,8 +63,7 @@ const jsFlock = {
   title: 'js-flock',
   summary: 'JS utility methods for NODE and Browser',
   period: '??',
-  featured: true,
-  type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
+  type: [type.FEATURED, type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE],
   description: `Gather and polish helper methods created during other projects.
     Code are published on npm under name js-flock.`,
@@ -90,7 +87,7 @@ const addKontrol = {
   summary: 'Logging occurrences of advertisements on radio and television',
   period: '??',
   type: [type.TEAM, type.LARGE, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.Angular1, tech.MYSQL, tech.ADONET,
+  technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.MYSQL, tech.ADONET,
     tech.HTML, tech.CSS],
   client: {
     name: 'Ad Kontrol',
@@ -193,7 +190,7 @@ const jdcDemolition = {
   title: 'JDC Demolition',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.css],
   client: {
     name: 'Boston Web Developer',
@@ -229,8 +226,7 @@ const zet = {
   title: 'Zagreb Municipal Transit System',
   summary: 'New business application for selling e-tickets',
   period: '??',
-  featured: true,
-  type: [type.TEAM, type.LARGE, type.SERVERSIDE],
+  type: [type.FEATURED, type.TEAM, type.LARGE, type.SERVERSIDE],
   technologies: [tech.CSHARP, tech.MSSQL,
     tech.ENTITYFRAMEWORK, tech.WPF],
   client: {
@@ -268,9 +264,8 @@ const pht = {
   title: 'PHT',
   summary: 'LogPad app for clinical research to ',
   period: '??',
-  featured: true,
   noImages: 6,
-  type: [type.TEAM, type.LARGE, type.FULLSTACK],
+  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.BACKBONE, tech.PHONEGAP,
     tech.HTML, tech.CSS],
   client: {
@@ -291,8 +286,7 @@ const fsg = {
   title: 'Frontier Strategy Group',
   period: '??',
   noImages: 8,
-  featured: true,
-  type: [type.TEAM, type.LARGE, type.FULLSTACK],
+  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.CSHARP,
     tech.MSSQL, tech.ADONET, tech.HTML, tech.CSS],
   client: {

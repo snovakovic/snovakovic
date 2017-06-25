@@ -123,8 +123,17 @@
       };
     },
     computed: {
+      typeFilter() {
+        return this.$store.state.projects.filter.type;
+      },
+      technologyFilter() {
+        return this.$store.state.projects.filter.technology;
+      },
       projects() {
-        return projects.filter((p) => p.featured);
+        return projects.filter((p) =>
+          (!this.typeFilter || p.type.some((t) => t === this.typeFilter))
+          && (!this.technologyFilter
+            || p.technology.some((t) => t === this.technologyFilter)));
       }
     },
     methods: {

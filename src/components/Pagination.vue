@@ -1,9 +1,9 @@
 <template>
   <section class="pagination">
-    <i class="fa fa-chevron-left"
+    <i class="fa fa-chevron-left unselectable"
       :class="{ inactive: currentPage === 1}" @click="prev"></i>
       <span class="state"> {{ currentPage }} / {{ noPages }} </span>
-    <i class="fa fa-chevron-right"
+    <i class="fa fa-chevron-right unselectable"
       :class="{ inactive: currentPage === noPages}" @click="next"></i>
   </section>
 </template>

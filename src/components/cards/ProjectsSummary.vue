@@ -2,23 +2,16 @@
   <card class="projects cf">
     <h2>Projects Summary</h2>
 
-    <div class="item">
+    <div class="item"
+      :class="{ active: !filter.type}"
+      @click="filterByType(undefined)">
       <span class="number">{{ total }}</span> Total
     </div>
-    <div class="item">
-      <span class="number">{{ byType(type.OPENSOURCE) }}</span> Open Source
-    </div>
-    <div class="item">
-      <span class="number">{{ byType(type.FREELANCE) }}</span> Freelance
-    </div>
-    <div class="item">
-      <span class="number">{{ byType(type.TEAM) }}</span> Team
-    </div>
-    <div class="item">
-      <span class="number">{{ byType(type.LARGE) }}</span> Large
-    </div>
-    <div class="item">
-      <span class="number">{{ byType(type.FULLSTACK) }}</span> Full Stack
+    <div class="item"
+      :class="{ active: type === filter.type}"
+      v-for="type in types" :key="type"
+      @click="filterByType(type)">
+      <span class="number">{{ countByType(type) }}</span> {{ type }}
     </div>
   </card>
 </template>
@@ -35,10 +28,15 @@
     margin: 10px 0;
     font-size: 14px;
     color: $light-txt-color;
+    cursor: pointer;
 
     .number {
       font-size: 32px;
       margin-right: 5px;
+    }
+
+    &.active {
+      color: $brand-color;
     }
   }
 </style>
@@ -53,15 +51,22 @@
 
   export default {
     data() {
-      return { type };
+      return {
+        types: [type.FEATURED, type.OPENSOURCE, type.FREELANCE,
+          type.TEAM, type.FULLSTACK]
+      };
     },
     computed: {
-      total() { return projects.length; }
+      total() { return projects.length; },
+      filter() { return this.$store.state.projects.filter; }
     },
     methods: {
-      byType(projectType) {
+      countByType(projectType) {
         return projects.filter((p) =>
           p.type.some((t) => t === projectType)).length;
+      },
+      filterByType(typeFilter) {
+        this.$store.commit('setTypeFilter', typeFilter);
       }
     },
     components: {

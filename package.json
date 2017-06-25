@@ -11,7 +11,8 @@
   "dependencies": {
     "js-flock": "^0.6.0",
     "pure-css": "^1.0.4",
-    "vue": "^2.3.3"
+    "vue": "^2.3.3",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
