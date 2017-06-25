@@ -1,7 +1,7 @@
 <template>
   <card class="projects">
     <h2>Projects</h2>
-    <div class="item" v-for="project in projects" :key="project.title">
+    <div class="item" v-for="project in activeProjects" :key="project.title">
       <div class="title">
         <h3>{{ project.title }}</h3>
         <p>{{ project.summary }}</p>
@@ -16,6 +16,7 @@
         <p v-html="project.description"></p>
       </div>
     </div>
+    <pagination :items="projects" @change="setItems"></pagination>
   </card>
 </template>
 
@@ -63,20 +64,30 @@
   import projects from 'common/projects';
 
   import Card from './Card.vue';
+  import Pagination from '../Pagination.vue';
 
   export default {
+    data() {
+      return {
+        activeProjects: []
+      };
+    },
     computed: {
       projects() {
-        return projects.filter((p) => p.featured).slice(0, 3);
+        return projects.filter((p) => p.featured);
       }
     },
     methods: {
       imagePath(project) {
         return `assets/images/projects/${project.id}/1.png`;
+      },
+      setItems(items) {
+        this.activeProjects = items;
       }
     },
     components: {
-      Card
+      Card,
+      Pagination
     }
   };
 </script>
