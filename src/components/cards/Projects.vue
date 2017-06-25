@@ -1,15 +1,18 @@
 <template>
   <card class="projects">
     <h2>Projects</h2>
-    <div class="item table fixed" v-for="project in projects" :key="project.id">
-      <div class="table-cell image-wrapper">
+    <div class="item" v-for="project in projects" :key="project.title">
+      <div class="title">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.summary }}</p>
+      </div>
+      <div class="image-wrapper">
         <div class="inner">
           <img :src="imagePath(project)" v-if="project.noImages"
-            class="img-responsive" :alt="project.id" >
+            class="img-responsive" :alt="project.title" >
         </div>
       </div>
-      <div class="table-cell content">
-        <h3>{{ project.id }}</h3>
+      <div class="info">
         <p v-html="project.description"></p>
       </div>
     </div>
@@ -21,24 +24,33 @@
   @import '~styles/constants';
 
   .item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
-  .image-wrapper {
-    width: 200px;
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
 
+    h3 {
+      margin-bottom: 0;
+    }
+
+    p {
+      color: $light-txt-color;
+      margin-top: 0px;
+    }
+  }
+
+
+  .image-wrapper {
     .inner {
-      min-height: 150px;
+      min-height: 250px;
       background: $dark-bg-color;
     }
   }
 
-  .content {
+  .info {
     padding-left: 20px;
-
-    h3 {
-      margin: 0;
-    }
 
     p {
       margin-top: 5px;
@@ -55,7 +67,7 @@
   export default {
     computed: {
       projects() {
-        return projects.filter((p) => p.featured);
+        return projects.filter((p) => p.featured).slice(0, 3);
       }
     },
     methods: {

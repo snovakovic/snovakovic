@@ -12,7 +12,7 @@
       unit testing. I have in-depth experience across the entire development cycle.
     </p>
     <p>
-      I'm passionate about <b>Full Stack JavaScript</b> development.
+      I'm <b>passionate</b> about <b>Full Stack JavaScript</b> development.
       Beside JavaScript I have lot of experiance in C# (.NET) but in recent years that part has been negliected in favor of JavaScript.
     </p>
   </card>

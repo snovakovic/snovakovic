@@ -3,7 +3,8 @@ import tech from './technology';
 
 
 const notreDame = {
-  id: 'notreDame',
+  title: 'University of Notre Dame',
+  summary: 'Learner dashboard for Notre Dame students',
   period: 'December 2016 - present',
   featured: true,
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
@@ -27,7 +28,7 @@ const notreDame = {
 };
 
 const reviews = {
-  id: 'reviews',
+  title: 'Hotel Reviews',
   period: '??',
   type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE,
@@ -41,7 +42,7 @@ const reviews = {
 };
 
 const QSF = {
-  id: 'qsf',
+  title: 'Document Management System',
   period: '??',
   featured: true,
   type: [type.TEAM, type.LARGE, type.FRONTEND],
@@ -61,7 +62,8 @@ const QSF = {
 };
 
 const jsFlock = {
-  id: 'jsFlock',
+  title: 'js-flock',
+  summary: 'JS utility methods for NODE and Browser',
   period: '??',
   featured: true,
   type: [type.SINGLE, type.SMALLe, type.OPENSOURCE],
@@ -73,7 +75,7 @@ const jsFlock = {
 };
 
 const wiggle = {
-  id: 'wiggle',
+  title: 'Wiggle',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT],
@@ -84,7 +86,8 @@ const wiggle = {
 };
 
 const addKontrol = {
-  id: 'addKontrol',
+  title: 'Ad Kontrol',
+  summary: 'Logging occurrences of advertisements on radio and television',
   period: '??',
   type: [type.TEAM, type.LARGE, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.Angular1, tech.MYSQL, tech.ADONET,
@@ -103,7 +106,8 @@ const addKontrol = {
 };
 
 const chsGroup = {
-  id: 'chsGroup',
+  title: 'The CHS Group',
+  summary: 'Custom WordPress site',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
@@ -118,7 +122,8 @@ const chsGroup = {
 };
 
 const stellaandruby = {
-  id: 'stellaandruby',
+  title: 'Stella and Ruby',
+  summary: 'Custom WordPress site',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
@@ -128,12 +133,13 @@ const stellaandruby = {
     link: 'http://yellowdotgroup.com/'
   },
   description: `Development of WordPress site with custom design
-    for Stella & Ruby.`,
+    for Stella & Ruby jewelry.`,
   link: 'http://stellaandruby.com/'
 };
 
 const yellowdot = {
-  id: 'yellowdot',
+  title: 'YellowDot',
+  summary: 'Updates on WordPress site',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
@@ -147,7 +153,7 @@ const yellowdot = {
 };
 
 const openLooq = {
-  id: 'openLooq',
+  title: 'OpenLooq',
   period: '??',
   type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
@@ -156,7 +162,7 @@ const openLooq = {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
   },
-  description: `Developing platform for buying/selling informations.
+  description: `Developing platform for buying/selling information.
     Platform allows administrator to define any data template
     (People, Places, Companies, etc) with following validation that’s used by
     platform seller to upload relevant data. Platform allows buyer to search
@@ -169,7 +175,7 @@ const openLooq = {
 };
 
 const thePartnershipResources = {
-  id: 'thePartnershipResources',
+  title: 'The Partnership Resources',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
@@ -184,7 +190,7 @@ const thePartnershipResources = {
 };
 
 const jdcDemolition = {
-  id: 'jdcDemolition',
+  title: 'JDC Demolition',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
@@ -200,7 +206,7 @@ const jdcDemolition = {
 };
 
 const ellevationEducation = {
-  id: 'ellevationEducation',
+  title: 'Ellevation Education',
   period: '??',
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.CSHARP, tech.MSSQL,
@@ -220,14 +226,15 @@ const ellevationEducation = {
 };
 
 const zet = {
-  id: 'zet',
+  title: 'Zagreb Municipal Transit System',
+  summary: 'New business application fro selling e-tickets',
   period: '??',
   featured: true,
   type: [type.TEAM, type.LARGE, type.SERVERSIDE],
   technologies: [tech.CSHARP, tech.MSSQL,
     tech.ENTITYFRAMEWORK, tech.WPF],
   client: {
-    name: ' Zagreb Municipal Transit System',
+    name: 'Zagreb Municipal Transit System',
     link: 'http://www.zet.hr/'
   },
   description: `Development of new business application for
@@ -241,18 +248,25 @@ const zet = {
 };
 
 const netgiro = {
-  id: 'netgiro',
+  title: 'Netgiro',
   noImages: 5,
   period: '??',
   type: [type.SINGLE, type.MEDIUM, type.FRONTEND],
-  technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.PHONEGAP, tech.HTML, tech.CSS],
+  technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.PHONEGAP,
+    tech.HTML, tech.CSS],
   description: `Development of the JavaScript angular mobile application
     that allows NetGiro payment system clients to explore their account
-    on mobile device`
+    on mobile device`,
+  client: {
+    name: 'Program 5',
+    link: 'http://program5.hr/'
+  },
+  link: 'https://www.netgiro.is/'
 };
 
 const pht = {
-  id: 'pht',
+  title: 'PHT',
+  summary: 'LogPad app for clinical research to ',
   noImages: 6,
   period: '??',
   featured: true,
@@ -274,7 +288,7 @@ const pht = {
 };
 
 const fsg = {
-  id: 'fsg',
+  title: 'Frontier Strategy Group',
   period: '??',
   noImages: 8,
   featured: true,
@@ -291,9 +305,8 @@ const fsg = {
 };
 
 const realEstate = {
-  id: 'realEstate',
+  title: 'Real Estate CMS',
   period: '??',
-  featured: true,
   type: [type.SINGLE, type.SMALL, type.SERVERSIDE],
   technologies: [tech.CSHARP, tech.MSSQL, tech.ADONET],
   client: {
@@ -305,7 +318,8 @@ const realEstate = {
 };
 
 const playground = {
-  id: 'playground',
+  title: 'Playground',
+  summary: 'Time for fun with hobby projects',
   period: '??',
   type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
   technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
