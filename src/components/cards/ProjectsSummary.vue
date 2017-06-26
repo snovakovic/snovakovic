@@ -3,14 +3,14 @@
     <h2>Projects Summary</h2>
 
     <div class="item"
-      :class="{ active: !filter.type}"
-      @click="filterByType(undefined)">
+      :class="{ active: !filter.type }"
+      @click="onTypeSelect(undefined)">
       <span class="number">{{ total }}</span> Total
     </div>
     <div class="item"
-      :class="{ active: type === filter.type}"
+      :class="{ active: type === filter.type }"
       v-for="type in types" :key="type"
-      @click="filterByType(type)">
+      @click="onTypeSelect(type)">
       <span class="number">{{ countByType(type) }}</span> {{ type }}
     </div>
   </card>
@@ -44,7 +44,7 @@
 
 <script>
   import projects from 'common/projects';
-  import type from 'common/projectType';
+  import projectType from 'common/projectType';
 
   import Card from './Card.vue';
 
@@ -52,8 +52,8 @@
   export default {
     data() {
       return {
-        types: [type.FEATURED, type.OPENSOURCE, type.FREELANCE,
-          type.TEAM, type.FULLSTACK]
+        types: [projectType.FEATURED, projectType.OPENSOURCE,
+          projectType.FREELANCE, projectType.TEAM, projectType.FULLSTACK]
       };
     },
     computed: {
@@ -61,12 +61,14 @@
       filter() { return this.$store.state.projects.filter; }
     },
     methods: {
-      countByType(projectType) {
-        return projects.filter((p) =>
-          p.type.some((t) => t === projectType)).length;
+      countByType(type) {
+        return projects.filter((p) => p.type.some((t) => t === type)).length;
       },
-      filterByType(typeFilter) {
-        this.$store.commit('setTypeFilter', typeFilter);
+      onTypeSelect(type) {
+        if (type === this.filter.type) {
+          type = undefined; // eslint-disable-line no-param-reassign
+        }
+        this.$store.commit('setTypeFilter', type);
       }
     },
     components: {

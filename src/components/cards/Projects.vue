@@ -133,7 +133,7 @@
         return projects.filter((p) =>
           (!this.typeFilter || p.type.some((t) => t === this.typeFilter))
           && (!this.technologyFilter
-            || p.technology.some((t) => t === this.technologyFilter)));
+            || p.technologies.some((t) => t === this.technologyFilter)));
       }
     },
     methods: {
