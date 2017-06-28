@@ -2,7 +2,9 @@ import type from './projectType';
 import tech from './technology';
 
 
-const notreDame = {
+const projects = [];
+
+projects.push({
   title: 'University of Notre Dame',
   summary: 'Learner dashboard for Notre Dame students',
   period: 'December 2016 - present',
@@ -24,9 +26,9 @@ const notreDame = {
     to be used on project, to mentor junior team members and to ensure code
     quality that is enforced through required code reviews and off course to
     develop cool new features`
-};
+});
 
-const reviews = {
+projects.push({
   title: 'Hotel Reviews',
   period: '??',
   type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
@@ -38,9 +40,9 @@ const reviews = {
   },
   description: `Creating platform for managing hotel/accommodation
     reviews in one place`
-};
+});
 
-const QSF = {
+projects.push({
   title: 'Document Management System',
   period: '??',
   type: [type.FEATURED, type.TEAM, type.LARGE, type.FRONTEND],
@@ -57,9 +59,9 @@ const QSF = {
     parts of applications`,
   duties: `Working directly with client own development team writing high
     quality code with required code reviews and unit testing`
-};
+});
 
-const jsFlock = {
+projects.push({
   title: 'js-flock',
   summary: 'JS utility methods for NODE and Browser',
   period: '??',
@@ -69,9 +71,9 @@ const jsFlock = {
     Code are published on npm under name js-flock.`,
   duties: 'Creator',
   link: 'https://www.npmjs.com/package/js-flock'
-};
+});
 
-const wiggle = {
+projects.push({
   title: 'Wiggle',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
@@ -80,9 +82,9 @@ const wiggle = {
     in page layout.`,
   duties: 'Creator',
   link: 'https://www.npmjs.com/package/wiggle.js'
-};
+});
 
-const addKontrol = {
+projects.push({
   title: 'Ad Kontrol',
   summary: 'Logging occurrences of advertisements on radio and television',
   period: '??',
@@ -100,9 +102,9 @@ const addKontrol = {
   duties: `Developing new features for adKontol with main focus on
     new reporting system`,
   link: 'http://adkontrol.com/'
-};
+});
 
-const chsGroup = {
+projects.push({
   title: 'The CHS Group',
   summary: 'Custom WordPress site',
   period: '??',
@@ -116,9 +118,9 @@ const chsGroup = {
   description: `Development of WordPress site with custom design
     for NYC Renovation Company.`,
   link: 'http://thechsgroup.us/'
-};
+});
 
-const stellaandruby = {
+projects.push({
   title: 'Stella and Ruby',
   summary: 'Custom WordPress site',
   period: '??',
@@ -132,9 +134,9 @@ const stellaandruby = {
   description: `Development of WordPress site with custom design
     for Stella & Ruby jewelry.`,
   link: 'http://stellaandruby.com/'
-};
+});
 
-const yellowdot = {
+projects.push({
   title: 'YellowDot',
   summary: 'Updates on WordPress site',
   period: '??',
@@ -147,9 +149,9 @@ const yellowdot = {
   },
   description: 'Updates of existing Wordpress theme for Yellowdot Group.',
   link: 'http://yellowdotgroup.com/'
-};
+});
 
-const openLooq = {
+projects.push({
   title: 'OpenLooq',
   period: '??',
   type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
@@ -169,9 +171,9 @@ const openLooq = {
   duties: `Only developer working on platform from ground up.
     Development of platform have been stopped after 6months of development
     due to financial reasons`
-};
+});
 
-const thePartnershipResources = {
+projects.push({
   title: 'The Partnership Resources',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
@@ -184,9 +186,9 @@ const thePartnershipResources = {
   description: `Development of custom designed page for The Partnership
     Resource. Page is build on top of custom made C#(.NET) CMS.`,
   link: 'http://thepartnershipresource.com/'
-};
+});
 
-const jdcDemolition = {
+projects.push({
   title: 'JDC Demolition',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
@@ -196,13 +198,12 @@ const jdcDemolition = {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
   },
-
   description: `Development of custom designed page for The JDC Demolition
     Company. Page is build on top of custom made C#(.NET) CMS.`,
   link: 'http://jdcdemoinc.com/'
-};
+});
 
-const ellevationEducation = {
+projects.push({
   title: 'Ellevation Education',
   period: '??',
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
@@ -220,9 +221,9 @@ const ellevationEducation = {
     reclassified, and exited students`,
   duties: 'Working directly with client own development team and management.',
   link: 'https://www.npmjs.com/package/wiggle.js'
-};
+});
 
-const zet = {
+projects.push({
   title: 'Zagreb Municipal Transit System',
   summary: 'New business application for selling e-tickets',
   period: '??',
@@ -241,9 +242,9 @@ const zet = {
     and by existing applications in kiosks around Zagreb`,
   duties: `Developing of new features, deploying to production
     and fixing production issues`
-};
+});
 
-const playground = {
+projects.push({
   title: 'Playground',
   summary: 'Time for fun with hobby projects',
   period: '??',
@@ -251,9 +252,9 @@ const playground = {
   technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
   description: 'Hobby project. Development of HTML/JS games',
   duties: 'Creator'
-};
+});
 
-const netgiro = {
+projects.push({
   title: 'Netgiro',
   noImages: 5,
   period: '??',
@@ -268,9 +269,9 @@ const netgiro = {
     link: 'http://program5.hr/'
   },
   link: 'https://www.netgiro.is/'
-};
+});
 
-const hil = {
+projects.push({
   title: 'Harvard Inovation Lab',
   type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
   technologies: [tech.PHP, tech.JAVASCRIPT, tech.JQUERY, tech.HTML, tech.CSS],
@@ -284,9 +285,9 @@ const hil = {
     link: 'http://i-lab.harvard.edu/'
   },
   link: 'http://i-lab.harvard.edu/expert-resourcing/advisor-tool/become_advisor'
-};
+});
 
-const pht = {
+projects.push({
   title: 'PHT',
   summary: 'LogPad app for clinical research to ',
   period: '??',
@@ -306,9 +307,9 @@ const pht = {
     by sites and study teams`,
   duties: `Developing new core features for LogPad App.
     Writing extensive unit test and documentation`
-};
+});
 
-const fsg = {
+projects.push({
   title: 'Frontier Strategy Group',
   period: '??',
   noImages: 8,
@@ -322,9 +323,9 @@ const fsg = {
   description: `Development of web portal for accurate timely and business
     critical data. FSG was my first actual big project after graduating from
     collage and a month of training in company on smaller projects`
-};
+});
 
-const salesForce = {
+projects.push({
   title: 'SalesForce Widget',
   period: '??',
   type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
@@ -334,9 +335,9 @@ const salesForce = {
     name: 'Frontier Strategy Group',
     link: 'http://frontierstrategygroup.com/'
   }
-};
+});
 
-const realEstate = {
+projects.push({
   title: 'Real Estate CMS',
   period: '??',
   type: [type.SINGLE, type.SMALL, type.SERVERSIDE],
@@ -347,9 +348,9 @@ const realEstate = {
   },
   description: `Design and implementation of REST web service and database
     for real-estate CMS system`
-};
+});
 
-const virtualNavigation = {
+projects.push({
   title: 'Virtual Web Navigation',
   type: [type.SINGLE, tech.MEDIUM, type.FULLSTACK],
   technologies: [tech.CSHARP, tech.ADONET, tech.JAVASCRIPT,
@@ -359,37 +360,14 @@ const virtualNavigation = {
     for viewing virtual navigations and administration web pages for creating
     modifing or deleting web navigations.
     Application is built using 3-tier architecture principles.`
-};
+});
 
-const geolocation = {
+projects.push({
   title: 'Geolocation WEB 2.0 API',
   type: [type.SINGLE, type.MEDIUM],
   technologies: [tech.PHP, tech.HTML, tech.CSS],
   description: 'Application build as part of my Bachelor degree thesis.'
-};
+});
 
-export default [
-  notreDame,
-  reviews,
-  QSF,
-  jsFlock,
-  wiggle,
-  ellevationEducation,
-  zet,
-  netgiro,
-  addKontrol,
-  pht,
-  fsg,
-  realEstate,
-  openLooq,
-  chsGroup,
-  thePartnershipResources,
-  jdcDemolition,
-  stellaandruby,
-  yellowdot,
-  playground,
-  salesForce,
-  virtualNavigation,
-  geolocation,
-  hil
-];
+
+export default projects;
