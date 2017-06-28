@@ -123,12 +123,8 @@
       };
     },
     computed: {
-      typeFilter() {
-        return this.$store.state.projects.filter.type;
-      },
-      technologyFilter() {
-        return this.$store.state.projects.filter.technology;
-      },
+      typeFilter() { return this.$store.state.projects.filter.type; },
+      technologyFilter() { return this.$store.state.projects.filter.technology; },
       projects() {
         return projects.filter((p) =>
           (!this.typeFilter || p.type.some((t) => t === this.typeFilter))

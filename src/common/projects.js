@@ -191,7 +191,7 @@ const jdcDemolition = {
   period: '??',
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
-    tech.HTML, tech.css],
+    tech.HTML, tech.CSS],
   client: {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
