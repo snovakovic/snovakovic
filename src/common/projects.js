@@ -243,6 +243,16 @@ const zet = {
     and fixing production issues`
 };
 
+const playground = {
+  title: 'Playground',
+  summary: 'Time for fun with hobby projects',
+  period: '??',
+  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
+  technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
+  description: 'Hobby project. Development of HTML/JS games',
+  duties: 'Creator'
+};
+
 const netgiro = {
   title: 'Netgiro',
   noImages: 5,
@@ -258,6 +268,22 @@ const netgiro = {
     link: 'http://program5.hr/'
   },
   link: 'https://www.netgiro.is/'
+};
+
+const hil = {
+  title: 'Harvard Inovation Lab',
+  type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
+  technologies: [tech.PHP, tech.JAVASCRIPT, tech.JQUERY, tech.HTML, tech.CSS],
+  description: `Development of web application and integration with existing
+    iLab site. Application is conceived as a link between Harvard students and
+    advisors. Advisors have options to login to system and to manage their
+    profiles. Students have ability to search and to make connection
+    with advisors. `,
+  client: {
+    name: 'Harvard Inovation Lab',
+    link: 'http://i-lab.harvard.edu/'
+  },
+  link: 'http://i-lab.harvard.edu/expert-resourcing/advisor-tool/become_advisor'
 };
 
 const pht = {
@@ -298,6 +324,18 @@ const fsg = {
     collage and a month of training in company on smaller projects`
 };
 
+const salesForce = {
+  title: 'SalesForce Widget',
+  period: '??',
+  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
+  technologies: [tech.JAVASCRIPT, tech.JQUERY],
+  description: 'Hobby project. Development of HTML/JS games',
+  client: {
+    name: 'Frontier Strategy Group',
+    link: 'http://frontierstrategygroup.com/'
+  }
+};
+
 const realEstate = {
   title: 'Real Estate CMS',
   period: '??',
@@ -311,14 +349,23 @@ const realEstate = {
     for real-estate CMS system`
 };
 
-const playground = {
-  title: 'Playground',
-  summary: 'Time for fun with hobby projects',
-  period: '??',
-  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
-  technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
-  description: 'Hobby project. Development of HTML/JS games',
-  duties: 'Creator'
+const virtualNavigation = {
+  title: 'Virtual Web Navigation',
+  type: [type.SINGLE, tech.MEDIUM, type.FULLSTACK],
+  technologies: [tech.CSHARP, tech.ADONET, tech.JAVASCRIPT,
+    tech.HTML, tech.CSS],
+  description: `Virtual navigation application is a part of my Master degree
+    thesis. Application is consist of two parts: Publicly accessible web pages
+    for viewing virtual navigations and administration web pages for creating
+    modifing or deleting web navigations.
+    Application is built using 3-tier architecture principles.`
+};
+
+const geolocation = {
+  title: 'Geolocation WEB 2.0 API',
+  type: [type.SINGLE, type.MEDIUM],
+  technologies: [tech.PHP, tech.HTML, tech.CSS],
+  description: 'Application build as part of my Bachelor degree thesis.'
 };
 
 export default [
@@ -340,5 +387,9 @@ export default [
   jdcDemolition,
   stellaandruby,
   yellowdot,
-  playground
+  playground,
+  salesForce,
+  virtualNavigation,
+  geolocation,
+  hil
 ];
