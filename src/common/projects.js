@@ -61,10 +61,27 @@ projects.push({
 });
 
 projects.push({
+  title: 'Hotel Reviews',
+  period: {
+    start: new Date(2016, 10),
+    end: new Date(2016, 7)
+  },
+  type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
+  technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE,
+    tech.HAPI, tech.VUE, tech.MONGO],
+  client: {
+    name: 'Manas',
+    link: 'http://www.manas.hr/'
+  },
+  description: `Creating platform for managing hotel/accommodation
+    reviews in one place`
+});
+
+projects.push({
   title: 'Ad Kontrol',
   summary: 'Logging occurrences of advertisements on radio and television',
   period: {
-    start: new Date(2016),
+    start: new Date(2016, 6),
     end: new Date(2017, 3)
   },
   type: [type.TEAM, type.LARGE, type.FULLSTACK, type.FREELANCE],
@@ -81,23 +98,6 @@ projects.push({
   duties: `Developing new features for adKontol with main focus on
     new reporting system`,
   link: 'http://adkontrol.com/'
-});
-
-projects.push({
-  title: 'Hotel Reviews',
-  period: {
-    start: new Date(2016, 10),
-    end: new Date(2016, 7)
-  },
-  type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE,
-    tech.HAPI, tech.VUE, tech.MONGO],
-  client: {
-    name: 'Manas',
-    link: 'http://www.manas.hr/'
-  },
-  description: `Creating platform for managing hotel/accommodation
-    reviews in one place`
 });
 
 projects.push({
@@ -125,7 +125,10 @@ projects.push({
 projects.push({
   title: 'The CHS Group',
   summary: 'Custom WordPress site',
-  period: '??',
+  period: {
+    start: new Date(2015, 4),
+    end: new Date(2015, 6)
+  },
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
     tech.HTML, tech.CSS],
@@ -139,9 +142,30 @@ projects.push({
 });
 
 projects.push({
+  title: 'YellowDot',
+  summary: 'Updates on WordPress site',
+  period: {
+    start: new Date(2015, 3),
+    end: new Date(2015, 3)
+  },
+  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
+    tech.HTML, tech.CSS],
+  client: {
+    name: 'Yellowdot Group',
+    link: 'http://yellowdotgroup.com/'
+  },
+  description: 'Updates of existing Wordpress theme for Yellowdot Group.',
+  link: 'http://yellowdotgroup.com/'
+});
+
+projects.push({
   title: 'Stella and Ruby',
   summary: 'Custom WordPress site',
-  period: '??',
+  period: {
+    start: new Date(2015, 2),
+    end: new Date(2015, 2)
+  },
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
     tech.HTML, tech.CSS],
@@ -155,23 +179,11 @@ projects.push({
 });
 
 projects.push({
-  title: 'YellowDot',
-  summary: 'Updates on WordPress site',
-  period: '??',
-  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
-    tech.HTML, tech.CSS],
-  client: {
-    name: 'Yellowdot Group',
-    link: 'http://yellowdotgroup.com/'
-  },
-  description: 'Updates of existing Wordpress theme for Yellowdot Group.',
-  link: 'http://yellowdotgroup.com/'
-});
-
-projects.push({
   title: 'OpenLooq',
-  period: '??',
+  period: {
+    start: new Date(2015, 8),
+    end: new Date(2017, 2)
+  },
   type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
@@ -193,7 +205,10 @@ projects.push({
 
 projects.push({
   title: 'The Partnership Resources',
-  period: '??',
+  period: {
+    start: new Date(2015, 8),
+    end: new Date(2015, 11)
+  },
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.css],
@@ -208,7 +223,10 @@ projects.push({
 
 projects.push({
   title: 'JDC Demolition',
-  period: '??',
+  period: {
+    start: new Date(2015, 8),
+    end: new Date(2015, 9)
+  },
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
@@ -222,8 +240,27 @@ projects.push({
 });
 
 projects.push({
+  title: 'BWD CMS',
+  period: {
+    start: new Date(2016, 0),
+    end: new Date(2015, 9)
+  },
+  type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
+    tech.HTML, tech.CSS],
+  client: {
+    name: 'Boston Web Developer',
+    link: 'http://www.bostonwebdeveloper.com/'
+  },
+  description: 'Updates and improvements to custom made C# .NET CMS System'
+});
+
+projects.push({
   title: 'Ellevation Education',
-  period: '??',
+  period: {
+    start: new Date(2014, 7),
+    end: new Date(2015, 8)
+  },
   type: [type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.CSHARP, tech.MSSQL,
     tech.ELASTICSEARCH, tech.ENTITYFRAMEWORK, tech.HTML, tech.CSS],
@@ -244,7 +281,10 @@ projects.push({
 projects.push({
   title: 'Zagreb Municipal Transit System',
   summary: 'New business application for selling e-tickets',
-  period: '??',
+  period: {
+    start: new Date(2014, 0),
+    end: new Date(2015, 7)
+  },
   type: [type.FEATURED, type.TEAM, type.LARGE, type.SERVERSIDE],
   technologies: [tech.CSHARP, tech.MSSQL,
     tech.ENTITYFRAMEWORK, tech.WPF],
