@@ -7,7 +7,10 @@ const projects = [];
 projects.push({
   title: 'University of Notre Dame',
   summary: 'Learner dashboard for Notre Dame students',
-  period: 'December 2016 - present',
+  period: {
+    start: new Date(2016, 10),
+    end: undefined
+  },
   type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE, tech.HAPI, tech.VUE,
     tech.MONGO, tech.REDIS, tech.WEBSOCKETS, tech.ZEROMQ, tech.HTML, tech.CSS],
@@ -29,42 +32,12 @@ projects.push({
 });
 
 projects.push({
-  title: 'Hotel Reviews',
-  period: '??',
-  type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE,
-    tech.HAPI, tech.VUE, tech.MONGO],
-  client: {
-    name: 'Manas',
-    link: 'http://www.manas.hr/'
-  },
-  description: `Creating platform for managing hotel/accommodation
-    reviews in one place`
-});
-
-projects.push({
-  title: 'Document Management System',
-  period: '??',
-  type: [type.FEATURED, type.TEAM, type.LARGE, type.FRONTEND],
-  technologies: [tech.JAVASCRIPT, tech.ES6, tech.ANGULAR1, tech.HTML,
-    tech.CSS],
-  client: {
-    name: 'Quiet Stream Financial',
-    link: 'https://www.quietstreamfinancial.com/'
-  },
-  description: `Worked in one of many teams inside of QSF. Our team main focus
-    was on developing Document Management System.
-    Document Management System is very similar to online version of Dropbox
-    combined with specific business logic and integrated with other
-    parts of applications`,
-  duties: `Working directly with client own development team writing high
-    quality code with required code reviews and unit testing`
-});
-
-projects.push({
   title: 'js-flock',
   summary: 'JS utility methods for NODE and Browser',
-  period: '??',
+  period: {
+    start: new Date(2017, 0),
+    end: undefined
+  },
   type: [type.FEATURED, type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE],
   description: `Gather and polish helper methods created during other projects.
@@ -75,7 +48,10 @@ projects.push({
 
 projects.push({
   title: 'Wiggle',
-  period: '??',
+  period: {
+    start: new Date(2017, 0),
+    end: new Date(2017, 2)
+  },
   type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT],
   description: `Small wrapper around matchMedia to easily react on changes
@@ -87,7 +63,10 @@ projects.push({
 projects.push({
   title: 'Ad Kontrol',
   summary: 'Logging occurrences of advertisements on radio and television',
-  period: '??',
+  period: {
+    start: new Date(2016),
+    end: new Date(2017, 3)
+  },
   type: [type.TEAM, type.LARGE, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.MYSQL, tech.ADONET,
     tech.HTML, tech.CSS],
@@ -102,6 +81,45 @@ projects.push({
   duties: `Developing new features for adKontol with main focus on
     new reporting system`,
   link: 'http://adkontrol.com/'
+});
+
+projects.push({
+  title: 'Hotel Reviews',
+  period: {
+    start: new Date(2016, 10),
+    end: new Date(2016, 7)
+  },
+  type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
+  technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE,
+    tech.HAPI, tech.VUE, tech.MONGO],
+  client: {
+    name: 'Manas',
+    link: 'http://www.manas.hr/'
+  },
+  description: `Creating platform for managing hotel/accommodation
+    reviews in one place`
+});
+
+projects.push({
+  title: 'Document Management System',
+  period: {
+    start: new Date(2015, 8),
+    end: new Date(2016, 7)
+  },
+  type: [type.FEATURED, type.TEAM, type.LARGE, type.FRONTEND],
+  technologies: [tech.JAVASCRIPT, tech.ES6, tech.ANGULAR1, tech.HTML,
+    tech.CSS],
+  client: {
+    name: 'Quiet Stream Financial',
+    link: 'https://www.quietstreamfinancial.com/'
+  },
+  description: `Worked in one of many teams inside of QSF. Our team main focus
+    was on developing Document Management System.
+    Document Management System is very similar to online version of Dropbox
+    combined with specific business logic and integrated with other
+    parts of applications`,
+  duties: `Working directly with client own development team writing high
+    quality code with required code reviews and unit testing`
 });
 
 projects.push({
