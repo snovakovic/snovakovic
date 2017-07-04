@@ -21,13 +21,17 @@
           </p>
           <p v-if="project.client">
             <span class="group">Client:</span>
-            <span><a href="project.client.link">{{ project.client.name }}</a></span>
+            <a href="project.client.link">{{ project.client.name }}</a>
           </p>
           <p v-if="project.duties">
             <span class="group">Duties:</span>
             <span>{{ project.duties }}</span>
           </p>
-          <p>
+          <p v-if="project.link">
+            <span class="group">Link:</span>
+            <a href="project.link">{{ project.link }}</a>
+          </p>
+          <p class="type">
             <span class="group">Type:</span>
             <span class="tag" v-for="type in project.type" :key="type">{{ type }}</span>
           </p>
@@ -82,8 +86,10 @@
     }
 
     .breakdown {
-      p { margin: 5px 0; }
+      p { margin: 7.5px 0; }
+      p.type { margin: 15px 0 10px 0; }
     }
+
 
     .group {
       text-transform: uppercase;
@@ -92,11 +98,12 @@
       font-size: 13px;
       margin-right: 5px;
       display: inline-block;
+      min-width: 52px;
     }
 
     .tag {
       display: inline-block;
-      margin: 5px;
+      margin: 5px 5px 5px 0;
       color: $dark-txt-color;
       background: $bg-color;
       padding: 2px 10px;
