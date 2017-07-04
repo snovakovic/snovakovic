@@ -17,7 +17,7 @@
         <div class="breakdown">
           <p>
             <span class="group">Period:</span>
-            <span>{{ project.period }}</span>
+            <span>{{ formatPeriod(project.period) }}</span>
           </p>
           <p v-if="project.client">
             <span class="group">Client:</span>
@@ -72,7 +72,6 @@
     }
   }
 
-
   .image-wrapper {
     .inner {
       min-height: 250px;
@@ -111,6 +110,7 @@
 
 
 <script>
+  import months from 'common/months';
   import projects from 'common/projects';
 
   import Card from './Card.vue';
@@ -138,6 +138,13 @@
       },
       setActive(items) {
         this.activeProjects = items;
+      },
+      formatPeriod(period) {
+        const start = `${months[period.start.getMonth()]} ${period.start.getFullYear()}`;
+        if (!period.end) {
+          return `${start} - Present`;
+        }
+        return `${start} - ${months[period.end.getMonth()]} ${period.end.getFullYear()}`;
       }
     },
     components: {

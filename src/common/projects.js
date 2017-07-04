@@ -386,7 +386,7 @@ projects.push({
     start: new Date(2012, 2),
     end: new Date(2012, 3)
   },
-  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
+  type: [type.SINGLE, type.SMALL],
   technologies: [tech.JAVASCRIPT, tech.JQUERY],
   description: 'Hobby project. Development of HTML/JS games',
   client: {

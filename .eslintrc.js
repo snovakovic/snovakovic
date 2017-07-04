@@ -25,7 +25,7 @@ module.exports = {
     'no-console': 'error',
     'comma-dangle': ['error', 'never'],
     // Line length
-    'max-len': ['error', 80, 2, { ignoreComments: true }],
+    'max-len': ['error', 100, 2, { ignoreComments: true }],
     // Functions
     'func-names': ['error', 'never'],
     'arrow-parens': ['error', 'always'],
