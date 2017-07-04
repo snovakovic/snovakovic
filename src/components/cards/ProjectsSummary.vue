@@ -1,7 +1,6 @@
 <template>
   <card class="projects cf">
-    <h2>Projects Summary</h2>
-
+    <h2><i class="fa fa-bar-chart"></i>Projects Summary</h2>
     <div class="item"
       :class="{ active: !filter.type }"
       @click="onTypeSelect(undefined)">
@@ -11,7 +10,7 @@
       :class="{ active: type === filter.type }"
       v-for="type in types" :key="type"
       @click="onTypeSelect(type)">
-      <span class="number">{{ countByType(type) }}</span> {{ type }}
+      <span class="number">{{ countByType(type) }}</span>{{ type }}
     </div>
   </card>
 </template>
@@ -19,6 +18,10 @@
 
 <style lang="scss" scoped>
   @import '~styles/constants';
+
+  .fa-bar-chart {
+    margin-right: 5px;
+  }
 
   .item {
     text-transform: uppercase;

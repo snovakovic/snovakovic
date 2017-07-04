@@ -137,7 +137,9 @@
       },
       setActive(items) {
         this.activeProjects = items;
-        scrollTo(this.$el);
+        if (this.$el) {
+          scrollTo(this.$el);
+        }
       },
       formatPeriod(period) {
         const start = `${months[period.start.getMonth()]} ${period.start.getFullYear()}`;

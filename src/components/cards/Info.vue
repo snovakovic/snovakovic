@@ -7,7 +7,7 @@
       </li>
       <li>
         <span class="icon"><i class="fa fa-envelope-o"></i></span>
-        </i><a :href="mailto">{{ email }}</a>
+        <a :href="mailto">{{ email }}</a>
       </li>
     </ul>
     <div class="resume">Download Resume</div>

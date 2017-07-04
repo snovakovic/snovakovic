@@ -4,9 +4,7 @@
     <div class="item" v-for="study in education" :key="study.title">
       <h4 class="title">{{ study.title }}</h4>
       <p class="university">
-        <a class="dark" :href="study.university.link">
-          {{ study.university.name }}
-        </a>
+        <a class="dark" :href="study.university.link">{{ study.university.name }}</a>
         <span class="year">({{ study.period }})</span>
       </p>
     </div>

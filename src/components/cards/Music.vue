@@ -1,14 +1,9 @@
 <template>
   <card class="music">
-    <h2>
-      <i class="fa fa-music"></i>
-      Favorite coding Music
-    </h2>
+    <h2><i class="fa fa-music"></i>Favorite coding Music</h2>
     <ul>
       <li v-for="song in music" :key="song.name">
-        <a class="dark" :href="song.link">
-          {{ song.author }}: {{ song.title }}
-        </a>
+        <a class="dark" :href="song.link">{{ song.author }}: {{ song.title }}</a>
       </li>
     </ul>
   </card>
