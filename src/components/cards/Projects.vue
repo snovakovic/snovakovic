@@ -1,5 +1,5 @@
 <template>
-  <card class="projects">
+  <card id="projects-card" class="projects">
     <h2>Projects</h2>
     <div class="item" v-for="project in activeProjects" :key="project.title">
       <div class="title">
@@ -110,6 +110,7 @@
 <script>
   import months from 'common/months';
   import projects from 'common/projects';
+  import scrollTo from 'common/scrollTo';
 
   import Card from './Card.vue';
   import Pagination from '../Pagination.vue';
@@ -136,6 +137,7 @@
       },
       setActive(items) {
         this.activeProjects = items;
+        scrollTo(this.$el);
       },
       formatPeriod(period) {
         const start = `${months[period.start.getMonth()]} ${period.start.getFullYear()}`;

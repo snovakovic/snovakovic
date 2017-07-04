@@ -42,31 +42,24 @@
   }
 </style>
 
+
 <script>
   export default {
-    data() {
-      return {
-        currentPage: 1
-      };
-    },
     props: {
       items: { type: Array },
       perPage: {
         type: Number,
-        default() {
-          return 3;
-        }
+        default() { return 3; }
       }
+    },
+    data() {
+      return { currentPage: 1 };
     },
     watch: {
-      items() {
-        this.reset();
-      }
+      items() { this.reset(); }
     },
     computed: {
-      noPages() {
-        return Math.ceil(this.items.length / this.perPage);
-      }
+      noPages() { return Math.ceil(this.items.length / this.perPage); }
     },
     methods: {
       update() {
@@ -89,7 +82,6 @@
         if (this.currentPage >= this.noPages) {
           return;
         }
-
         this.currentPage += 1;
         this.update();
       }
