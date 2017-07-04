@@ -22,7 +22,7 @@ export default toEnum({
   PHP: 'PHP',
   WPF: 'WPF',
   PHONEGAP: 'Phone Gap',
-  BACKBNE: 'Backbone',
+  BACKBONE: 'Backbone',
   ADONET: 'ADO.NET',
   HTML: 'HTML',
   CSS: 'CSS',

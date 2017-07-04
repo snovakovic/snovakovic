@@ -130,7 +130,7 @@ projects.push({
     end: new Date(2015, 6)
   },
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.PHP, tech.WORDPRESS,
     tech.HTML, tech.CSS],
   client: {
     name: 'Yellowdot Group',
@@ -149,7 +149,7 @@ projects.push({
     end: new Date(2015, 3)
   },
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.PHP, tech.WORDPRESS,
     tech.HTML, tech.CSS],
   client: {
     name: 'Yellowdot Group',
@@ -167,7 +167,7 @@ projects.push({
     end: new Date(2015, 2)
   },
   type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.PHP, tech.WORDPRESS,
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.PHP, tech.WORDPRESS,
     tech.HTML, tech.CSS],
   client: {
     name: 'Yellowdot Group',
@@ -185,7 +185,7 @@ projects.push({
     end: new Date(2017, 2)
   },
   type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
   client: {
     name: 'Boston Web Developer',
@@ -210,8 +210,8 @@ projects.push({
     end: new Date(2015, 11)
   },
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.jQuery, tech.MSSQL, tech.ADONET,
-    tech.HTML, tech.css],
+  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
+    tech.HTML, tech.CSS],
   client: {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
@@ -436,7 +436,7 @@ projects.push({
     start: new Date(2011, 1),
     end: new Date(2011, 7)
   },
-  type: [type.SINGLE, tech.MEDIUM, type.FULLSTACK],
+  type: [type.SINGLE, type.MEDIUM, type.FULLSTACK],
   technologies: [tech.CSHARP, tech.ADONET, tech.JAVASCRIPT,
     tech.HTML, tech.CSS],
   description: `Virtual navigation application is a part of my Master degree
