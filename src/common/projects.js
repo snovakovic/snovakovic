@@ -256,6 +256,19 @@ projects.push({
 });
 
 projects.push({
+  title: 'Playground',
+  summary: 'Time for fun with hobby projects',
+  period: {
+    start: new Date(2014, 10),
+    end: new Date(2015, 3)
+  },
+  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
+  technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
+  description: 'Hobby project. Development of HTML/JS games',
+  duties: 'Creator'
+});
+
+projects.push({
   title: 'Ellevation Education',
   period: {
     start: new Date(2014, 7),
@@ -283,7 +296,7 @@ projects.push({
   summary: 'New business application for selling e-tickets',
   period: {
     start: new Date(2014, 0),
-    end: new Date(2015, 7)
+    end: new Date(2014, 7)
   },
   type: [type.FEATURED, type.TEAM, type.LARGE, type.SERVERSIDE],
   technologies: [tech.CSHARP, tech.MSSQL,
@@ -303,19 +316,12 @@ projects.push({
 });
 
 projects.push({
-  title: 'Playground',
-  summary: 'Time for fun with hobby projects',
-  period: '??',
-  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
-  technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
-  description: 'Hobby project. Development of HTML/JS games',
-  duties: 'Creator'
-});
-
-projects.push({
   title: 'Netgiro',
   noImages: 5,
-  period: '??',
+  period: {
+    start: new Date(2013, 9),
+    end: new Date(2013, 11)
+  },
   type: [type.SINGLE, type.MEDIUM, type.FRONTEND],
   technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.PHONEGAP,
     tech.HTML, tech.CSS],
@@ -331,6 +337,10 @@ projects.push({
 
 projects.push({
   title: 'Harvard Inovation Lab',
+  period: {
+    start: new Date(2013, 1),
+    end: new Date(2013, 3)
+  },
   type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
   technologies: [tech.PHP, tech.JAVASCRIPT, tech.JQUERY, tech.HTML, tech.CSS],
   description: `Development of web application and integration with existing
@@ -348,7 +358,10 @@ projects.push({
 projects.push({
   title: 'PHT',
   summary: 'LogPad app for clinical research to ',
-  period: '??',
+  period: {
+    start: new Date(2012, 8),
+    end: new Date(2013, 8)
+  },
   noImages: 6,
   type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.BACKBONE, tech.PHONEGAP,
@@ -368,8 +381,26 @@ projects.push({
 });
 
 projects.push({
+  title: 'SalesForce Widget',
+  period: {
+    start: new Date(2012, 2),
+    end: new Date(2012, 3)
+  },
+  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
+  technologies: [tech.JAVASCRIPT, tech.JQUERY],
+  description: 'Hobby project. Development of HTML/JS games',
+  client: {
+    name: 'Frontier Strategy Group',
+    link: 'http://frontierstrategygroup.com/'
+  }
+});
+
+projects.push({
   title: 'Frontier Strategy Group',
-  period: '??',
+  period: {
+    start: new Date(2011, 10),
+    end: new Date(2012, 8)
+  },
   noImages: 8,
   type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.CSHARP,
@@ -384,20 +415,11 @@ projects.push({
 });
 
 projects.push({
-  title: 'SalesForce Widget',
-  period: '??',
-  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY],
-  description: 'Hobby project. Development of HTML/JS games',
-  client: {
-    name: 'Frontier Strategy Group',
-    link: 'http://frontierstrategygroup.com/'
-  }
-});
-
-projects.push({
   title: 'Real Estate CMS',
-  period: '??',
+  period: {
+    start: new Date(2011, 9),
+    end: new Date(2011, 10)
+  },
   type: [type.SINGLE, type.SMALL, type.SERVERSIDE],
   technologies: [tech.CSHARP, tech.MSSQL, tech.ADONET],
   client: {
@@ -410,6 +432,10 @@ projects.push({
 
 projects.push({
   title: 'Virtual Web Navigation',
+  period: {
+    start: new Date(2011, 1),
+    end: new Date(2011, 7)
+  },
   type: [type.SINGLE, tech.MEDIUM, type.FULLSTACK],
   technologies: [tech.CSHARP, tech.ADONET, tech.JAVASCRIPT,
     tech.HTML, tech.CSS],
@@ -422,6 +448,10 @@ projects.push({
 
 projects.push({
   title: 'Geolocation WEB 2.0 API',
+  period: {
+    start: new Date(2009, 4),
+    end: new Date(2009, 8)
+  },
   type: [type.SINGLE, type.MEDIUM],
   technologies: [tech.PHP, tech.HTML, tech.CSS],
   description: 'Application build as part of my Bachelor degree thesis.'
