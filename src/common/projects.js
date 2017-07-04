@@ -28,7 +28,7 @@ projects.push({
   duties: `As senior developer my role was to make decisions on technologies
     to be used on project, to mentor junior team members and to ensure code
     quality that is enforced through required code reviews and off course to
-    develop cool new features`
+    develop cool new features.`
 });
 
 projects.push({

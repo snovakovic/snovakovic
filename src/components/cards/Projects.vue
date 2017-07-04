@@ -21,9 +21,7 @@
           </p>
           <p v-if="project.client">
             <span class="group">Client:</span>
-            <span>
-              <a href="project.client.link">{{ project.client.name }}</a>
-            </span>
+            <span><a href="project.client.link">{{ project.client.name }}</a></span>
           </p>
           <p v-if="project.duties">
             <span class="group">Duties:</span>
@@ -31,14 +29,11 @@
           </p>
           <p>
             <span class="group">Type:</span>
-            <span class="tag" v-for="type in project.type" :key="type">
-              {{ type }}
-            </span>
+            <span class="tag" v-for="type in project.type" :key="type">{{ type }}</span>
           </p>
           <p>
             <span class="group">Technologies:</span>
-            <span class="tag"
-              v-for="technology in project.technologies" :key="technology">
+            <span class="tag" v-for="technology in project.technologies" :key="technology">
               {{ technology }}
             </span>
           </p>
@@ -80,18 +75,20 @@
   }
 
   .info {
-    padding: 10px 30px 0 30px;
+    padding: 10px 30px 20px 30px;
+
+    p {
+      color: $txt-color;
+    }
 
     .breakdown {
-      p {
-        margin: 5px 0;
-      }
+      p { margin: 5px 0; }
     }
 
     .group {
       text-transform: uppercase;
-      color: $header-color;
       font-weight: bold;
+      color: $header-color;
       font-size: 13px;
       margin-right: 5px;
       display: inline-block;
@@ -100,6 +97,7 @@
     .tag {
       display: inline-block;
       margin: 5px;
+      color: $dark-txt-color;
       background: $bg-color;
       padding: 2px 10px;
       font-size: 12px;
