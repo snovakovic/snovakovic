@@ -141,7 +141,7 @@
     methods: {
       imagePath(project) {
         if (project.noImages) {
-          return `assets/images/projects/${project.id}/1.png`;
+          return `assets/images/projects/${project.id}/1.jpg`;
         }
         return undefined;
       },
