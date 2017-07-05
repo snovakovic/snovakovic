@@ -140,8 +140,9 @@
     },
     methods: {
       imagePath(project) {
-        if (project.noImages) {
-          return `assets/images/projects/${project.id}/1.jpg`;
+        if (project.images && project.images.total) {
+          const extension = project.images.extension || 'jpg';
+          return `assets/images/projects/${project.images.folder}/1.${extension}`;
         }
         return undefined;
       },

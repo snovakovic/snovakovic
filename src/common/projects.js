@@ -5,10 +5,12 @@ import tech from './technology';
 const projects = [];
 
 projects.push({
-  id: 'notre-dame',
-  noImages: 0,
   title: 'University of Notre Dame',
   summary: 'Learner dashboard for Notre Dame students',
+  images: {
+    folder: 'notre-dame',
+    total: 0
+  },
   period: {
     start: new Date(2016, 10),
     end: undefined
@@ -34,10 +36,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'js-flock',
-  noImages: 0,
   title: 'js-flock',
   summary: 'JS utility methods for NODE and Browser',
+  images: {
+    folder: 'js-flock',
+    total: 0
+  },
   period: {
     start: new Date(2017, 0),
     end: undefined
@@ -51,9 +55,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'wiggle',
-  noImages: 0,
   title: 'Wiggle',
+  images: {
+    folder: 'wiggle',
+    total: 0
+  },
   period: {
     start: new Date(2017, 0),
     end: new Date(2017, 2)
@@ -67,9 +73,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'hotel-reviews',
-  noImages: 0,
   title: 'Hotel Reviews',
+  images: {
+    folder: 'hotel-reviews',
+    total: 0
+  },
   period: {
     start: new Date(2016, 10),
     end: new Date(2016, 7)
@@ -86,10 +94,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'ad-kontrol',
-  noImages: 0,
   title: 'Ad Kontrol',
   summary: 'Logging occurrences of advertisements on radio and television',
+  images: {
+    folder: 'ad-kontrol',
+    total: 0
+  },
   period: {
     start: new Date(2016, 6),
     end: new Date(2017, 3)
@@ -111,9 +121,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'docma',
-  noImages: 0,
   title: 'Document Management System',
+  images: {
+    folder: 'docma',
+    total: 0
+  },
   period: {
     start: new Date(2015, 8),
     end: new Date(2016, 7)
@@ -135,10 +147,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'chs-group',
-  noImages: 0,
   title: 'The CHS Group',
   summary: 'Custom WordPress site',
+  images: {
+    folder: 'chs-group',
+    total: 0
+  },
   period: {
     start: new Date(2015, 4),
     end: new Date(2015, 6)
@@ -156,10 +170,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'wellowdot',
-  noImages: 0,
   title: 'YellowDot',
   summary: 'Updates on WordPress site',
+  images: {
+    folder: 'wellowdot',
+    total: 0
+  },
   period: {
     start: new Date(2015, 3),
     end: new Date(2015, 3)
@@ -176,10 +192,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'stella-and-ruby',
-  noImages: 0,
   title: 'Stella and Ruby',
   summary: 'Custom WordPress site',
+  images: {
+    folder: 'stella-and-ruby',
+    total: 0
+  },
   period: {
     start: new Date(2015, 2),
     end: new Date(2015, 2)
@@ -197,9 +215,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'openlooq',
-  noImages: 0,
   title: 'OpenLooq',
+  images: {
+    folder: 'openlooq',
+    total: 0
+  },
   period: {
     start: new Date(2015, 8),
     end: new Date(2017, 2)
@@ -224,9 +244,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'partnership-resources',
-  noImages: 0,
   title: 'The Partnership Resources',
+  images: {
+    folder: 'partnership-resources',
+    total: 0
+  },
   period: {
     start: new Date(2015, 8),
     end: new Date(2015, 11)
@@ -244,9 +266,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'jdc-demolition',
-  noImages: 0,
   title: 'JDC Demolition',
+  images: {
+    folder: 'jdc-demolition',
+    total: 0
+  },
   period: {
     start: new Date(2015, 8),
     end: new Date(2015, 9)
@@ -264,9 +288,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'bwd-cms',
-  noImages: 0,
   title: 'BWD CMS',
+  images: {
+    folder: 'bwd-cms',
+    total: 0
+  },
   period: {
     start: new Date(2016, 0),
     end: new Date(2015, 9)
@@ -282,10 +308,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'playground',
-  noImages: 0,
   title: 'Playground',
   summary: 'Time for fun with hobby projects',
+  images: {
+    folder: 'playground',
+    total: 0
+  },
   period: {
     start: new Date(2014, 10),
     end: new Date(2015, 3)
@@ -297,9 +325,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'ellevation',
-  noImages: 0,
   title: 'Ellevation Education',
+  images: {
+    folder: 'ellevation',
+    total: 0
+  },
   period: {
     start: new Date(2014, 7),
     end: new Date(2015, 8)
@@ -322,10 +352,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'zet',
-  noImages: 0,
   title: 'Zagreb Municipal Transit System',
   summary: 'New business application for selling e-tickets',
+  images: {
+    folder: 'zet',
+    total: 0
+  },
   period: {
     start: new Date(2014, 0),
     end: new Date(2014, 7)
@@ -348,9 +380,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'netgiro',
-  noImages: 5,
   title: 'Netgiro',
+  images: {
+    folder: 'netgiro',
+    total: 5
+  },
   period: {
     start: new Date(2013, 9),
     end: new Date(2013, 11)
@@ -369,9 +403,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'hardvard-inovation-lab',
-  noImages: 6,
   title: 'Harvard Inovation Lab',
+  images: {
+    folder: 'hardvard-inovation-lab',
+    total: 6
+  },
   period: {
     start: new Date(2013, 1),
     end: new Date(2013, 3)
@@ -391,10 +427,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'pht',
-  noImages: 6,
   title: 'PHT',
   summary: 'LogPad app for clinical research to ',
+  images: {
+    folder: 'pht',
+    total: 6
+  },
   period: {
     start: new Date(2012, 8),
     end: new Date(2013, 8)
@@ -417,9 +455,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'salesforce',
-  noImages: 4,
   title: 'SalesForce Widget',
+  images: {
+    folder: 'salesforce',
+    total: 4,
+    extension: 'png'
+  },
   period: {
     start: new Date(2012, 2),
     end: new Date(2012, 3)
@@ -434,9 +475,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'fsg',
-  noImages: 8,
   title: 'Frontier Strategy Group',
+  images: {
+    folder: 'fsg',
+    total: 8,
+    extension: 'png'
+  },
   period: {
     start: new Date(2011, 10),
     end: new Date(2012, 8)
@@ -454,9 +498,12 @@ projects.push({
 });
 
 projects.push({
-  id: 'real-estate',
-  noImages: 4,
   title: 'Real Estate CMS',
+  images: {
+    folder: 'real-estate',
+    total: 4,
+    extension: 'png'
+  },
   period: {
     start: new Date(2011, 9),
     end: new Date(2011, 10)
@@ -472,9 +519,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'vw-navigation',
-  noImages: 5,
   title: 'Virtual Web Navigation',
+  images: {
+    folder: 'vw-navigation',
+    total: 5
+  },
   period: {
     start: new Date(2011, 1),
     end: new Date(2011, 7)
@@ -490,9 +539,11 @@ projects.push({
 });
 
 projects.push({
-  id: 'geolocation',
-  noImages: 0,
   title: 'Geolocation WEB 2.0 API',
+  images: {
+    folder: 'geolocation',
+    total: 0
+  },
   period: {
     start: new Date(2009, 4),
     end: new Date(2009, 8)
