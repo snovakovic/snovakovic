@@ -5,6 +5,8 @@ import tech from './technology';
 const projects = [];
 
 projects.push({
+  id: 'notre-dame',
+  noImages: 0,
   title: 'University of Notre Dame',
   summary: 'Learner dashboard for Notre Dame students',
   period: {
@@ -32,6 +34,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'js-flock',
+  noImages: 0,
   title: 'js-flock',
   summary: 'JS utility methods for NODE and Browser',
   period: {
@@ -47,6 +51,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'wiggle',
+  noImages: 0,
   title: 'Wiggle',
   period: {
     start: new Date(2017, 0),
@@ -61,6 +67,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'hotel-reviews',
+  noImages: 0,
   title: 'Hotel Reviews',
   period: {
     start: new Date(2016, 10),
@@ -78,6 +86,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'ad-kontrol',
+  noImages: 0,
   title: 'Ad Kontrol',
   summary: 'Logging occurrences of advertisements on radio and television',
   period: {
@@ -101,6 +111,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'docma',
+  noImages: 0,
   title: 'Document Management System',
   period: {
     start: new Date(2015, 8),
@@ -123,6 +135,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'chs-group',
+  noImages: 0,
   title: 'The CHS Group',
   summary: 'Custom WordPress site',
   period: {
@@ -142,6 +156,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'wellowdot',
+  noImages: 0,
   title: 'YellowDot',
   summary: 'Updates on WordPress site',
   period: {
@@ -160,6 +176,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'stella-and-ruby',
+  noImages: 0,
   title: 'Stella and Ruby',
   summary: 'Custom WordPress site',
   period: {
@@ -179,6 +197,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'openlooq',
+  noImages: 0,
   title: 'OpenLooq',
   period: {
     start: new Date(2015, 8),
@@ -204,6 +224,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'partnership-resources',
+  noImages: 0,
   title: 'The Partnership Resources',
   period: {
     start: new Date(2015, 8),
@@ -222,6 +244,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'jdc-demolition',
+  noImages: 0,
   title: 'JDC Demolition',
   period: {
     start: new Date(2015, 8),
@@ -240,6 +264,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'bwd-cms',
+  noImages: 0,
   title: 'BWD CMS',
   period: {
     start: new Date(2016, 0),
@@ -256,6 +282,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'playground',
+  noImages: 0,
   title: 'Playground',
   summary: 'Time for fun with hobby projects',
   period: {
@@ -269,6 +297,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'ellevation',
+  noImages: 0,
   title: 'Ellevation Education',
   period: {
     start: new Date(2014, 7),
@@ -292,6 +322,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'zet',
+  noImages: 0,
   title: 'Zagreb Municipal Transit System',
   summary: 'New business application for selling e-tickets',
   period: {
@@ -316,8 +348,9 @@ projects.push({
 });
 
 projects.push({
-  title: 'Netgiro',
+  id: 'netgiro',
   noImages: 5,
+  title: 'Netgiro',
   period: {
     start: new Date(2013, 9),
     end: new Date(2013, 11)
@@ -336,6 +369,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'hardvard-inovation-lab',
+  noImages: 6,
   title: 'Harvard Inovation Lab',
   period: {
     start: new Date(2013, 1),
@@ -356,13 +391,14 @@ projects.push({
 });
 
 projects.push({
+  id: 'pht',
+  noImages: 6,
   title: 'PHT',
   summary: 'LogPad app for clinical research to ',
   period: {
     start: new Date(2012, 8),
     end: new Date(2013, 8)
   },
-  noImages: 6,
   type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.BACKBONE, tech.PHONEGAP,
     tech.HTML, tech.CSS],
@@ -381,6 +417,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'salesforce',
+  noImages: 4,
   title: 'SalesForce Widget',
   period: {
     start: new Date(2012, 2),
@@ -396,12 +434,13 @@ projects.push({
 });
 
 projects.push({
+  id: 'fsg',
+  noImages: 8,
   title: 'Frontier Strategy Group',
   period: {
     start: new Date(2011, 10),
     end: new Date(2012, 8)
   },
-  noImages: 8,
   type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.CSHARP,
     tech.MSSQL, tech.ADONET, tech.HTML, tech.CSS],
@@ -415,6 +454,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'real-estate',
+  noImages: 4,
   title: 'Real Estate CMS',
   period: {
     start: new Date(2011, 9),
@@ -431,6 +472,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'vw-navigation',
+  noImages: 5,
   title: 'Virtual Web Navigation',
   period: {
     start: new Date(2011, 1),
@@ -447,6 +490,8 @@ projects.push({
 });
 
 projects.push({
+  id: 'geolocation',
+  noImages: 0,
   title: 'Geolocation WEB 2.0 API',
   period: {
     start: new Date(2009, 4),

@@ -8,8 +8,7 @@
       </div>
       <div class="image-wrapper">
         <div class="inner">
-          <img :src="imagePath(project)" v-if="project.noImages"
-            class="img-responsive" :alt="project.title" >
+          <img v-if="imagePath(project)" :src="imagePath(project)" class="img-responsive">
         </div>
       </div>
       <div class="info">
@@ -141,7 +140,10 @@
     },
     methods: {
       imagePath(project) {
-        return `assets/images/projects/${project.id}/1.png`;
+        if (project.noImages) {
+          return `assets/images/projects/${project.id}/1.png`;
+        }
+        return undefined;
       },
       setActive(items) {
         this.activeProjects = items;
