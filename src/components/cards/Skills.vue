@@ -1,6 +1,6 @@
 <template>
   <card class="skills">
-    <h2>Skills</h2>
+    <h2><i class="fa fa-cogs"></i>Skills</h2>
     <div class="item" v-for="skill in skills" :key="skill.technology">
       <h4 class="level-title"
         :class="{ active: skill.technology === filter.technology }"

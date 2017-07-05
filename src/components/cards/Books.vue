@@ -11,10 +11,6 @@
 
 
 <style lang="scss" scoped>
-  .fa-book {
-    margin-right: 4px;
-  }
-
   li {
     &:not(:last-child) {
       margin-bottom: 12px;

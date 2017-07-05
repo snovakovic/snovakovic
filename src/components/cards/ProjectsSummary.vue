@@ -19,10 +19,6 @@
 <style lang="scss" scoped>
   @import '~styles/constants';
 
-  .fa-bar-chart {
-    margin-right: 5px;
-  }
-
   .item {
     text-transform: uppercase;
     font-weight: bold;

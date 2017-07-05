@@ -1,6 +1,6 @@
 <template>
   <card class="testimonials">
-    <h2>Testimonials</h2>
+    <h2><i class="fa fa-thumbs-o-up"></i>Testimonials</h2>
     <div v-for="testimonial in testimonials" :key="testimonial.content">
       <blockquote class="quote">
         <i class="fa fa-quote-left"></i>{{ testimonial.content }}

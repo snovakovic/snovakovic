@@ -13,4 +13,8 @@
     padding: 30px;
     margin-bottom: 30px;
   }
+
+  h2 > i {
+    margin-right: 8px;
+  }
 </style>

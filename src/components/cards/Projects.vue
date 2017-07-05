@@ -86,6 +86,7 @@
     }
 
     .breakdown {
+      text-align: left;
       p { margin: 7.5px 0; }
       p.type { margin: 15px 0 10px 0; }
     }

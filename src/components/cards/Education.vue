@@ -23,6 +23,10 @@
     margin: 0;
   }
 
+  .fa-graduation-cap {
+    margin-right: 2px;
+  }
+
   .university {
     font-size: 13px;
     font-weight: bold;
