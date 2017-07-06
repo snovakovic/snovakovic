@@ -3,7 +3,6 @@
   "description": "Personal webpage",
   "version": "1.0.0",
   "author": "Stefan Novaković <stefan.novakovich@gmail.com>",
-  "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -12,6 +11,7 @@
     "js-flock": "^0.9.1",
     "pure-css": "^1.0.4",
     "vue": "^2.3.4",
+    "vue-easy-slider": "^3.1.0",
     "vuex": "^2.3.1"
   },
   "devDependencies": {

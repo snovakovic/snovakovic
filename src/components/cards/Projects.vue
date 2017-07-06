@@ -8,7 +8,7 @@
       </div>
       <div class="image-wrapper">
         <div class="inner">
-          <img v-if="imagePath(project)" :src="imagePath(project)" class="img-responsive">
+          <image-slider :images="getImages(project)"></image-slider>
         </div>
       </div>
       <div class="info">
@@ -71,6 +71,9 @@
   }
 
   .image-wrapper {
+    border: 2px solid $alt-brand-color;
+    padding: 5px;
+
     .inner {
       min-height: 250px;
       background: $dark-bg-color;
@@ -89,7 +92,6 @@
       p { margin: 7.5px 0; }
       p.type { margin: 15px 0 10px 0; }
     }
-
 
     .group {
       text-transform: uppercase;
@@ -120,6 +122,7 @@
   import scrollTo from 'common/scrollTo';
 
   import Card from './Card.vue';
+  import ImageSlider from '../ImageSlider.vue';
   import Pagination from '../Pagination.vue';
 
   export default {
@@ -139,12 +142,15 @@
       }
     },
     methods: {
-      imagePath(project) {
+      getImages(project) {
+        const images = [];
         if (project.images && project.images.total) {
           const extension = project.images.extension || 'jpg';
-          return `assets/images/projects/${project.images.folder}/1.${extension}`;
+          for (let i = 1; i <= project.images.total; i++) { // eslint-disable-line no-plusplus
+            images.push(`assets/images/projects/${project.images.folder}/${i}.${extension}`);
+          }
         }
-        return undefined;
+        return images;
       },
       setActive(items) {
         this.activeProjects = items;
@@ -162,6 +168,7 @@
     },
     components: {
       Card,
+      ImageSlider,
       Pagination
     }
   };
