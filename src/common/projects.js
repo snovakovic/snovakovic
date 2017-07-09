@@ -466,7 +466,7 @@ projects.push({
   title: 'SalesForce Widget',
   images: {
     folder: 'salesforce',
-    total: 4,
+    total: 2,
     extension: 'png'
   },
   period: {
@@ -509,7 +509,7 @@ projects.push({
   title: 'Real Estate CMS',
   images: {
     folder: 'real-estate',
-    total: 4,
+    total: 2,
     extension: 'png'
   },
   period: {
