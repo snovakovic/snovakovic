@@ -9,7 +9,7 @@ projects.push({
   summary: 'Learner dashboard for Notre Dame students',
   images: {
     folder: 'notre-dame',
-    total: 7,
+    total: 6,
     extension: 'png'
   },
   period: {
