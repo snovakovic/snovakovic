@@ -11,7 +11,8 @@
 
 <style lang="scss" scoped>
   img {
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
   }

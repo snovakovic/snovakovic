@@ -41,7 +41,8 @@ projects.push({
   summary: 'JS utility methods for NODE and Browser',
   images: {
     folder: 'js-flock',
-    total: 0
+    total: 1,
+    extension: 'png'
   },
   period: {
     start: new Date(2017, 0),
@@ -59,7 +60,8 @@ projects.push({
   title: 'Wiggle',
   images: {
     folder: 'wiggle',
-    total: 0
+    total: 1,
+    extension: 'png'
   },
   period: {
     start: new Date(2017, 0),
@@ -99,7 +101,8 @@ projects.push({
   summary: 'Logging occurrences of advertisements on radio and television',
   images: {
     folder: 'ad-kontrol',
-    total: 0
+    total: 4,
+    extension: 'png'
   },
   period: {
     start: new Date(2016, 6),
@@ -152,7 +155,8 @@ projects.push({
   summary: 'Custom WordPress site',
   images: {
     folder: 'chs-group',
-    total: 0
+    total: 4,
+    extension: 'png'
   },
   period: {
     start: new Date(2015, 4),
@@ -174,8 +178,9 @@ projects.push({
   title: 'YellowDot',
   summary: 'Updates on WordPress site',
   images: {
-    folder: 'wellowdot',
-    total: 0
+    folder: 'yellowdot',
+    total: 2,
+    extension: 'png'
   },
   period: {
     start: new Date(2015, 3),
@@ -197,7 +202,8 @@ projects.push({
   summary: 'Custom WordPress site',
   images: {
     folder: 'stella-and-ruby',
-    total: 0
+    total: 2,
+    extension: 'png'
   },
   period: {
     start: new Date(2015, 2),
@@ -248,7 +254,7 @@ projects.push({
   title: 'The Partnership Resources',
   images: {
     folder: 'partnership-resources',
-    total: 0
+    total: 2
   },
   period: {
     start: new Date(2015, 8),
@@ -313,7 +319,8 @@ projects.push({
   summary: 'Time for fun with hobby projects',
   images: {
     folder: 'playground',
-    total: 0
+    total: 5,
+    extension: 'png'
   },
   period: {
     start: new Date(2014, 10),
@@ -329,7 +336,7 @@ projects.push({
   title: 'Ellevation Education',
   images: {
     folder: 'ellevation',
-    total: 0
+    total: 4
   },
   period: {
     start: new Date(2014, 7),
