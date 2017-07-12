@@ -225,7 +225,7 @@ projects.push({
   title: 'OpenLooq',
   images: {
     folder: 'openlooq',
-    total: 0
+    total: 6
   },
   period: {
     start: new Date(2015, 8),
@@ -276,7 +276,7 @@ projects.push({
   title: 'JDC Demolition',
   images: {
     folder: 'jdc-demolition',
-    total: 0
+    total: 2
   },
   period: {
     start: new Date(2015, 8),
