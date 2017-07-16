@@ -298,7 +298,8 @@ projects.push({
   title: 'BWD CMS',
   images: {
     folder: 'bwd-cms',
-    total: 0
+    total: 3,
+    extension: 'png'
   },
   period: {
     start: new Date(2016, 0),
