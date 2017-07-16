@@ -76,7 +76,6 @@
 
     .inner {
       min-height: 250px;
-      // background: $light-bg-color;
     }
   }
 

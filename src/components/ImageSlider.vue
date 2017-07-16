@@ -1,6 +1,6 @@
 <template>
   <section>
-    <slider :auto="false" height="400px">
+    <slider :auto="false" :control-btn="images.length > 1" height="400px">
       <slider-item v-for="(img, index) in images" :key="index">
         <img :src="img" alt="">
       </slider-item>
