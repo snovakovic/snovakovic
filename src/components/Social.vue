@@ -1,12 +1,15 @@
 <template>
   <section class="cf">
-    <a href="#" class="linkedin" :title="getTitle('linkedin')">
+    <a href="https://www.linkedin.com/in/stefan-novakovi%C4%87-494b545a/"
+      class="linkedin" :title="getTitle('linkedin')">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="#" class="github" :title="getTitle('github')">
+    <a href="https://github.com/snovakovic"
+      class="github" :title="getTitle('github')">
       <i class="fa fa-github"></i>
     </a>
-    <a href="#" class="stack-overflow" :title="getTitle('stack-overflow')">
+    <a href="https://stackoverflow.com/users/1804295/snovakovic?tab=profile"
+      class="stack-overflow" :title="getTitle('stack-overflow')">
       <i class="fa fa-stack-overflow"></i>
     </a>
   </section>
