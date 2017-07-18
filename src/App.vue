@@ -2,13 +2,13 @@
   <div id="app">
     <page-header></page-header>
     <div class="content">
-      <div class="pure-g">
-        <main class="pure-u-1 pure-u-md-2-3">
+      <div class="cf">
+        <main>
           <about-me></about-me>
           <projects></projects>
           <work-history></work-history>
         </main>
-        <aside class="pure-u-1 pure-u-md-1-3">
+        <aside>
           <info></info>
           <projects-summary></projects-summary>
           <skills></skills>
@@ -31,10 +31,17 @@
     padding-bottom: 60px;
   }
 
-  @include md-screen {
-    main > * {
-      margin-right: 20px;
+  @include desktop-screen {
+    main, aside {
+      float: left;
     }
+    main {
+      width: 70%;
+      & > * {
+        margin-right: 20px;
+      }
+    }
+    aside { width: 30%; }
   }
 </style>
 
