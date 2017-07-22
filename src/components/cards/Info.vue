@@ -10,7 +10,7 @@
         <a :href="mailto">{{ email }}</a>
       </li>
     </ul>
-    <div class="resume">Download Resume</div>
+    <div class="resume" @click="donwloadResume">Download Resume</div>
   </card>
 </template>
 
@@ -75,6 +75,11 @@
     },
     computed: {
       mailto() { return `mailto:${this.email}`; }
+    },
+    methods: {
+      donwloadResume() {
+        window.open('/assets/Resume_Stefan_Novakovic.pdf','_blank');
+      }
     },
     components: {
       Card

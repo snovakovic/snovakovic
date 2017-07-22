@@ -1,6 +1,6 @@
-const Path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Path = require('path');
 const Webpack = require('webpack');
 
 const loaders = require('./config/webpack.loaders');
@@ -39,7 +39,7 @@ module.exports = {
       inject: true
     }),
     new CopyWebpackPlugin([
-      { from: 'src/assets', to: 'assets' }
+      { from: 'assets', to: 'assets' }
     ])
   ],
   module: { rules: loaders },
@@ -50,7 +50,6 @@ module.exports = {
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map';
 
-  // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new Webpack.DefinePlugin({
       'process.env': {

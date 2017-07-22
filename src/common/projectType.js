@@ -1,4 +1,4 @@
-import toEnum from 'js-flock/src/toEnum';
+import toEnum from 'js-flock/toEnum';
 
 export default toEnum({
   FREELANCE: 'Freelance',

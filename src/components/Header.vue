@@ -1,7 +1,7 @@
 <template>
   <header class="cf">
     <div class="content">
-        <img class="profile-img" src="/assets/images/profile.jpg" :alt="name"></img>
+        <img class="profile-img" src="assets/images/profile.jpg" :alt="name"></img>
         <div class="profile-content">
           <h1 class="name">{{ name }}</h1>
           <h2 class="desc">{{ description }}</h2>
