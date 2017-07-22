@@ -43,7 +43,7 @@
   import PageHeader from './components/Header.vue';
 
   import AboutMe from './components/cards/AboutMe.vue';
-  import Projects from './components/cards/Projects.vue';
+  import Projects from './components/cards/projects/index.vue';
   import ProjectsSummary from './components/cards/ProjectsSummary.vue';
   import WorkHistory from './components/cards/WorkHistory.vue';
 

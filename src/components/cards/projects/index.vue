@@ -20,11 +20,11 @@
           </p>
           <p v-if="project.client">
             <span class="group">Client:</span>
-            <a href="project.client.link">{{ project.client.name }}</a>
+            <a v-if="project.client.link" :href="project.client.link">{{ project.client.name }}</a>
+            <span v-else>{{ project.client.name }}</span>
           </p>
           <p v-if="project.duties">
-            <span class="group">Duties:</span>
-            <span>{{ project.duties }}</span>
+            <span class="group">Duties:</span><span>{{ project.duties }}</span>
           </p>
           <p v-if="project.link">
             <span class="group">Link:</span>
@@ -44,6 +44,7 @@
       </div>
     </div>
     <pagination :items="projects" @change="setActive"></pagination>
+    <filtered-by v-if="typeFilter || technologyFilter"></filtered-by>
   </card>
 </template>
 
@@ -120,9 +121,10 @@
   import projects from 'common/projects';
   import scrollTo from 'common/scrollTo';
 
-  import Card from './Card.vue';
-  import ImageSlider from '../ImageSlider.vue';
-  import Pagination from '../Pagination.vue';
+  import Card from '../Card.vue';
+  import FilteredBy from './FilteredBy.vue';
+  import ImageSlider from '../../ImageSlider.vue';
+  import Pagination from '../../Pagination.vue';
 
   export default {
     data() {
@@ -167,6 +169,7 @@
     },
     components: {
       Card,
+      FilteredBy,
       ImageSlider,
       Pagination
     }
