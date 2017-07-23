@@ -21,13 +21,19 @@
   header {
     text-align: center;
     padding: 20px 0;
-    background: $light-bg-color;
-    border-top: 10px solid $dark-brand-color;
+    background: $dark-brand-color;
+    border-top: 8px solid $brand-color;
+
+    h1, h2 {
+      color: $light-color;
+      text-shadow: 0px 1px 5px $dark-color;
+    }
   }
 
   .profile-img {
     width: 150px;
     border-radius: 50%;
+    box-shadow: 0px 1px 5px $dark-color;
   }
 
   .name {
@@ -38,7 +44,6 @@
 
   .desc {
     font-weight: normal;
-    color: $txt-color;
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 15px;

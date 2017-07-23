@@ -34,6 +34,7 @@
     text-align: center;
     font-size: 24px;
     transition: all .3s;
+    border: 1px solid $dark-color;
 
     &:not(:last-child) {
       margin-right: 20px;
