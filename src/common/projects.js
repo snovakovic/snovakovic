@@ -225,14 +225,15 @@ projects.push({
   title: 'OpenLooq',
   images: {
     folder: 'openlooq',
-    total: 6
+    total: 6,
+    extension: 'png'
   },
   period: {
     start: new Date(2015, 8),
     end: new Date(2017, 2)
   },
   type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
+  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
   client: {
     name: 'Boston Web Developer',
@@ -261,7 +262,7 @@ projects.push({
     end: new Date(2015, 11)
   },
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
+  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
   client: {
     name: 'Boston Web Developer',
@@ -276,14 +277,15 @@ projects.push({
   title: 'JDC Demolition',
   images: {
     folder: 'jdc-demolition',
-    total: 2
+    total: 2,
+    extension: 'png'
   },
   period: {
     start: new Date(2015, 8),
     end: new Date(2015, 9)
   },
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
+  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
   client: {
     name: 'Boston Web Developer',
@@ -306,7 +308,7 @@ projects.push({
     end: new Date(2015, 9)
   },
   type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
+  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
   client: {
     name: 'Boston Web Developer',

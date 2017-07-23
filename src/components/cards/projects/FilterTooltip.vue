@@ -1,9 +1,11 @@
 <template>
   <section class="filter-tooltip">
-    <div class="tooltip">
-      You can apply type or technology filter by cliking on project tag or skills/summary section.
-    </div>
-    <i class="fa fa-info"></i>
+    <transition name="fade">
+      <div class="tooltip" v-if="show">
+        You can apply type or technology filter by cliking on project tag or skills/summary section.
+      </div>
+    </transition>
+    <i class="fa fa-info" @mouseover="show=true" @mouseout="show=false"></i>
   </section>
 </template>
 
@@ -13,10 +15,8 @@
 
   .filter-tooltip {
     color: $info-color;
-    padding: 5px;
 
     .tooltip {
-      opacity: 0;
       position: absolute;
       width: 240px;
       background-color: #d9edf7;
@@ -29,17 +29,24 @@
       top: -60px;
       left: -108px;
       z-index: 1;
-      transition: 1s opacity;
-    }
-
-    &:hover {
-      .tooltip {
-        opacity: 1;
-      }
+      overflow: hidden;
     }
 
     i {
+      cursor: help;
       font-size: 18px;
+      padding: 5px;
     }
   }
 </style>
+
+
+<script>
+  export default {
+    data() {
+      return {
+        show: false
+      };
+    }
+  };
+</script>
