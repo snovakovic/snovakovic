@@ -32,13 +32,17 @@
           </p>
           <p class="type">
             <span class="group">Type:</span>
-            <span class="tag" v-for="type in project.type" :key="type">{{ type }}</span>
+            <span class="tag" v-for="type in project.type" :key="type"
+              :class="{ active: type === typeFilter }"
+              title="Click to apply this filter"
+              @click="setTypeFilter(type)">{{ type }}</span>
           </p>
           <p>
             <span class="group">Technologies:</span>
-            <span class="tag" v-for="technology in project.technologies" :key="technology">
-              {{ technology }}
-            </span>
+            <span class="tag" v-for="technology in project.technologies" :key="technology"
+              :class="{ active: technology === technologyFilter }"
+              title="Click to apply this filter"
+              @click="setTechnologyFilter(technology)">{{ technology }}</span>
           </p>
         </div>
       </div>
@@ -88,6 +92,10 @@
 
     p {
       color: $txt-color;
+    }
+
+    .tag {
+      cursor: pointer;
     }
 
     .breakdown {
@@ -169,6 +177,12 @@
           return `${start} - Present`;
         }
         return `${start} - ${months[period.end.getMonth()]} ${period.end.getFullYear()}`;
+      },
+      setTypeFilter(type) {
+        this.$store.commit('setTypeFilter', type);
+      },
+      setTechnologyFilter(technology) {
+        this.$store.commit('setTechnologyFilter', technology);
       }
     },
     components: {
