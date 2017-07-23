@@ -42,7 +42,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: $brand-color;
+    background: $light-alt-brand-color;
     transition: background .5s;
     text-align: center;
     padding: 15px 0;
@@ -53,7 +53,7 @@
     transition: all .75s;
 
     &:hover {
-      background: $dark-brand-color;
+      background: $alt-brand-color;
       letter-spacing: 2px;
     }
   }

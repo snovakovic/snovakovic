@@ -35,7 +35,7 @@
     }
 
     &.active {
-      color: $brand-color;
+      color: $alt-brand-color;
     }
   }
 </style>

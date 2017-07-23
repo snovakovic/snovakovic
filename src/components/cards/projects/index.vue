@@ -79,7 +79,9 @@
   }
 
   .image-wrapper {
-    border: 2px solid $alt-brand-color;
+    background: $bg-color;
+    box-shadow: 0px 1px 5px $dark-color;
+
     padding: 5px;
 
     .inner {

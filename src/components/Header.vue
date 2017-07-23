@@ -20,12 +20,12 @@
 
   header {
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     background: $dark-brand-color;
-    border-top: 8px solid $brand-color;
+    border-top: 7px solid $brand-color;
 
     h1, h2 {
-      color: $light-color;
+      color: $bg-color;
       text-shadow: 0px 1px 5px $dark-color;
     }
   }

@@ -12,6 +12,7 @@
     background-color: white;
     padding: 30px;
     margin-bottom: 30px;
+    box-shadow: -2px 3px 5px #e5e5e5
   }
 
   h2 > i {

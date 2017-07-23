@@ -36,13 +36,13 @@ h1, h2 {
 blockquote {
   padding: 10px 20px;
   margin: 0;
-  border-left: 5px solid $brand-color;
+  border-left: 5px solid $light-alt-brand-color;
   font-style: italic;
   font-size: 0.95em;
 }
 
 a {
-  color: $brand-color;
+  color: $alt-brand-color;
   cursor: pointer;
   text-decoration: none;
   transition: color .5s;
@@ -70,6 +70,7 @@ a {
   margin: 5px 5px 5px 0;
   color: $dark-txt-color;
   background: $bg-color;
+  box-shadow: -2px 3px 5px #e5e5e5;
   padding: 2px 10px;
   font-size: 12px;
   border-radius: 5px;

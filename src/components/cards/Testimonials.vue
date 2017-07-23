@@ -23,7 +23,7 @@
 
     i {
       margin-right: 15px;
-      color: $brand-color;
+      color: $alt-brand-color;
     }
   }
 

@@ -32,18 +32,18 @@
     }
 
     &.active {
-      color: $brand-color;
+      color: $alt-brand-color;
     }
   }
 
   .level-bar {
-    background: $bg-color;
+    background: $dark-bg-color;
     width: 100%;
     height: 15px;
 
     .level-bar-inner {
       height: 100%;
-      background: $dark-brand-color;
+      background: $light-alt-brand-color;
     }
   }
 </style>
@@ -54,7 +54,6 @@
   import tech from 'common/technology';
 
   import Card from './Card.vue';
-
 
   const skills = [];
   function add(technology, proficiency, featured = false) {

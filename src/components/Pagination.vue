@@ -27,7 +27,7 @@
         cursor: pointer;
 
         &:hover {
-          color: $brand-color;
+          color: $alt-brand-color;
         }
       }
     }
