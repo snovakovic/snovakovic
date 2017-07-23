@@ -43,8 +43,11 @@
         </div>
       </div>
     </div>
-    <pagination :items="projects" @change="setActive"></pagination>
-    <filtered-by v-if="typeFilter || technologyFilter"></filtered-by>
+    <div class="pagination">
+      <pagination :items="projects" @change="setActive"></pagination>
+      <filtered-by v-if="typeFilter || technologyFilter"></filtered-by>
+      <filter-tooltip class="filter-tooltip-wrapper"></filter-tooltip>
+    </div>
   </card>
 </template>
 
@@ -102,15 +105,15 @@
       display: inline-block;
       min-width: 52px;
     }
+  }
 
-    .tag {
-      display: inline-block;
-      margin: 5px 5px 5px 0;
-      color: $dark-txt-color;
-      background: $bg-color;
-      padding: 2px 10px;
-      font-size: 12px;
-      border-radius: 5px;
+  .pagination {
+    position: relative;
+
+    .filter-tooltip-wrapper {
+      position: absolute;
+      top: -5px;
+      right: 10px;
     }
   }
 </style>
@@ -122,6 +125,7 @@
   import scrollTo from 'common/scrollTo';
 
   import Card from '../Card.vue';
+  import FilterTooltip from './FilterTooltip.vue';
   import FilteredBy from './FilteredBy.vue';
   import ImageSlider from '../../ImageSlider.vue';
   import Pagination from '../../Pagination.vue';
@@ -169,6 +173,7 @@
     },
     components: {
       Card,
+      FilterTooltip,
       FilteredBy,
       ImageSlider,
       Pagination

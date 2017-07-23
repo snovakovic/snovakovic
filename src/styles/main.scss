@@ -64,3 +64,13 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
+
+.tag {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  color: $dark-txt-color;
+  background: $bg-color;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
