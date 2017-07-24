@@ -4,6 +4,7 @@
 
 .card {
   position: relative;
+  border: 1px solid #ddd;
 }
 
 .card:before,
@@ -18,7 +19,6 @@
 
 .box1 {
   background: gradient(linear, 0% 20%, 0% 1000%, from(#fff), to(#fff), color-stop(.1, #f3f3f3));
-  border: 1px solid #ccc;
   border-bottom-right-radius: 6px 50px;
 }
 
@@ -85,7 +85,6 @@
 
 .box3 {
   background: gradient(linear, 0% 20%, 0% 92%, from(#fff), to(#f3f3f3), color-stop(.1, #fff));
-  border: 1px solid #ccc;
   border-radius: 60px 5px;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1) inset;
 }
@@ -128,7 +127,6 @@
   width: 300px;
   padding: 5px 0;
   background: gradient(linear, 0% 20%, 0% 100%, from(#fff), to(#fff), color-stop(.2, #f2f2f2));
-  border: 1px solid #ccc;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -179,12 +177,8 @@
 }
 
 
-/************/
-
-
-/*** Box5 ***/
-
-
+/************
+*** Box5 ***
 /************/
 
 .box5 {
@@ -251,13 +245,9 @@
 }
 
 
-/***************/
-
-
-/*** box Six ***/
-
-
-/***************/
+/***************
+*** box Six ***
+***************/
 
 .box6 {
   margin: 50px;
@@ -326,12 +316,8 @@
 }
 
 
-/****************/
-
-
-/*** box seven ***/
-
-
+/****************
+*** box seven ***
 /****************/
 
 .box7 {
@@ -340,7 +326,6 @@
   min-height: 150px;
   padding: 0 0 1px 0;
   background: gradient(linear, 100% 100%, 50% 10%, from(#fff), to(#f3f3f3), color-stop(.1, #fff));
-  border: 1px solid #ccc;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   border-bottom-right-radius: 60px 5px;
 }
@@ -377,12 +362,8 @@
 }
 
 
-/****************/
-
-
-/*** box eight ***/
-
-
+/****************
+*** box eight ***
 /****************/
 
 .box8 {
@@ -391,7 +372,6 @@
   min-height: 150px;
   padding: 0 0 1px 0;
   background: gradient(linear, 100% 100%, 50% 10%, from(#fff), to(#f3f3f3), color-stop(.1, #fff));
-  border: 1px solid #ccc;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   border-bottom-right-radius: 60px 5px;
 }
@@ -441,13 +421,9 @@
 }
 
 
-/*****************/
-
-
-/*** box ten ***/
-
-
-/*****************/
+/*****************
+*** box ten ***
+*****************/
 
 .box10 {
   margin: 70px 50px;

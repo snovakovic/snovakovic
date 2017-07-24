@@ -1,5 +1,5 @@
 <template>
-  <card class="info box1">
+  <card class="info">
     <ul class="list-unstyled">
       <li>
         <span class="icon"><i class="fa fa-map-marker"></i></span>
