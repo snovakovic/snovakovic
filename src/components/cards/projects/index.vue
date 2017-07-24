@@ -80,9 +80,8 @@
 
   .image-wrapper {
     background: $bg-color;
-    box-shadow: 0px 1px 5px $dark-color;
-
     padding: 5px;
+    border: 6px double $dark-bg-color;
 
     .inner {
       min-height: 250px;
