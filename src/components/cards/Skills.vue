@@ -1,5 +1,5 @@
 <template>
-  <card class="skills">
+  <card class="skills box1">
     <h2><i class="fa fa-cogs"></i>Skills</h2>
     <div class="item" v-for="skill in skills" :key="skill.technology">
       <h4 class="level-title"

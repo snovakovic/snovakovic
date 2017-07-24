@@ -1,5 +1,5 @@
 <template>
-  <card class="about-me">
+  <card class="about-me box1">
     <h2>About me</h2>
     <blockquote class="tldr">
       <b>TL;DR - </b> JavaScript enthusiast that writes clean, readable and modular code.

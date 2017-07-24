@@ -1,16 +1,18 @@
 <template>
-  <card class="projects cf">
+  <card class="projects box2">
     <h2><i class="fa fa-bar-chart"></i>Projects Summary</h2>
-    <div class="item"
-      :class="{ active: !filter.type }"
-      @click="onTypeSelect(undefined)">
-      <span class="number">{{ total }}</span> Total
-    </div>
-    <div class="item"
-      :class="{ active: type === filter.type }"
-      v-for="type in types" :key="type"
-      @click="onTypeSelect(type)">
-      <span class="number">{{ countByType(type) }}</span>{{ type }}
+    <div class="cf">
+      <div class="item"
+        :class="{ active: !filter.type }"
+        @click="onTypeSelect(undefined)">
+        <span class="number">{{ total }}</span> Total
+      </div>
+      <div class="item"
+        :class="{ active: type === filter.type }"
+        v-for="type in types" :key="type"
+        @click="onTypeSelect(type)">
+        <span class="number">{{ countByType(type) }}</span>{{ type }}
+      </div>
     </div>
   </card>
 </template>
