@@ -13,6 +13,7 @@
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: -2px 3px 5px $dark-bg-color;
+    border: 1px solid $dark-bg-color;
   }
 
   h2 > i {
