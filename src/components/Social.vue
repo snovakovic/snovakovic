@@ -51,7 +51,6 @@
 
   .github {
     background: #171515;
-    font-size: 28px;
   }
 
   .stack-overflow {

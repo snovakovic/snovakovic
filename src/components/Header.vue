@@ -1,7 +1,7 @@
 <template>
   <header class="cf">
     <div class="content">
-        <img class="profile-img" src="assets/images/profile.jpg" :alt="name"></img>
+        <img class="profile-img" src="assets/images/profile.jpg"></img>
         <div class="profile-content">
           <h1 class="name">Stefan Novakovic</h1>
           <h2 class="desc">Senior Software Developer</h2>
@@ -13,7 +13,6 @@
   </header>
 </template>
 
-
 <style lang="scss" scoped>
   @import '~styles/constants.scss';
   @import '~styles/mixins.scss';
@@ -23,7 +22,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 9999;
     text-align: center;
     padding: 15px 0;
     background: $alt-brand-color;
@@ -37,6 +36,7 @@
 
   .profile-img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     box-shadow: 0px 1px 5px $dark-color;
   }
