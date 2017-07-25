@@ -3,8 +3,8 @@
     <div class="content">
         <img class="profile-img" src="assets/images/profile.jpg" :alt="name"></img>
         <div class="profile-content">
-          <h1 class="name">{{ name }}</h1>
-          <h2 class="desc">{{ description }}</h2>
+          <h1 class="name">Stefan Novakovic</h1>
+          <h2 class="desc">Senior Software Developer</h2>
         </div>
         <div class="social-wrapper">
           <social></social>
@@ -19,6 +19,11 @@
   @import '~styles/mixins.scss';
 
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
     text-align: center;
     padding: 15px 0;
     background: $alt-brand-color;
@@ -84,12 +89,6 @@
   import Social from './Social.vue';
 
   export default {
-    data() {
-      return {
-        name: 'Stefan Novakovic',
-        description: 'Senior Software Developer'
-      };
-    },
     components: {
       Social
     }
