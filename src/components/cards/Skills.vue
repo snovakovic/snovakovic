@@ -32,7 +32,7 @@
     }
 
     &.active {
-      color: $alt-brand-color;
+      color: $brand-color;
     }
   }
 
@@ -43,7 +43,7 @@
 
     .level-bar-inner {
       height: 100%;
-      background: $light-alt-brand-color;
+      background: $light-brand-color;
     }
   }
 </style>

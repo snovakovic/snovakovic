@@ -21,7 +21,7 @@
   header {
     text-align: center;
     padding: 15px 0;
-    background: $dark-brand-color;
+    background: $alt-brand-color;
     border-top: 7px solid $brand-color;
 
     h1, h2 {
