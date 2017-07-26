@@ -51,7 +51,7 @@
     font-weight: normal;
     font-size: 24px;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 
   .social-wrapper {
