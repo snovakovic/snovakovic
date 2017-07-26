@@ -35,11 +35,11 @@ const setSize = function(force) {
   elem.profilePicture.style.marginRight = getSize(20, 30);
 
   // Name
-  elem.name.style.marginTop = getSize(0, 30);
-  elem.name.style.fontSize = getSize(21, 34);
+  elem.name.style.marginTop = getSize(3, 30);
+  elem.name.style.fontSize = getSize(20, 34);
 
   // Description
-  elem.desc.style.fontSize = getSize(17, 24);
+  elem.desc.style.fontSize = getSize(15, 24);
 
   // Social icons
   elem.socialWrapper.style.marginTop = getSize(5, 40);
