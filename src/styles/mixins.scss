@@ -37,10 +37,17 @@
 }
 
 @mixin mobile-screen {
+  @media screen and (max-width: $md-screen - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
   @media screen and (max-width: $lg-screen - 1px) {
     @content;
   }
 }
+
 
 @mixin desktop-screen {
   @media screen and (min-width: $lg-screen) {

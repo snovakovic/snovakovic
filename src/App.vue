@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <page-header></page-header>
+    <page-header class="header"></page-header>
     <div class="content">
       <div class="cf">
         <main>
@@ -27,10 +27,24 @@
   @import '~styles/mixins.scss';
 
   $header-height: 187px;
+  $content-top-padding: 40px;
 
   .content {
-    padding-top: 40px + $header-height;
-    padding-bottom: 60px;
+    padding-top: $content-top-padding;
+  }
+
+  @include md-screen {
+    .content {
+      padding-top: $content-top-padding + $header-height;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+    }
   }
 
   @include desktop-screen {

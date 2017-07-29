@@ -18,11 +18,6 @@
   @import '~styles/mixins.scss';
 
   header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
     text-align: center;
     padding: 15px 0;
     background: $alt-brand-color;
