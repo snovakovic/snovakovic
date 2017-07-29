@@ -1,6 +1,6 @@
 <template>
   <card class="books">
-    <h2><i class="fa fa-book"></i>Favorite coding Books</h2>
+    <h2><i class="fa fa-book"></i>Favorite Books</h2>
     <ul>
       <li v-for="book in books" :key="book.name">
         <a class="dark" :href="book.link">{{ book.title }} by {{ book.author }}</a>

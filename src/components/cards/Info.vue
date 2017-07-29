@@ -53,7 +53,6 @@
     transition: all .75s;
 
     &:hover {
-      background: $dark-brand-color;
       letter-spacing: 2px;
     }
   }

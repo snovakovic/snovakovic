@@ -26,8 +26,10 @@
 <style lang="scss" scoped>
   @import '~styles/mixins.scss';
 
+  $header-height: 187px;
+
   .content {
-    padding-top: 60px;
+    padding-top: 60px + $header-height;
     padding-bottom: 60px;
   }
 
@@ -35,12 +37,14 @@
     main, aside {
       float: left;
     }
+
     main {
       width: 70%;
       & > * {
         margin-right: 20px;
       }
     }
+
     aside { width: 30%; }
   }
 </style>

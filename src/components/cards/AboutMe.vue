@@ -20,8 +20,11 @@
 
 
 <style lang="scss" scoped>
+  @import '~styles/constants.scss';
+
   .tldr {
     font-style: normal;
+    border-color: $brand-color;
   }
 </style>
 
