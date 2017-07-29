@@ -65,7 +65,10 @@ export default {
     elem.socialWrapper = elem.header.querySelector('.social-wrapper');
     elem.socialIcons = Array.from(elem.socialWrapper.querySelectorAll('a'));
 
-    window.addEventListener('scroll', setSize);
+    this.watch();
+    this.setSize();
   },
+  watch: () => window.addEventListener('scroll', setSize),
+  unwatch: () => window.removeEventListener('scroll', setSize),
   setSize: () => setSize(true)
 };

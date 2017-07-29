@@ -29,7 +29,7 @@
   $header-height: 187px;
 
   .content {
-    padding-top: 60px + $header-height;
+    padding-top: 40px + $header-height;
     padding-bottom: 60px;
   }
 
