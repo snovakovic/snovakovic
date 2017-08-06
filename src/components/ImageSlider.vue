@@ -1,10 +1,8 @@
 <template>
-  <section>
-    <slider :auto="false" :control-btn="images.length > 1" height="400px">
-      <slider-item v-for="(img, index) in images" :key="index">
-        <img :src="img" alt="">
-      </slider-item>
-    </slider>
+  <section class="peppermint peppermint-inactive">
+    <figure v-for="(img, index) in images" :key="index">
+      <img :src="img" alt="">
+    </figure>
   </section>
 </template>
 
@@ -20,18 +18,18 @@
 
 
 <script>
-  import { Slider, SliderItem } from 'vue-easy-slider';
+  import peppermint from '../peppermint/peppermint';
 
   export default {
     props: {
       images: Array
     },
     data() {
-      return { list: null };
+      return { list: null, slider: undefined };
     },
-    components: {
-      Slider,
-      SliderItem
+    mounted() {
+      console.log(peppermint);
+      this.slider = peppermint(this.$el);
     }
   };
 </script>
