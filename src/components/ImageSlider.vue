@@ -1,6 +1,6 @@
 <template>
   <section class="sn-slider">
-    <slider :auto="false" :control-btn="images.length > 1" height="400px">
+    <slider :auto="false" v-if="images.length" :control-btn="images.length > 1" height="350px">
       <slider-item v-for="(img, index) in images" :key="index">
         <img :src="img" alt="">
       </slider-item>
@@ -32,6 +32,15 @@
     .slider-icon {
       border-left: 3px solid $alt-brand-color;
       border-bottom: 3px solid $alt-brand-color;
+    }
+
+
+    .slider-indicator-icon {
+      background: rgba(33, 33, 33, 0.4);
+
+      &.slider-indicator-active {
+        background: rgba(3, 41, 79, 0.8);
+      }
     }
   }
 </style>
