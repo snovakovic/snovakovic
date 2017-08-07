@@ -14,7 +14,7 @@
   @import '~styles/constants';
 
   .filter-tooltip {
-    color: $info-color;
+    color: $alt-brand-color;
 
     .tooltip {
       position: absolute;
