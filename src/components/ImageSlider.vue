@@ -1,20 +1,45 @@
 <template>
   <section class="sn-slider">
-    <slider :auto="false" v-if="images.length" :control-btn="images.length > 1" height="350px">
+    <slider v-if="images.length" height="350px"
+      :auto="false"
+      :indicators="images.length > 1 ? 'center': false"
+      :control-btn="images.length > 1">
       <slider-item v-for="(img, index) in images" :key="index">
         <img :src="img" alt="">
       </slider-item>
     </slider>
+    <div v-else class="no-picture">
+      <i class="fa fa-picture-o"></i>
+      <p>NO PICTURE</p>
+    </div>
   </section>
 </template>
 
 
 <style lang="scss" scoped>
+  @import '~styles/constants';
+
   img {
     max-height: 100%;
     max-width: 100%;
     display: block;
     margin: 0 auto;
+  }
+
+  .no-picture {
+    text-align: center;
+    color: $dark-bg-color;
+
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+
+    i {
+      font-size: 104px;
+      margin-top: 65px;
+    }
   }
 </style>
 
