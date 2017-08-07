@@ -3,8 +3,11 @@
 @import "~normalize.css";
 
 // Custom
+
 @import "constants";
 @import "helpers";
+
+// Rules
 
 body {
   color: $dark-txt-color;

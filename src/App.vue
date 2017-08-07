@@ -2,7 +2,7 @@
   <div id="app">
     <page-header class="header"></page-header>
     <div class="content">
-      <div class="cf">
+      <div v-if="isDesktop" class="cf">
         <main>
           <about-me></about-me>
           <projects></projects>
@@ -17,6 +17,16 @@
           <music></music>
           <books></books>
         </aside>
+      </div>
+      <div v-else>
+        <info></info>
+        <about-me></about-me>
+        <projects-summary></projects-summary>
+        <projects></projects>
+        <work-history></work-history>
+        <skills></skills>
+        <education></education>
+        <testimonials></testimonials>
       </div>
     </div>
   </div>
@@ -80,6 +90,9 @@
   import Books from './components/cards/Books.vue';
 
   export default {
+    computed: {
+      isDesktop() { return this.$store.state.isDesktop; }
+    },
     components: {
       PageHeader,
       AboutMe,
