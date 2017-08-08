@@ -26,7 +26,7 @@
         </p>
         <p v-if="project.link">
           <span class="group">Link:</span>
-          <a href="project.link">{{ project.link }}</a>
+          <a :href="project.link">{{ project.link }}</a>
         </p>
         <p class="type">
           <span class="group">Type:</span>
