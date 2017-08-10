@@ -19,7 +19,7 @@
   @import '~styles/constants.scss';
 
   .info {
-    padding-bottom: 70px;
+    padding-bottom: 70px!important;
     position: relative;
 
     .icon {
