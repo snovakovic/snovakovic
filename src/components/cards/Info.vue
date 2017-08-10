@@ -73,11 +73,13 @@
       };
     },
     computed: {
-      mailto() { return `mailto:${this.email}`; }
+      mailto() {
+        return `mailto:${this.email}`;
+      }
     },
     methods: {
       donwloadResume() {
-        window.open('/assets/Resume_Stefan_Novakovic.pdf','_blank');
+        window.open('/assets/Resume_Stefan_Novakovic.pdf', '_blank');
       }
     },
     components: {
