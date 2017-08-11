@@ -9,7 +9,7 @@
     "deploy": "npm run build && surge -p dist -d snovakovic.surge.sh"
   },
   "dependencies": {
-    "js-flock": "^2.0.2",
+    "js-flock": "^2.1.2",
     "normalize.css": "^7.0.0",
     "vue": "^2.4.2",
     "vue-easy-slider": "snovakovic/vue-easy-slider",
