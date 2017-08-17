@@ -1,15 +1,14 @@
 <template>
-  <section class="sn-slider">
-    <slider v-if="images.length"
-      height="350px"
-      ref="slider"
-      :auto="false"
-      :indicators="images.length > 1 ? 'center': false"
-      :control-btn="images.length > 1">
-      <slider-item v-for="(img, index) in images" :key="index">
-        <img :src="img" alt="">
-      </slider-item>
-    </slider>
+  <section>
+    <div v-if="images.length">
+      <div class="siema">
+        <img v-for="(img, index) in images" :key="index" :src="img" alt="">
+      </div>
+      <div class="navigation">
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
     <div v-else class="no-picture">
       <i class="fa fa-picture-o"></i>
       <p>NO PICTURE</p>
@@ -43,44 +42,15 @@
       margin-top: 65px;
     }
   }
-</style>
 
-
-<style lang="scss">
-  @import '~styles/constants';
-
-  .sn-slider {
-    .btn {
-      background: none!important;
-      opacity: 1;
-      margin-top: -5px;
-
-      &:hover {
-        .slider-icon {
-          border-color: $brand-color;
-        }
-      }
-    }
-
-    .slider-icon {
-      transition: .5s border-color;
-      border-left: 3px solid $alt-brand-color;
-      border-bottom: 3px solid $alt-brand-color;
-    }
-
-    .slider-indicator-icon {
-      background: rgba(33, 33, 33, 0.4);
-
-      &.slider-indicator-active {
-        background: rgba(3, 41, 79, 0.8);
-      }
-    }
+  .navigation {
+    display: none;
   }
 </style>
 
 
 <script>
-  import { Slider, SliderItem } from 'vue-easy-slider';
+  import Siema from 'siema';
 
   export default {
     props: {
@@ -89,19 +59,11 @@
     data() {
       return { list: null };
     },
-    methods: {
-      reRenderSlider() {
-        if (this.$refs.slider) {
-          this.$refs.slider.$emit('$VueEasySlider:reRender');
-        }
-      }
-    },
     mounted() {
-      window.addEventListener('resize', this.reRenderSlider);
-    },
-    components: {
-      Slider,
-      SliderItem
+
+      const mySiema = new Siema();
+      document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+      document.querySelector('.next').addEventListener('click', () => mySiema.next());
     }
   };
 </script>
