@@ -6,8 +6,15 @@
           <img :src="img" alt="">
         </div>
       </div>
-      <i class="fa fa-angle-left prev" v-if="images.length > 1"></i>
-      <i class="fa fa-angle-right next" v-if="images.length > 1"></i>
+      <span v-if="showSlider">
+        <i class="fa fa-angle-left prev"></i>
+        <i class="fa fa-angle-right next"></i>
+        <div class="slide-indicators">
+          <span class="dot" :class="{ active: index === currentSlideNo }"
+            v-for="(img, index) in images" :key="index"
+            @click="changeSlide(index)"></span>
+        </div>
+      </span>
     </div>
     <div v-else class="no-picture">
       <i class="fa fa-picture-o"></i>
@@ -67,12 +74,31 @@
     }
   }
 
-  .prev {
-    left: 10px;
-  }
+  .prev { left: 10px; }
+  .next { right: 10px; }
 
-  .next {
-    right: 10px;
+  .slide-indicators {
+    $dot-size: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+
+    .dot {
+      display: inline-block;
+      width: $dot-size;
+      height: $dot-size;
+      border-radius: 50%;
+      background: $alt-brand-color;
+      margin: 0 3px;
+      cursor: pointer;
+      opacity: 0.7;
+
+      &.active {
+        background: $brand-color;
+      }
+    }
   }
 </style>
 
@@ -90,10 +116,25 @@
         slider: null
       };
     },
+    computed: {
+      showSlider() {
+        return this.images.length > 1;
+      },
+      currentSlideNo() {
+        return this.slider && this.slider.currentSlide;
+      }
+    },
+    methods: {
+      changeSlide(slideNo) {
+        this.slider.goTo(slideNo);
+      }
+    },
     mounted() {
-      if (this.images.length > 1) {
+      if (this.showSlider) {
         this.slider = new Siema({
-          selector: this.$el.querySelector('.siema')
+          selector: this.$el.querySelector('.siema'),
+          loop: true,
+          duration: 500
         });
 
         this.$el.querySelector('.prev').addEventListener('click', () => this.slider.prev());
