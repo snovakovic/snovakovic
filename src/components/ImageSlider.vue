@@ -31,7 +31,7 @@
 
   img {
     max-height: 100%;
-    max-width: 100%;
+    max-width: 99%;
     display: block;
     margin: 0 auto;
   }
@@ -92,7 +92,10 @@
     },
     mounted() {
       if (this.images.length > 1) {
-        this.slider = new Siema();
+        this.slider = new Siema({
+          selector: this.$el.querySelector('.siema')
+        });
+
         this.$el.querySelector('.prev').addEventListener('click', () => this.slider.prev());
         this.$el.querySelector('.next').addEventListener('click', () => this.slider.next());
       }
