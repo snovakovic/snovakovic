@@ -85,13 +85,21 @@
       images: Array
     },
     data() {
-      return { list: null };
+      return {
+        list: null,
+        slider: null
+      };
     },
     mounted() {
       if (this.images.length > 1) {
-        const slider = new Siema();
-        this.$el.querySelector('.prev').addEventListener('click', () => slider.prev());
-        this.$el.querySelector('.next').addEventListener('click', () => slider.next());
+        this.slider = new Siema();
+        this.$el.querySelector('.prev').addEventListener('click', () => this.slider.prev());
+        this.$el.querySelector('.next').addEventListener('click', () => this.slider.next());
+      }
+    },
+    beforeDestroy() {
+      if (this.slider) {
+        this.slider.destroy();
       }
     }
   };
