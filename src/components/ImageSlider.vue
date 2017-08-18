@@ -1,13 +1,13 @@
 <template>
-  <section>
+  <section class="image-slider">
     <div v-if="images.length">
       <div class="siema">
-        <img v-for="(img, index) in images" :key="index" :src="img" alt="">
+        <div class="image-wrapper" v-for="(img, index) in images" :key="index">
+          <img :src="img" alt="">
+        </div>
       </div>
-      <div class="navigation">
-        <button class="prev">Prev</button>
-        <button class="next">Next</button>
-      </div>
+      <i class="fa fa-angle-left prev" v-if="images.length > 1"></i>
+      <i class="fa fa-angle-right next" v-if="images.length > 1"></i>
     </div>
     <div v-else class="no-picture">
       <i class="fa fa-picture-o"></i>
@@ -19,6 +19,15 @@
 
 <style lang="scss" scoped>
   @import '~styles/constants';
+
+  .image-slider {
+    position: relative;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: 400px;
+  }
 
   img {
     max-height: 100%;
@@ -43,8 +52,27 @@
     }
   }
 
-  .navigation {
-    display: none;
+  .prev,
+  .next {
+    font-size: 50px;
+    color: $alt-brand-color;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    transition: .5s color;
+    cursor: pointer;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
   }
 </style>
 
@@ -60,10 +88,9 @@
       return { list: null };
     },
     mounted() {
-
-      const mySiema = new Siema();
-      document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-      document.querySelector('.next').addEventListener('click', () => mySiema.next());
+      const slider = new Siema();
+      this.$el.querySelector('.prev').addEventListener('click', () => slider.prev());
+      this.$el.querySelector('.next').addEventListener('click', () => slider.next());
     }
   };
 </script>
