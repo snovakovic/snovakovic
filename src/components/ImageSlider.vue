@@ -88,9 +88,11 @@
       return { list: null };
     },
     mounted() {
-      const slider = new Siema();
-      this.$el.querySelector('.prev').addEventListener('click', () => slider.prev());
-      this.$el.querySelector('.next').addEventListener('click', () => slider.next());
+      if (this.images.length > 1) {
+        const slider = new Siema();
+        this.$el.querySelector('.prev').addEventListener('click', () => slider.prev());
+        this.$el.querySelector('.next').addEventListener('click', () => slider.next());
+      }
     }
   };
 </script>
