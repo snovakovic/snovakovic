@@ -67,10 +67,6 @@
     background: $bg-color;
     padding: 5px;
     border: 6px double $dark-bg-color;
-
-    .inner {
-      min-height: 250px;
-    }
   }
 
   .info {
