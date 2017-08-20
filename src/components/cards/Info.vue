@@ -79,7 +79,9 @@
     },
     methods: {
       donwloadResume() {
-        window.open('/assets/Resume_Stefan_Novakovic.pdf', '_blank');
+        window.open(
+          'https://drive.google.com/file/d/0B5nqK8_IZiBBc3pnc090RDBaQ00/view?usp=sharing', '_blank'
+        );
       }
     },
     components: {
