@@ -11,8 +11,8 @@
   "dependencies": {
     "js-flock": "^2.1.2",
     "normalize.css": "^7.0.0",
+    "siema": "^1.4.6",
     "vue": "^2.4.2",
-    "vue-easy-slider": "snovakovic/vue-easy-slider",
     "vuex": "^2.3.1",
     "wiggle.js": "^1.2.1"
   },

@@ -1,15 +1,21 @@
 <template>
-  <section class="sn-slider">
-    <slider v-if="images.length"
-      height="350px"
-      ref="slider"
-      :auto="false"
-      :indicators="images.length > 1 ? 'center': false"
-      :control-btn="images.length > 1">
-      <slider-item v-for="(img, index) in images" :key="index">
-        <img :src="img" alt="">
-      </slider-item>
-    </slider>
+  <section class="image-slider">
+    <div v-if="images.length">
+      <div class="siema">
+        <div class="image-wrapper" v-for="(img, index) in images" :key="index">
+          <img :src="img" alt="">
+        </div>
+      </div>
+      <span v-if="haveSlides">
+        <i class="fa fa-angle-left prev"></i>
+        <i class="fa fa-angle-right next"></i>
+        <div class="slide-indicators">
+          <span class="dot" :class="{ active: index === currentSlideNo }"
+            v-for="(img, index) in images" :key="index"
+            @click="changeSlide(index)"></span>
+        </div>
+      </span>
+    </div>
     <div v-else class="no-picture">
       <i class="fa fa-picture-o"></i>
       <p>NO PICTURE</p>
@@ -21,9 +27,18 @@
 <style lang="scss" scoped>
   @import '~styles/constants';
 
+  .image-slider {
+    position: relative;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: 300px;
+  }
+
   img {
     max-height: 100%;
-    max-width: 100%;
+    max-width: 99%;
     display: block;
     margin: 0 auto;
   }
@@ -35,44 +50,53 @@
     p {
       font-weight: bold;
       font-size: 18px;
-      margin-top: 5px;
+      margin-top: 0;
     }
 
     i {
       font-size: 104px;
-      margin-top: 65px;
+      margin: 20px 0;
     }
   }
-</style>
 
+  .prev,
+  .next {
+    font-size: 50px;
+    color: $alt-brand-color;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    transition: .5s color;
+    cursor: pointer;
 
-<style lang="scss">
-  @import '~styles/constants';
-
-  .sn-slider {
-    .btn {
-      background: none!important;
-      opacity: 1;
-      margin-top: -5px;
-
-      &:hover {
-        .slider-icon {
-          border-color: $brand-color;
-        }
-      }
+    &:hover {
+      color: $brand-color;
     }
+  }
 
-    .slider-icon {
-      transition: .5s border-color;
-      border-left: 3px solid $alt-brand-color;
-      border-bottom: 3px solid $alt-brand-color;
-    }
+  .prev { left: 10px; }
+  .next { right: 10px; }
 
-    .slider-indicator-icon {
-      background: rgba(33, 33, 33, 0.4);
+  .slide-indicators {
+    $dot-size: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
 
-      &.slider-indicator-active {
-        background: rgba(3, 41, 79, 0.8);
+    .dot {
+      display: inline-block;
+      width: $dot-size;
+      height: $dot-size;
+      border-radius: 50%;
+      background: $alt-brand-color;
+      margin: 0 3px;
+      cursor: pointer;
+      opacity: 0.7;
+
+      &.active {
+        background: $brand-color;
       }
     }
   }
@@ -80,28 +104,67 @@
 
 
 <script>
-  import { Slider, SliderItem } from 'vue-easy-slider';
+  import Siema from 'siema';
+
+  const IMAGE_RATIO = 1.75;
 
   export default {
     props: {
       images: Array
     },
     data() {
-      return { list: null };
+      return {
+        list: null,
+        slider: null,
+        slides: null
+      };
+    },
+    computed: {
+      haveSlides() {
+        return this.images.length > 1;
+      },
+      currentSlideNo() {
+        return this.slider && this.slider.currentSlide;
+      }
     },
     methods: {
-      reRenderSlider() {
-        if (this.$refs.slider) {
-          this.$refs.slider.$emit('$VueEasySlider:reRender');
+      changeSlide(slideNo) {
+        this.slider.goTo(slideNo);
+      },
+      setWrapperHeight() {
+        if (this.slider) {
+          const height = this.slider.selector.clientWidth / IMAGE_RATIO;
+          if (!this.slides) {
+            this.slides = Array.from(this.slider.selector.querySelectorAll('.image-wrapper'));
+          }
+          this.slides.forEach(($slide) => { $slide.style.height = `${Math.max(120, height)}px`; });
         }
       }
     },
     mounted() {
-      window.addEventListener('resize', this.reRenderSlider);
+      if (!this.images.length) {
+        return;
+      }
+
+      this.slider = new Siema({
+        selector: this.$el.querySelector('.siema'),
+        loop: true,
+        duration: 500
+      });
+
+      this.setWrapperHeight();
+      window.addEventListener('resize', this.setWrapperHeight);
+
+      if (this.haveSlides) {
+        this.$el.querySelector('.prev').addEventListener('click', () => this.slider.prev());
+        this.$el.querySelector('.next').addEventListener('click', () => this.slider.next());
+      }
     },
-    components: {
-      Slider,
-      SliderItem
+    beforeDestroy() {
+      if (this.slider) {
+        this.slider.destroy();
+        window.removeEventListener('resize', this.setWrapperHeight);
+      }
     }
   };
 </script>
