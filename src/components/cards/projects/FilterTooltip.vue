@@ -27,7 +27,7 @@
       text-align: center;
       line-height: 15px;
       top: -60px;
-      left: -108px;
+      left: -215px;
       z-index: 1;
       overflow: hidden;
     }
