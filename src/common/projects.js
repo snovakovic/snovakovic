@@ -79,7 +79,8 @@ projects.push({
   title: 'Hotel Reviews',
   images: {
     folder: 'hotel-reviews',
-    total: 0
+    total: 3,
+    extension: 'png'
   },
   period: {
     start: new Date(2016, 10),
