@@ -24,7 +24,7 @@
 
     .icon {
       display: inline-block;
-      width: 35px;
+      width: 25px;
     }
 
     .fa-map-marker {
