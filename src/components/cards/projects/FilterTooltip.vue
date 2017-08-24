@@ -2,7 +2,7 @@
   <section class="filter-tooltip">
     <transition name="fade">
       <div class="tooltip" v-if="show">
-        You can apply type or technology filter by cliking on project tag or skills/summary section.
+        Apply type or technology filter by cliking on project tag or on item in skills/summary section.
       </div>
     </transition>
     <i class="fa fa-info" @mouseover="show=true" @mouseout="show=false"></i>
