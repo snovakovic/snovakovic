@@ -6,7 +6,7 @@
     </blockquote>
     <p></p>
     <p>
-      I'm Professional software developer with a Master’s degree in Computer Science and
+      I'm a professional software developer with a Master’s degree in Computer Science and
       more than {{ yearOfExperiance }} years of industry experience.
       Agile, direct communication with internal stakeholders, external clients, code reviews and
       unit testing. I have in-depth experience across the entire development cycle.
