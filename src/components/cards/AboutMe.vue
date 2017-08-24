@@ -13,7 +13,7 @@
     </p>
     <p>
       I'm <b>passionate</b> about <b>Full Stack JavaScript</b> development.
-      Beside JavaScript I have lot of experiance in C# (.NET) but in recent years that part has been negliected in favor of JavaScript.
+      Beside JavaScript I have lot of experience in C# (.NET) but in recent years that part has been neglected in favor of JavaScript.
     </p>
     <p>
       <b>Interesting in seing my work in action?</b> Take a peek at my <a href="https://github.com/snovakovic">github</a>
