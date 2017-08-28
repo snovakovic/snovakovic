@@ -6,7 +6,7 @@ const projects = [];
 
 projects.push({
   title: 'University of Notre Dame',
-  summary: 'Learner dashboard for Notre Dame students',
+  summary: 'Learner dashboard for Notre Dame online master’s degree programs',
   images: {
     folder: 'notre-dame',
     total: 6,
@@ -23,13 +23,12 @@ projects.push({
     name: 'University of Notre Dame',
     link: 'https://www.nd.edu/'
   },
-  description: `Developing learner dashboard for first Notre Dame online
-    master’s degree program, in data science. Main features of dashboard are
-    chat, live updates, live notifications and timeline that combines all user
-    relevant data as articles, events, courses.
-    Dashboard is internationalized and wcag 2.0 accessible. More about
-    program can be found in following
-    <a href="https://www.insidehighered.com/digital-learning/article/2017/06/07/notre-dame-offers-its-first-graduate-online-program?utm_campaign=press&utm_source=facebook&utm_medium=social">article</a>`, // eslint-disable-line max-len
+  description: `Developing of learner dashboard for Notre Dame online master’s degree programs.
+    Learner dashboard allows easy collaboration between students and professors through chat,
+    sharing of resources, events and live notifications.
+    All content on dashboard is live updated with WebSockets and immediately available to students.
+    Center piece  lofearner dashboard is timeline that combines all student relevant data in
+    chronological order. Dashboard is internationalized and WCAG 2.0 accessible.`,
   duties: `As senior developer my role was to make decisions on technologies
     to be used on project, to mentor junior team members and to ensure code
     quality that is enforced through required code reviews and off course to
