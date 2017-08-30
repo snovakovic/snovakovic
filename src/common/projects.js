@@ -6,7 +6,7 @@ const projects = [];
 
 projects.push({
   title: 'University of Notre Dame',
-  summary: 'Learner dashboard for Notre Dame online master’s degree programs',
+  summary: 'Learner dashboard for Notre Dame online master’s degree program',
   images: {
     folder: 'notre-dame',
     total: 6,
@@ -23,11 +23,11 @@ projects.push({
     name: 'University of Notre Dame',
     link: 'https://www.nd.edu/'
   },
-  description: `Developing of learner dashboard for Notre Dame online master’s degree programs.
+  description: `Developing of learner dashboard for Notre Dame online master’s degree program.
     Learner dashboard allows easy collaboration between students and professors through chat,
     sharing of resources, events and live notifications.
     All content on dashboard is live updated with WebSockets and immediately available to students.
-    Center piece  lofearner dashboard is timeline that combines all student relevant data in
+    Center piece of learner dashboard is timeline that combines all student relevant data in
     chronological order. Dashboard is internationalized and WCAG 2.0 accessible.`,
   duties: `As senior developer my role was to make decisions on technologies
     to be used on project, to mentor junior team members and to ensure code
@@ -49,14 +49,15 @@ projects.push({
   },
   type: [type.FEATURED, type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE],
-  description: `Gather and polish helper methods created during other projects.
-    Code are published on npm under name js-flock.`,
-  duties: 'Creator',
+  description: `Collection of useful modules/utilities that can be used in NODE and in browser.
+    Library is published on npm. For more information on library visit npm/github page.`,
+  duties: 'Creator of library',
   link: 'https://www.npmjs.com/package/js-flock'
 });
 
 projects.push({
   title: 'Wiggle',
+  summary: 'Media query change listener',
   images: {
     folder: 'wiggle',
     total: 1,
@@ -69,8 +70,8 @@ projects.push({
   type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
   technologies: [tech.JAVASCRIPT],
   description: `Small wrapper around matchMedia to easily react on changes
-    in page layout.`,
-  duties: 'Creator',
+    in page layout. Library is published on npm.`,
+  duties: 'Creator of library',
   link: 'https://www.npmjs.com/package/wiggle.js'
 });
 
@@ -386,8 +387,7 @@ projects.push({
     other public transportation related services.
     Development of the SOAP based service used by new application
     and by existing applications in kiosks around Zagreb`,
-  duties: `Developing of new features, deploying to production
-    and fixing production issues`
+  duties: 'Developing of new features, deploying to production and fixing production issues'
 });
 
 projects.push({
@@ -439,7 +439,7 @@ projects.push({
 
 projects.push({
   title: 'PHT',
-  summary: 'LogPad app for clinical research to ',
+  summary: 'LogPad app for clinical research',
   images: {
     folder: 'pht',
     total: 6
