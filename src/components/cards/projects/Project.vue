@@ -95,9 +95,10 @@
 
 
 <script>
-  import Months from 'common/Months';
-
   import ImageSlider from '../../ImageSlider.vue';
+
+  const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.',
+    'Sept.', 'Oct.', 'Nov.', 'Dec.'];
 
   export default {
     props: { project: Object },
@@ -117,11 +118,11 @@
         return images;
       },
       formatPeriod(period) {
-        const start = `${Months[period.start.getMonth()]} ${period.start.getFullYear()}`;
+        const start = `${months[period.start.getMonth()]} ${period.start.getFullYear()}`;
         if (!period.end) {
           return `${start} - Present`;
         }
-        return `${start} - ${Months[period.end.getMonth()]} ${period.end.getFullYear()}`;
+        return `${start} - ${months[period.end.getMonth()]} ${period.end.getFullYear()}`;
       },
       setTypeFilter(type) {
         this.$store.commit('setTypeFilter', type);

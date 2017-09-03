@@ -29,7 +29,8 @@ export default [{
       <li>Communicate directly with the clients regarding their requirements.</li>
       <li>Develop the projects from start to finish based on agreed specifications.</li>
     </ul>
-    I’m proud of receiving only positive reviews from clients on <a href="${Profile.upwork}">Upwork</a>.`
+    I’m proud of receiving only positive reviews from clients on
+    <a href="${Profile.upwork}">Upwork</a>.`
 }, {
   position: 'Software Developer',
   period: 'Jan 2014 - Aug 2014',
