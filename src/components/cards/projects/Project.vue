@@ -97,8 +97,8 @@
 <script>
   import ImageSlider from '../../ImageSlider.vue';
 
-  const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.',
-    'Sept.', 'Oct.', 'Nov.', 'Dec.'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
+    'Sept', 'Oct', 'Nov', 'Dec'];
 
   export default {
     props: { project: Object },
