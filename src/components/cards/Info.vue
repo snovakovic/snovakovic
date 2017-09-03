@@ -80,7 +80,7 @@
     methods: {
       donwloadResume() {
         window.open(
-          'https://drive.google.com/file/d/0B5nqK8_IZiBBc3pnc090RDBaQ00/view?usp=sharing', '_blank'
+          'https://drive.google.com/file/d/0B5nqK8_IZiBBWGZINl9hb012Nk0/view?usp=sharing', '_blank'
         );
       }
     },
