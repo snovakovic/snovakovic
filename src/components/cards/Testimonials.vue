@@ -7,7 +7,7 @@
       </blockquote>
       <p class="source smallest">{{ testimonial.by }}</p>
     </div>
-    <a class="more-link" href="https://www.upwork.com/o/profiles/users/_~017c648c2aba395f29/">
+    <a class="more-link" :href="profile.upwork">
       <i class="fa fa-external-link smallest"></i>
       More on Upwork
     </a>
@@ -47,6 +47,8 @@
 
 
 <script>
+  import Profile from 'data/Profile';
+
   import Card from './Card.vue';
 
   const testimonials = [{
@@ -65,7 +67,10 @@
 
   export default {
     data() {
-      return { testimonials }
+      return {
+        profile: Profile,
+        testimonials
+      };
     },
     components: {
       Card

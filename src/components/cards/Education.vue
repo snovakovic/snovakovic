@@ -66,7 +66,7 @@
           period: '2002-2006',
           institution: {
             name: 'Technical High School of Split',
-            link: 'ss-tehnicka-st.skole.hr'
+            link: 'http://ss-tehnicka-st.skole.hr/'
           }
         }]
       };

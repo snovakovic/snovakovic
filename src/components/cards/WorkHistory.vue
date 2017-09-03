@@ -5,16 +5,19 @@
       <h3 class="title">
         {{ item.position }}
         <i class="fa fa-circle"></i>
-        <span class="company">
-          <a v-if="item.company.link" :href="item.link">{{ item.company.name }}</a>
-          <span v-else>{{ item.company.name }}</span>
+        <span class="extra">
+          <span class="company">
+            <a v-if="item.company.link" :href="item.link">{{ item.company.name }}</a>
+            <span v-else>{{ item.company.name }}</span>
+          </span>
+          <span class="year">{{ item.period }}</span>
         </span>
-        <span class="year">{{ item.period }}</span>
       </h3>
       <p v-html="item.summary"></p>
     </div>
   </card>
 </template>
+
 
 <style lang="scss">
   .work-history {
@@ -22,6 +25,7 @@
 
     ul {
       margin-top: 0px;
+      margin-bottom: 10px;
 
       &.in-content {
         margin-top: 8px;
@@ -32,6 +36,7 @@
 
 <style lang="scss" scoped>
   @import '~styles/constants';
+  @import '~styles/mixins';
 
   .title {
     font-size: 16px;
@@ -42,6 +47,7 @@
     .fa-circle {
       font-size: 6px;
       top: -2px;
+      display: none;
     }
 
     .company,
@@ -55,6 +61,17 @@
     .year {
       float: right;
       margin-top: 1px;
+    }
+
+    .extra {
+      display: block;
+    }
+
+    @include sm-screen {
+      .fa-circle,
+      .extra {
+        display: inline;
+      }
     }
   }
 </style>
