@@ -11,7 +11,7 @@
         </span>
         <span class="year">{{ item.period }}</span>
       </h3>
-      <p>{{ item.summary }}</p>
+      <p v-html="item.summary"></p>
     </div>
   </card>
 </template>
