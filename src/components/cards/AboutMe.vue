@@ -13,13 +13,15 @@
     </p>
     <p>
       I'm <b>passionate</b> about <b>Full Stack JavaScript</b> development.
-      Beside JavaScript I have lot of experience in C# (.NET) but in recent years that part has been neglected in favor of JavaScript.
+      Beside JavaScript I have lot of experience in C# (.NET) but in recent years that part has
+      been neglected in favor of JavaScript.
     </p>
     <p>
-      <b>Interesting in seing my work in action?</b> Take a peek at my <a href="https://github.com/snovakovic">github</a>
-      account, my open source projects on <a href="https://www.npmjs.com/~snovakovic">npm</a>
-      or at any of my contributions to Open Source projects which become my passion in recent time.
-      I belive it's time to give back to community after all these years of using greate open source projects in every day development.
+      <b>Interesting in seing my work in action?</b> Take a peek at my
+      <a :href="profile.github">github</a> account, my open source projects on
+      <a :href="profile.npm">npm</a> or at any of my contributions to open source projects
+      which become my passion in recent time. I belive it's time to give back to community after
+      all these years of using greate open source projects in every day development.
     </p>
   </card>
 </template>
@@ -42,6 +44,7 @@
 
   export default {
     computed: {
+      profile() { return this.$store.state.profile; },
       yearOfExperiance() {
         const DifMs = Date.now() - begeningOfWOrk.getTime();
         return Math.abs((new Date(DifMs)).getUTCFullYear() - 1970);

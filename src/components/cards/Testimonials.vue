@@ -47,8 +47,6 @@
 
 
 <script>
-  import Profile from 'data/Profile';
-
   import Card from './Card.vue';
 
   const testimonials = [{
@@ -67,10 +65,10 @@
 
   export default {
     data() {
-      return {
-        profile: Profile,
-        testimonials
-      };
+      return { testimonials };
+    },
+    computed: {
+      profile() { return this.$store.state.profile; }
     },
     components: {
       Card

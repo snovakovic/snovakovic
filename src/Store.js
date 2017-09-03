@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
+import Profile from 'data/Profile';
 import ProjectType from 'common/ProjectType';
 
 Vue.use(Vuex);
@@ -8,6 +9,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     isDesktop: undefined,
+    profile: Profile,
     projects: {
       list: [],
       filter: {

@@ -65,7 +65,6 @@
   export default {
     data() {
       return {
-        email: 'stefan.novakovich@gmail.com',
         location: {
           name: 'Split, Croatia',
           link: 'https://goo.gl/maps/kaLwrJyfmGT2'
@@ -73,15 +72,13 @@
       };
     },
     computed: {
-      mailto() {
-        return `mailto:${this.email}`;
-      }
+      profile() { return this.$store.state.profile; },
+      email() { return this.$store.state.profile.email; },
+      mailto() { return `mailto:${this.email}`; }
     },
     methods: {
       donwloadResume() {
-        window.open(
-          'https://drive.google.com/file/d/0B5nqK8_IZiBBWGZINl9hb012Nk0/view?usp=sharing', '_blank'
-        );
+        window.open(this.profile.resume, '_blank');
       }
     },
     components: {

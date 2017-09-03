@@ -1,14 +1,14 @@
 <template>
   <section class="cf">
-    <a href="https://www.linkedin.com/in/stefan-novakovi%C4%87-494b545a/"
+    <a :href="profile.linkedin"
       class="linkedin" :title="getTitle('linkedin')">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/snovakovic"
+    <a :href="profile.github"
       class="github" :title="getTitle('github')">
       <i class="fa fa-github"></i>
     </a>
-    <a href="https://stackoverflow.com/users/1804295/snovakovic?tab=profile"
+    <a :href="profile.stackoverflow"
       class="stack-overflow" :title="getTitle('stack-overflow')">
       <i class="fa fa-stack-overflow"></i>
     </a>
@@ -67,6 +67,9 @@
 
 <script>
   export default {
+    computed: {
+      profile() { return this.$store.state.profile; }
+    },
     methods: {
       getTitle(name) {
         return `Go to ${name} profile`;
