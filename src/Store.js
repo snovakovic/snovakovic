@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import projectType from 'common/projectType';
+import ProjectType from 'common/ProjectType';
 
 Vue.use(Vuex);
 
@@ -11,7 +11,7 @@ export default new Vuex.Store({
     projects: {
       list: [],
       filter: {
-        type: projectType.FEATURED,
+        type: ProjectType.FEATURED,
         technology: undefined
       }
     }

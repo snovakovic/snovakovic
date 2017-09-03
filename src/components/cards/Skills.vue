@@ -50,8 +50,8 @@
 
 
 <script>
-  import projects from 'data/projects';
-  import tech from 'common/technology';
+  import Projects from 'data/Projects';
+  import Technology from 'common/Technology';
 
   import Card from './Card.vue';
 
@@ -60,24 +60,24 @@
     skills.push({ technology, proficiency, featured });
   }
 
-  add(tech.JAVASCRIPT, 90, true);
-  add(tech.ES6, 90);
-  add(tech.NODE, 85, true);
-  add(tech.VUE, 85, true);
-  add(tech.HAPI, 80, true);
-  add(tech.JQUERY, 80);
-  add(tech.CSHARP, 75, true);
-  add(tech.Angular1, 75);
-  add(tech.MSSQL, 70, true);
-  add(tech.MYSQL, 70);
-  add(tech.POSTGRESQL, 70);
-  add(tech.MONGO, 65, true);
-  add(tech.REDIS, 65, true);
-  add(tech.ZEROMQ, 60);
-  add(tech.ELASTICSEARCH, 55);
-  add(tech.EXPRESS, 55);
-  add(tech.ENTITYFRAMEWORK, 50);
-  add(tech.PHP, 35);
+  add(Technology.JAVASCRIPT, 90, true);
+  add(Technology.ES6, 90);
+  add(Technology.NODE, 85, true);
+  add(Technology.VUE, 85, true);
+  add(Technology.HAPI, 80, true);
+  add(Technology.JQUERY, 80);
+  add(Technology.CSHARP, 75, true);
+  add(Technology.Angular1, 75);
+  add(Technology.MSSQL, 70, true);
+  add(Technology.MYSQL, 70);
+  add(Technology.POSTGRESQL, 70);
+  add(Technology.MONGO, 65, true);
+  add(Technology.REDIS, 65, true);
+  add(Technology.ZEROMQ, 60);
+  add(Technology.ELASTICSEARCH, 55);
+  add(Technology.EXPRESS, 55);
+  add(Technology.ENTITYFRAMEWORK, 50);
+  add(Technology.PHP, 35);
 
 
   export default {
@@ -90,7 +90,7 @@
         return `width: ${skill.proficiency}%;`;
       },
       countByTechnology(technology) {
-        return projects.filter((p) =>
+        return Projects.filter((p) =>
           p.technologies.some((t) => t === technology)).length;
       },
       onTechnologySelect(technology) {

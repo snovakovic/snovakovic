@@ -34,7 +34,7 @@
 
 
 <script>
-  import projects from 'data/projects';
+  import Projects from 'data/Projects';
   import scrollTo from 'common/scrollTo';
 
   import Card from '../Card.vue';
@@ -51,7 +51,7 @@
       typeFilter() { return this.$store.state.projects.filter.type; },
       technologyFilter() { return this.$store.state.projects.filter.technology; },
       projects() {
-        return projects.filter((p) =>
+        return Projects.filter((p) =>
           (!this.typeFilter || p.type.some((t) => t === this.typeFilter))
           && (!this.technologyFilter
             || p.technologies.some((t) => t === this.technologyFilter)));

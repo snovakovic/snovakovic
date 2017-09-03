@@ -95,7 +95,7 @@
 
 
 <script>
-  import months from 'common/months';
+  import Months from 'common/Months';
 
   import ImageSlider from '../../ImageSlider.vue';
 
@@ -117,11 +117,11 @@
         return images;
       },
       formatPeriod(period) {
-        const start = `${months[period.start.getMonth()]} ${period.start.getFullYear()}`;
+        const start = `${Months[period.start.getMonth()]} ${period.start.getFullYear()}`;
         if (!period.end) {
           return `${start} - Present`;
         }
-        return `${start} - ${months[period.end.getMonth()]} ${period.end.getFullYear()}`;
+        return `${start} - ${Months[period.end.getMonth()]} ${period.end.getFullYear()}`;
       },
       setTypeFilter(type) {
         this.$store.commit('setTypeFilter', type);

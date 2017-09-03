@@ -1,5 +1,5 @@
-import type from 'common/projectType';
-import tech from 'common/technology';
+import Type from 'common/ProjectType';
+import Tech from 'common/Technology';
 
 
 const projects = [];
@@ -16,9 +16,9 @@ projects.push({
     start: new Date(2016, 10),
     end: undefined
   },
-  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE, tech.HAPI, tech.VUE,
-    tech.MONGO, tech.REDIS, tech.WEBSOCKETS, tech.ZEROMQ, tech.HTML, tech.CSS],
+  type: [Type.FEATURED, Type.TEAM, Type.LARGE, Type.FULLSTACK],
+  technologies: [Tech.JAVASCRIPT, Tech.ES6, Tech.NODE, Tech.HAPI, Tech.VUE,
+    Tech.MONGO, Tech.REDIS, Tech.WEBSOCKETS, Tech.ZEROMQ, Tech.HTML, Tech.CSS],
   client: {
     name: 'University of Notre Dame',
     link: 'https://www.nd.edu/'
@@ -47,8 +47,8 @@ projects.push({
     start: new Date(2017, 0),
     end: undefined
   },
-  type: [type.FEATURED, type.SINGLE, type.SMALL, type.OPENSOURCE],
-  technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE],
+  type: [Type.FEATURED, Type.SINGLE, Type.SMALL, Type.OPENSOURCE],
+  technologies: [Tech.JAVASCRIPT, Tech.ES6, Tech.NODE],
   description: `Collection of useful modules/utilities that can be used in NODE and in browser.
     Library is published on npm. For more information on library visit npm/github page.`,
   duties: 'Creator of library',
@@ -67,8 +67,8 @@ projects.push({
     start: new Date(2017, 0),
     end: new Date(2017, 2)
   },
-  type: [type.SINGLE, type.SMALL, type.OPENSOURCE],
-  technologies: [tech.JAVASCRIPT],
+  type: [Type.SINGLE, Type.SMALL, Type.OPENSOURCE],
+  technologies: [Tech.JAVASCRIPT],
   description: `Small wrapper around matchMedia to easily react on changes
     in page layout. Library is published on npm.`,
   duties: 'Creator of library',
@@ -86,9 +86,9 @@ projects.push({
     start: new Date(2016, 10),
     end: new Date(2016, 7)
   },
-  type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.ES6, tech.NODE,
-    tech.HAPI, tech.VUE, tech.MONGO],
+  type: [Type.TEAM, Type.MEDIUM, Type.FULLSTACK],
+  technologies: [Tech.JAVASCRIPT, Tech.ES6, Tech.NODE,
+    Tech.HAPI, Tech.VUE, Tech.MONGO],
   client: {
     name: 'Manas',
     link: 'http://www.manas.hr/'
@@ -109,9 +109,9 @@ projects.push({
     start: new Date(2016, 6),
     end: new Date(2017, 3)
   },
-  type: [type.TEAM, type.LARGE, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.MYSQL, tech.ADONET,
-    tech.HTML, tech.CSS],
+  type: [Type.TEAM, Type.LARGE, Type.FULLSTACK, Type.FREELANCE],
+  technologies: [Tech.JAVASCRIPT, Tech.ANGULAR1, Tech.MYSQL, Tech.ADONET,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Ad Kontrol',
     link: 'http://adkontrol.com/'
@@ -135,9 +135,9 @@ projects.push({
     start: new Date(2015, 8),
     end: new Date(2016, 7)
   },
-  type: [type.FEATURED, type.TEAM, type.LARGE, type.FRONTEND],
-  technologies: [tech.JAVASCRIPT, tech.ES6, tech.ANGULAR1, tech.HTML,
-    tech.CSS],
+  type: [Type.FEATURED, Type.TEAM, Type.LARGE, Type.FRONTEND],
+  technologies: [Tech.JAVASCRIPT, Tech.ES6, Tech.ANGULAR1, Tech.HTML,
+    Tech.CSS],
   client: {
     name: 'Quiet Stream Financial',
     link: 'https://www.quietstreamfinancial.com/'
@@ -163,9 +163,9 @@ projects.push({
     start: new Date(2015, 4),
     end: new Date(2015, 6)
   },
-  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.PHP, tech.WORDPRESS,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.SMALL, Type.FRONTEND, Type.FREELANCE],
+  technologies: [Tech.JAVASCRIPT, Tech.JQUERY, Tech.PHP, Tech.WORDPRESS,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Yellowdot Group',
     link: 'http://yellowdotgroup.com/'
@@ -187,9 +187,9 @@ projects.push({
     start: new Date(2015, 3),
     end: new Date(2015, 3)
   },
-  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.PHP, tech.WORDPRESS,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.SMALL, Type.FRONTEND, Type.FREELANCE],
+  technologies: [Tech.JAVASCRIPT, Tech.JQUERY, Tech.PHP, Tech.WORDPRESS,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Yellowdot Group',
     link: 'http://yellowdotgroup.com/'
@@ -210,9 +210,9 @@ projects.push({
     start: new Date(2015, 2),
     end: new Date(2015, 2)
   },
-  type: [type.SINGLE, type.SMALL, type.FRONTEND, type.FREELANCE],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.PHP, tech.WORDPRESS,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.SMALL, Type.FRONTEND, Type.FREELANCE],
+  technologies: [Tech.JAVASCRIPT, Tech.JQUERY, Tech.PHP, Tech.WORDPRESS,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Yellowdot Group',
     link: 'http://yellowdotgroup.com/'
@@ -233,9 +233,9 @@ projects.push({
     start: new Date(2015, 8),
     end: new Date(2017, 2)
   },
-  type: [type.FEATURED, type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
-    tech.HTML, tech.CSS],
+  type: [Type.FEATURED, Type.SINGLE, Type.LARGE, Type.FULLSTACK, Type.FREELANCE],
+  technologies: [Tech.CSHARP, Tech.JAVASCRIPT, Tech.JQUERY, Tech.MSSQL, Tech.ADONET,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
@@ -262,9 +262,9 @@ projects.push({
     start: new Date(2015, 8),
     end: new Date(2015, 11)
   },
-  type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.SMALL, Type.FULLSTACK, Type.FREELANCE],
+  technologies: [Tech.CSHARP, Tech.JAVASCRIPT, Tech.JQUERY, Tech.MSSQL, Tech.ADONET,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
@@ -285,9 +285,9 @@ projects.push({
     start: new Date(2015, 8),
     end: new Date(2015, 9)
   },
-  type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.SMALL, Type.FULLSTACK, Type.FREELANCE],
+  technologies: [Tech.CSHARP, Tech.JAVASCRIPT, Tech.JQUERY, Tech.MSSQL, Tech.ADONET,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
@@ -308,9 +308,9 @@ projects.push({
     start: new Date(2016, 0),
     end: new Date(2015, 9)
   },
-  type: [type.SINGLE, type.SMALL, type.FULLSTACK, type.FREELANCE],
-  technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.SMALL, Type.FULLSTACK, Type.FREELANCE],
+  technologies: [Tech.CSHARP, Tech.JAVASCRIPT, Tech.JQUERY, Tech.MSSQL, Tech.ADONET,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
@@ -330,8 +330,8 @@ projects.push({
     start: new Date(2014, 10),
     end: new Date(2015, 3)
   },
-  type: [type.SINGLE, type.OPENSOURCE, type.SMALL],
-  technologies: [tech.JAVASCRIPT, tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.OPENSOURCE, Type.SMALL],
+  technologies: [Tech.JAVASCRIPT, Tech.HTML, Tech.CSS],
   description: 'Hobby project. Development of HTML/JS games',
   duties: 'Creator'
 });
@@ -346,9 +346,9 @@ projects.push({
     start: new Date(2014, 7),
     end: new Date(2015, 8)
   },
-  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.CSHARP, tech.MSSQL,
-    tech.ELASTICSEARCH, tech.ENTITYFRAMEWORK, tech.HTML, tech.CSS],
+  type: [Type.FEATURED, Type.TEAM, Type.LARGE, Type.FULLSTACK],
+  technologies: [Tech.JAVASCRIPT, Tech.CSHARP, Tech.MSSQL,
+    Tech.ELASTICSEARCH, Tech.ENTITYFRAMEWORK, Tech.HTML, Tech.CSS],
   client: {
     name: 'Ellevation Education',
     link: 'http://ellevationeducation.com/'
@@ -374,9 +374,9 @@ projects.push({
     start: new Date(2014, 0),
     end: new Date(2014, 7)
   },
-  type: [type.FEATURED, type.TEAM, type.LARGE, type.SERVERSIDE],
-  technologies: [tech.CSHARP, tech.MSSQL,
-    tech.ENTITYFRAMEWORK, tech.WPF],
+  type: [Type.FEATURED, Type.TEAM, Type.LARGE, Type.SERVERSIDE],
+  technologies: [Tech.CSHARP, Tech.MSSQL,
+    Tech.ENTITYFRAMEWORK, Tech.WPF],
   client: {
     name: 'Zagreb Municipal Transit System',
     link: 'http://www.zet.hr/'
@@ -400,9 +400,9 @@ projects.push({
     start: new Date(2013, 9),
     end: new Date(2013, 11)
   },
-  type: [type.SINGLE, type.MEDIUM, type.FRONTEND],
-  technologies: [tech.JAVASCRIPT, tech.ANGULAR1, tech.PHONEGAP,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.MEDIUM, Type.FRONTEND],
+  technologies: [Tech.JAVASCRIPT, Tech.ANGULAR1, Tech.PHONEGAP,
+    Tech.HTML, Tech.CSS],
   description: `Development of the JavaScript angular mobile application
     that allows NetGiro payment system clients to explore their account
     on mobile device`,
@@ -423,8 +423,8 @@ projects.push({
     start: new Date(2013, 1),
     end: new Date(2013, 3)
   },
-  type: [type.TEAM, type.MEDIUM, type.FULLSTACK],
-  technologies: [tech.PHP, tech.JAVASCRIPT, tech.JQUERY, tech.HTML, tech.CSS],
+  type: [Type.TEAM, Type.MEDIUM, Type.FULLSTACK],
+  technologies: [Tech.PHP, Tech.JAVASCRIPT, Tech.JQUERY, Tech.HTML, Tech.CSS],
   description: `Development of web application and integration with existing
     iLab site. Application is conceived as a link between Harvard students and
     advisors. Advisors have options to login to system and to manage their
@@ -448,9 +448,9 @@ projects.push({
     start: new Date(2012, 8),
     end: new Date(2013, 8)
   },
-  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.BACKBONE, tech.PHONEGAP,
-    tech.HTML, tech.CSS],
+  type: [Type.FEATURED, Type.TEAM, Type.LARGE, Type.FULLSTACK],
+  technologies: [Tech.JAVASCRIPT, Tech.BACKBONE, Tech.PHONEGAP,
+    Tech.HTML, Tech.CSS],
   client: {
     name: 'ERT (past PHT)',
     link: 'https://www.ert.com/'
@@ -476,8 +476,8 @@ projects.push({
     start: new Date(2012, 2),
     end: new Date(2012, 3)
   },
-  type: [type.SINGLE, type.SMALL],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY],
+  type: [Type.SINGLE, Type.SMALL],
+  technologies: [Tech.JAVASCRIPT, Tech.JQUERY],
   description: 'Hobby project. Development of HTML/JS games',
   client: {
     name: 'Frontier Strategy Group',
@@ -496,9 +496,9 @@ projects.push({
     start: new Date(2011, 10),
     end: new Date(2012, 8)
   },
-  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
-  technologies: [tech.JAVASCRIPT, tech.JQUERY, tech.CSHARP,
-    tech.MSSQL, tech.ADONET, tech.HTML, tech.CSS],
+  type: [Type.FEATURED, Type.TEAM, Type.LARGE, Type.FULLSTACK],
+  technologies: [Tech.JAVASCRIPT, Tech.JQUERY, Tech.CSHARP,
+    Tech.MSSQL, Tech.ADONET, Tech.HTML, Tech.CSS],
   client: {
     name: 'Frontier Strategy Group',
     link: 'http://frontierstrategygroup.com/'
@@ -519,8 +519,8 @@ projects.push({
     start: new Date(2011, 9),
     end: new Date(2011, 10)
   },
-  type: [type.SINGLE, type.SMALL, type.SERVERSIDE],
-  technologies: [tech.CSHARP, tech.MSSQL, tech.ADONET],
+  type: [Type.SINGLE, Type.SMALL, Type.SERVERSIDE],
+  technologies: [Tech.CSHARP, Tech.MSSQL, Tech.ADONET],
   client: {
     name: 'MANAS',
     link: 'http://www.manas.hr/'
@@ -539,9 +539,9 @@ projects.push({
     start: new Date(2011, 1),
     end: new Date(2011, 7)
   },
-  type: [type.SINGLE, type.MEDIUM, type.FULLSTACK],
-  technologies: [tech.CSHARP, tech.ADONET, tech.JAVASCRIPT,
-    tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.MEDIUM, Type.FULLSTACK],
+  technologies: [Tech.CSHARP, Tech.ADONET, Tech.JAVASCRIPT,
+    Tech.HTML, Tech.CSS],
   description: `Virtual navigation application is a part of my Master degree
     thesis. Application is consist of two parts: Publicly accessible web pages
     for viewing virtual navigations and administration web pages for creating
@@ -559,8 +559,8 @@ projects.push({
     start: new Date(2009, 4),
     end: new Date(2009, 8)
   },
-  type: [type.SINGLE, type.MEDIUM],
-  technologies: [tech.PHP, tech.HTML, tech.CSS],
+  type: [Type.SINGLE, Type.MEDIUM],
+  technologies: [Tech.PHP, Tech.HTML, Tech.CSS],
   description: 'Application build as part of my Bachelor degree thesis.'
 });
 

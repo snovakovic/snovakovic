@@ -42,25 +42,25 @@
 
 
 <script>
-  import projects from 'data/projects';
-  import projectType from 'common/projectType';
+  import Projects from 'data/Projects';
+  import ProjectType from 'common/ProjectType';
 
   import Card from './Card.vue';
 
   export default {
     data() {
       return {
-        types: [projectType.FEATURED, projectType.OPENSOURCE,
-          projectType.FREELANCE, projectType.TEAM, projectType.FULLSTACK]
+        types: [ProjectType.FEATURED, ProjectType.OPENSOURCE,
+          ProjectType.FREELANCE, ProjectType.TEAM, ProjectType.FULLSTACK]
       };
     },
     computed: {
-      total() { return projects.length; },
+      total() { return Projects.length; },
       filter() { return this.$store.state.projects.filter; }
     },
     methods: {
       countByType(type) {
-        return projects.filter((p) => p.type.some((t) => t === type)).length;
+        return Projects.filter((p) => p.type.some((t) => t === type)).length;
       },
       onTypeSelect(type) {
         if (type === this.filter.type) {
