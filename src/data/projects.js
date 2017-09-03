@@ -1,5 +1,5 @@
-import type from './projectType';
-import tech from './technology';
+import type from 'common/projectType';
+import tech from 'common/technology';
 
 
 const projects = [];

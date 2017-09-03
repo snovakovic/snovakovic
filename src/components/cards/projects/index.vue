@@ -34,7 +34,7 @@
 
 
 <script>
-  import projects from 'common/projects';
+  import projects from 'data/projects';
   import scrollTo from 'common/scrollTo';
 
   import Card from '../Card.vue';

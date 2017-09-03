@@ -25,7 +25,8 @@ module.exports = {
     alias: {
       vue$: 'vue/dist/vue.esm.js',
       styles: Path.join(internals.path.src, 'styles'),
-      common: Path.join(internals.path.src, 'common')
+      common: Path.join(internals.path.src, 'common'),
+      data: Path.join(internals.path.src, 'data')
     }
   },
   devServer: {

@@ -42,7 +42,7 @@
 
 
 <script>
-  import projects from 'common/projects';
+  import projects from 'data/projects';
   import projectType from 'common/projectType';
 
   import Card from './Card.vue';

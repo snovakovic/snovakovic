@@ -50,7 +50,7 @@
 
 
 <script>
-  import projects from 'common/projects';
+  import projects from 'data/projects';
   import tech from 'common/technology';
 
   import Card from './Card.vue';
