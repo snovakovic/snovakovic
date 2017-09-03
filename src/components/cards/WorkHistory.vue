@@ -3,23 +3,24 @@
     <h2>Work History</h2>
     <div class="item">
       <h3 class="title">
-        Senior Software Developer -
+        Sr. Software Developer <i class="fa fa-circle"></i>
         <span class="company"><a href="https://extensionengine.com/">ExtensionEngine</a></span>
-        <span class="year">(August 2014 - Present)</span>
+        <span class="year">Aug 2014 - Present</span>
       </h3>
       <p>
         Back to roots at ExtensionEngine but this time in new role as Senior Software Developer.
-        Now I'm no longer the one who is learning I'm the one who is passing knowlage, expiriance and mentoring to junior team members.
-        Swithced my focus from Full Stack C#(.NET) development to Full Stack JavaScript development which become my main focus and passion.
-        Worked on multiple interesting international projects with main focus on projects for Ellevation Education,
-        QSF and the current project for University of NotreDame. Take a look at projects sections for more information on them.
+        Now I'm no longer the one who is learning I'm the one who is passing knowlage,
+        expiriance and mentoring to junior team members.Swithced my focus from
+        Full Stack C#(.NET) development to Full Stack JavaScript development which become
+        my main focus and passion.Worked on multiple interesting international projects with main
+        focus on projects for Ellevation Education,QSF and the current project for University of NotreDame. Take a look at projects sections for more information on them.
       </p>
     </div>
     <div class="item">
       <h3 class="title">
-        Software Developer -
+        Software Developer <i class="fa fa-circle"></i>
         <span class="company"><a href="http://www.king-ict.hr/">King ICT</a></span>
-        <span class="year">(January 2014 - August 2014)</span>
+        <span class="year">Jan 2014 - Aug 2014</span>
       </h3>
       <p>
         Relocated to Zagreb to work for one of bigest Croatian IT companies.
@@ -29,9 +30,9 @@
     </div>
     <div class="item">
       <h3 class="title">
-        Junior Software Developer -
+        Jr. Software Developer <i class="fa fa-circle"></i>
         <span class="company"><a href="https://extensionengine.com/">ExtensionEngine</a></span>
-        <span class="year">(September 2011 – January 2014)</span>
+        <span class="year">Sept 2011 – Jan 2014</span>
       </h3>
       <p>
         Fresh from collage thrown in fire of large international projects,
@@ -54,11 +55,21 @@
     margin-bottom: 5px;
     line-height: 1.5;
 
+    .fa-circle {
+      font-size: 6px;
+      top: -2px;
+    }
+
     .company a,
     .year {
       color: $light-txt-color;
       font-weight: normal;
       font-size: 15px;
+    }
+
+    .year {
+      float: right;
+      margin-top: 1px;
     }
   }
 </style>

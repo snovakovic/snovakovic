@@ -36,6 +36,10 @@ h1, h2 {
   color: $header-color;
 }
 
+i {
+  position: relative;
+}
+
 blockquote {
   padding: 10px 20px;
   margin: 0;
@@ -59,6 +63,7 @@ a {
     color: $alt-brand-color;
   }
 }
+
 
 .content {
   max-width: $content-max-width;
