@@ -11,14 +11,14 @@ export default [{
     to be used on new projects, to mentor junior team members, to ensure code
     quality that is enforced through required code reviews and off course, to
     develop cool new features. Main projects:
-    <ul>
+    <ul class="in-content">
       <li>A dashboard for Notre Dame online Master’s Degree program.</li>
       <li>A document management system for QuietStream Financial.</li>
       <li>A platform for English language learners for Ellevation Education.</li>
     </ul>`
 }, {
-  position: 'SOFTWARE ENTREPRENEUR',
-  period: 'JAN 2015 – NOV 2016',
+  position: 'Software Entrepreneur',
+  period: 'Jan 2015 - Nov 2016',
   company: { name: 'Freelance' },
   summary: `
     <ul>
@@ -41,7 +41,7 @@ export default [{
     related services.`
 }, {
   position: 'Jr. Software Developer',
-  period: 'Sept 2011 – Jan 2014',
+  period: 'Sept 2011 - Jan 2014',
   company: extensionEngine,
   summary: `Fresh from collage and was thrown in fire of large international projects,
     learned a lot in the first 2 years of my professional career. The most

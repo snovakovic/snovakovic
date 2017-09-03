@@ -16,6 +16,19 @@
   </card>
 </template>
 
+<style lang="scss">
+  .work-history {
+    p { margin-top: 8px; }
+
+    ul {
+      margin-top: 0px;
+
+      &.in-content {
+        margin-top: 8px;
+      }
+    }
+  }
+</style>
 
 <style lang="scss" scoped>
   @import '~styles/constants';
@@ -31,6 +44,7 @@
       top: -2px;
     }
 
+    .company,
     .company a,
     .year {
       color: $light-txt-color;
