@@ -233,7 +233,7 @@ projects.push({
     start: new Date(2015, 8),
     end: new Date(2017, 2)
   },
-  type: [type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
+  type: [type.FEATURED, type.SINGLE, type.LARGE, type.FULLSTACK, type.FREELANCE],
   technologies: [tech.CSHARP, tech.JAVASCRIPT, tech.JQUERY, tech.MSSQL, tech.ADONET,
     tech.HTML, tech.CSS],
   client: {
@@ -346,7 +346,7 @@ projects.push({
     start: new Date(2014, 7),
     end: new Date(2015, 8)
   },
-  type: [type.TEAM, type.LARGE, type.FULLSTACK],
+  type: [type.FEATURED, type.TEAM, type.LARGE, type.FULLSTACK],
   technologies: [tech.JAVASCRIPT, tech.CSHARP, tech.MSSQL,
     tech.ELASTICSEARCH, tech.ENTITYFRAMEWORK, tech.HTML, tech.CSS],
   client: {
