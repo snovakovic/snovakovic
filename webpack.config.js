@@ -26,7 +26,8 @@ module.exports = {
       vue$: 'vue/dist/vue.esm.js',
       styles: Path.join(internals.path.src, 'styles'),
       common: Path.join(internals.path.src, 'common'),
-      data: Path.join(internals.path.src, 'data')
+      data: Path.join(internals.path.src, 'data'),
+      dom: Path.join(internals.path.src, 'dom')
     }
   },
   devServer: {

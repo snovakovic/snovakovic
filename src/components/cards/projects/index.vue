@@ -35,7 +35,7 @@
 
 <script>
   import Projects from 'data/Projects';
-  import scrollTo from 'common/scrollTo';
+  import scrollTo from 'dom/scrollTo';
 
   import Card from '../Card.vue';
   import FilterTooltip from './FilterTooltip.vue';
