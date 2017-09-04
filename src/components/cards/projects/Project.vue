@@ -28,15 +28,15 @@
           <span class="group">Link:</span>
           <a :href="project.link">{{ project.link }}</a>
         </p>
-        <p class="type">
-          <span class="group">Type:</span>
+        <p>
+          <span class="group group-tag">Type:</span>
           <span class="tag" v-for="type in project.type" :key="type"
             :class="{ active: type === typeFilter }"
             title="Click to apply this filter"
             @click="setTypeFilter(type)">{{ type }}</span>
         </p>
         <p>
-          <span class="group">Technologies:</span>
+          <span class="group group-tag">Technologies:</span>
           <span class="tag" v-for="technology in project.technologies" :key="technology"
             :class="{ active: technology === technologyFilter }"
             title="Click to apply this filter"
@@ -50,6 +50,7 @@
 
 <style lang="scss" scoped>
   @import '~styles/constants';
+  @import '~styles/mixins';
 
   .title {
     text-align: center;
@@ -70,15 +71,17 @@
   }
 
   .info {
-    padding: 10px 30px 20px 30px;
+    padding: 10px 10px 20px 10px;
 
     p { color: $txt-color; }
     .tag { cursor: pointer; }
 
     .breakdown {
       text-align: left;
+
       p { margin: 7.5px 0; }
       p.type { margin: 15px 0 10px 0; }
+      p > a { margin-left: -1px; }
     }
 
     .group {
@@ -89,6 +92,17 @@
       margin-right: 5px;
       display: inline-block;
       min-width: 52px;
+
+      &.group-tag {
+        min-width: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @include sm-screen {
+    .info {
+      padding: 10px 30px 20px 30px;
     }
   }
 </style>
