@@ -6,7 +6,7 @@ const projects = [];
 
 projects.push({
   title: 'University of Notre Dame',
-  summary: 'Learner dashboard for Notre Dame online master’s degree program',
+  summary: 'Learner dashboard for Notre Dame online Master’s Degree program',
   images: {
     folder: 'notre-dame',
     total: 6,
@@ -23,9 +23,8 @@ projects.push({
     name: 'University of Notre Dame',
     link: 'https://www.nd.edu/'
   },
-  description: `Developing of learner dashboard for Notre Dame online master’s degree program.
-    Learner dashboard allows easy collaboration between students and professors through chat,
-    sharing of resources, events and live notifications.
+  description: `Learner dashboard allows easy collaboration between students and professors
+    through chat, sharing of resources, events and live notifications.
     All content on dashboard is live updated with WebSockets and immediately available to students.
     Center piece of learner dashboard is timeline that combines all student relevant data in
     chronological order. Dashboard is internationalized and WCAG 2.0 accessible.`,
@@ -49,14 +48,14 @@ projects.push({
   type: [Type.FEATURED, Type.SINGLE, Type.SMALL, Type.OPENSOURCE],
   technologies: [Tech.JAVASCRIPT, Tech.ES6, Tech.NODE],
   description: `Collection of useful modules/utilities that can be used in NODE and in browser.
-    Library is published on npm. For more information on library visit npm/github page.`,
+    Library is published on npm where you can find more information on it.`,
   duties: 'Creator of library',
   link: 'https://www.npmjs.com/package/js-flock'
 });
 
 projects.push({
   title: 'Wiggle',
-  summary: 'Media query change listener',
+  summary: 'Media Queries Change Listener',
   images: {
     folder: 'wiggle',
     total: 1,
@@ -69,7 +68,7 @@ projects.push({
   type: [Type.SINGLE, Type.SMALL, Type.OPENSOURCE],
   technologies: [Tech.JAVASCRIPT],
   description: `Small wrapper around matchMedia to easily react on changes
-    in page layout. Library is published on npm.`,
+    in page layout. Library is published on npm where you can find more information on it.`,
   duties: 'Creator of library',
   link: 'https://www.npmjs.com/package/wiggle.js'
 });
@@ -141,13 +140,11 @@ projects.push({
     name: 'Quiet Stream Financial',
     link: 'https://www.quietstreamfinancial.com/'
   },
-  description: `Worked in one of many teams inside of QSF. Our team main focus
-    was on developing Document Management System.
-    Document Management System is very similar to online version of Dropbox
-    combined with specific business logic and integrated with other
-    parts of applications`,
+  description: `Worked in one of many teams inside of QSF with main focus on developing
+    Document Management System. The system is very similar to online version of Dropbox combined
+    with specific QSF business logic and integrated with internal QSF applications.`,
   duties: `Working directly with client own development team writing high
-    quality code with required code reviews and unit testing`
+    quality code with required code reviews and unit testing.`
 });
 
 projects.push({
@@ -223,6 +220,7 @@ projects.push({
 
 projects.push({
   title: 'OpenLooq',
+  summary: 'Platform for selling and buying data',
   images: {
     folder: 'openlooq',
     total: 6,
@@ -239,16 +237,13 @@ projects.push({
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
   },
-  description: `Developing platform for buying/selling information.
-    Platform allows administrator to define any data template
-    (People, Places, Companies, etc) with following validation that’s used by
-    platform seller to upload relevant data. Platform allows buyer to search
-    and buy data using build payment system (Authorize.NET).
-    you can access it on on development server
-    <a href="'http://openlooq.bostonwebdeveloper.com/">development server</a>`,
-  duties: `Only developer working on platform from ground up.
-    Development of platform have been stopped after 6months of development
-    due to financial reasons`
+  description: `Platform allows administrator to define any data template
+    (People, Places, Companies...) and to define custom validations for each of template.
+    Sellers can upload data by manually typing information in platform or by uploading CSV
+    file with data. Each data upload are auto validated based on define validation in template.
+    Buyers can search for data and buy it using build it payment system (Authorize.NET).`,
+  duties: `Only developer working on platform from ground up. Development of platform have been
+    stopped after 6 months of development due to financial reasons.`
 });
 
 projects.push({
