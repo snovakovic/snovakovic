@@ -79,6 +79,7 @@
 
 <script>
   import WorkHistory from 'data/WorkHistory';
+
   import Card from './Card.vue';
 
   export default {

@@ -2,7 +2,7 @@ import toEnum from 'js-flock/toEnum';
 
 export default toEnum({
   JAVASCRIPT: 'JavaScript',
-  ES6: 'ES6 / ES-2015',
+  ES6: 'ES6',
   NODE: 'NODE',
   HAPI: 'Hapi.js',
   EXPRESS: 'Express',
