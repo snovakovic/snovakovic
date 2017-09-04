@@ -29,10 +29,9 @@ projects.push({
     All content on dashboard is live updated with WebSockets and immediately available to students.
     Center piece of learner dashboard is timeline that combines all student relevant data in
     chronological order. Dashboard is internationalized and WCAG 2.0 accessible.`,
-  duties: `As senior developer my role was to make decisions on technologies
-    to be used on project, to mentor junior team members and to ensure code
-    quality that is enforced through required code reviews and off course to
-    develop cool new features.`
+  duties: `As a senior developer my role was to make decisions on technologies
+    to be used on the project, to guide junior team member and to ensure code
+    quality that is enforced through required code reviews.`
 });
 
 projects.push({
