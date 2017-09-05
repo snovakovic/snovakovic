@@ -24,9 +24,9 @@
         <p v-if="project.duties">
           <span class="group">Duties:</span><span>{{ project.duties }}</span>
         </p>
-        <p v-if="project.link">
+        <p v-if="project.link" class="truncate">
           <span class="group">Link:</span>
-          <a :href="project.link">{{ project.link }}</a>
+          <a :href="project.link" class="">{{ project.link }}</a>
         </p>
         <p>
           <span class="group group-tag">Type:</span>
