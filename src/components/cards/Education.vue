@@ -62,7 +62,7 @@
           period: '2006-2009',
           institution: FESB
         }, {
-          title: 'Computer Tehnician for Engineering',
+          title: 'Computer Technician for Engineering',
           period: '2002-2006',
           institution: {
             name: 'Technical High School of Split',

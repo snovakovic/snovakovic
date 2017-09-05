@@ -20,8 +20,8 @@
       <b>Do you want to see my work in action?</b> Take a peek at my
       <a :href="profile.github">github</a> account, my open source projects on
       <a :href="profile.npm">npm</a> or at any of my contributions to open source projects
-      which became my passion in recent time. I belive it's time to give back to community after
-      all these years of using greate open source projects in every day development.
+      which became my passion in recent time. I believe it's time to give back to community after
+      all these years of using great open source projects in every day development.
     </p>
   </card>
 </template>
