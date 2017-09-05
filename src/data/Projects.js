@@ -6,7 +6,7 @@ const projects = [];
 
 projects.push({
   title: 'University of Notre Dame',
-  summary: 'Learner dashboard for Notre Dame online Master’s Degree program',
+  summary: 'Learner Dashboard for Notre Dame Online Master’s Degree Program',
   images: {
     folder: 'notre-dame',
     total: 6,
@@ -35,7 +35,7 @@ projects.push({
 
 projects.push({
   title: 'js-flock',
-  summary: 'JS utility methods for NODE and Browser',
+  summary: 'JS Utility Methods for NODE and Browser',
   images: {
     folder: 'js-flock',
     total: 1,
@@ -97,7 +97,7 @@ projects.push({
 
 projects.push({
   title: 'Ad Kontrol',
-  summary: 'Logging occurrences of advertisements on radio and television',
+  summary: 'Logging Occurrences of Advertisements on Radio and Television',
   images: {
     folder: 'ad-kontrol',
     total: 4,
@@ -149,7 +149,7 @@ projects.push({
 
 projects.push({
   title: 'The CHS Group',
-  summary: 'Custom WordPress site',
+  summary: 'Custom WordPress Site',
   images: {
     folder: 'chs-group',
     total: 4,
@@ -173,7 +173,7 @@ projects.push({
 
 projects.push({
   title: 'YellowDot',
-  summary: 'Updates on WordPress site',
+  summary: 'Updates on WordPress Site',
   images: {
     folder: 'yellowdot',
     total: 2,
@@ -196,7 +196,7 @@ projects.push({
 
 projects.push({
   title: 'Stella and Ruby',
-  summary: 'Custom WordPress site',
+  summary: 'Custom WordPress Site',
   images: {
     folder: 'stella-and-ruby',
     total: 2,
@@ -220,7 +220,7 @@ projects.push({
 
 projects.push({
   title: 'OpenLooq',
-  summary: 'Platform for selling and buying data',
+  summary: 'Platform for Selling and Buying Data',
   images: {
     folder: 'openlooq',
     total: 6,
@@ -314,7 +314,7 @@ projects.push({
 
 projects.push({
   title: 'Playground',
-  summary: 'Time for fun with hobby projects',
+  summary: 'Fun Time with Hobby Projects',
   images: {
     folder: 'playground',
     total: 5,
@@ -332,6 +332,7 @@ projects.push({
 
 projects.push({
   title: 'Ellevation Education',
+  summary: 'Platform for ELL Learners and Educators',
   images: {
     folder: 'ellevation',
     total: 4
@@ -359,7 +360,7 @@ projects.push({
 
 projects.push({
   title: 'Zagreb Municipal Transit System',
-  summary: 'New business application for selling e-tickets',
+  summary: 'Business App for Selling Transportation Services',
   images: {
     folder: 'zet',
     total: 0
@@ -375,13 +376,11 @@ projects.push({
     name: 'Zagreb Municipal Transit System',
     link: 'http://www.zet.hr/'
   },
-  description: `Development of new business application for
-    Zagreb Municipal Transit System or ZET.
-    WPF Application is used by the employees of the ZET to sold E-tickets and
-    other public transportation related services.
-    Development of the SOAP based service used by new application
+  description: `Development of new business application for Zagreb Municipal Transit System or ZET.
+    WPF Application is used by the employees of the ZET to sold E-tickets and other public
+    transportation related services. Development of the SOAP based service used by new application
     and by existing applications in kiosks around Zagreb`,
-  duties: 'Developing of new features, deploying to production and fixing production issues'
+  duties: 'Developing of new features, deploying to production and fixing issues in production'
 });
 
 projects.push({
@@ -433,7 +432,7 @@ projects.push({
 
 projects.push({
   title: 'PHT',
-  summary: 'LogPad app for clinical research',
+  summary: 'LogPad App for Clinical Research',
   images: {
     folder: 'pht',
     total: 6
@@ -497,9 +496,9 @@ projects.push({
     name: 'Frontier Strategy Group',
     link: 'http://frontierstrategygroup.com/'
   },
-  description: `Development of web portal for accurate timely and business
-    critical data. FSG was my first actual big project after graduating from
-    collage and a month of training in company on smaller projects`
+  description: `Development of web portal for accurate timely and business critical data.
+    FSG was my first big project after graduating from collage and a month of training
+    in company on smaller projects`
 });
 
 projects.push({
