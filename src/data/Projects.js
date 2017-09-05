@@ -464,7 +464,8 @@ projects.push({
   },
   type: [Type.SINGLE, Type.SMALL],
   technologies: [Tech.JAVASCRIPT, Tech.JQUERY],
-  description: 'Hobby project. Development of HTML/JS games',
+  description: `Developing of SalesForce widget to access client own system options
+    from inside of Sales Force`,
   client: {
     name: 'Frontier Strategy Group',
     link: 'http://frontierstrategygroup.com/'
