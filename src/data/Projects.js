@@ -49,7 +49,7 @@ projects.push({
   technologies: [Tech.JAVASCRIPT, Tech.ES6, Tech.NODE],
   description: `Collection of useful modules/utilities that can be used in NODE and in browser.
     Library is published on npm where you can find more information on it.`,
-  duties: 'Creator of library',
+  duties: 'Creator of the library.',
   link: 'https://www.npmjs.com/package/js-flock'
 });
 
@@ -69,7 +69,7 @@ projects.push({
   technologies: [Tech.JAVASCRIPT],
   description: `Small wrapper around matchMedia to easily react on changes
     in page layout. Library is published on npm where you can find more information on it.`,
-  duties: 'Creator of library',
+  duties: 'Creator of the library.',
   link: 'https://www.npmjs.com/package/wiggle.js'
 });
 
@@ -91,8 +91,7 @@ projects.push({
     name: 'Manas',
     link: 'http://www.manas.hr/'
   },
-  description: `Creating platform for managing hotel/accommodation
-    reviews in one place`
+  description: 'Creating platform for managing accommodation reviews in one place.'
 });
 
 projects.push({
@@ -118,8 +117,8 @@ projects.push({
     on-air occurrences of pre-recorded advertisements on radio and television
     to produce high-value reporting products for advertisers, agencies,
     media houses, and regulators.`,
-  duties: `Developing new features for adKontol with main focus on
-    new reporting system`,
+  duties: `Developing new features for AdKontol with main focus on
+    new reporting system.`,
   link: 'http://adkontrol.com/'
 });
 
@@ -166,8 +165,7 @@ projects.push({
     name: 'Yellowdot Group',
     link: 'http://yellowdotgroup.com/'
   },
-  description: `Development of WordPress site with custom design
-    for NYC Renovation Company.`,
+  description: 'Development of custom designed WordPress site.',
   link: 'http://thechsgroup.us/'
 });
 
@@ -190,7 +188,7 @@ projects.push({
     name: 'Yellowdot Group',
     link: 'http://yellowdotgroup.com/'
   },
-  description: 'Updates of existing Wordpress theme for Yellowdot Group.',
+  description: 'Updates of existing WordPress theme for Yellowdot Group.',
   link: 'http://yellowdotgroup.com/'
 });
 
@@ -213,8 +211,7 @@ projects.push({
     name: 'Yellowdot Group',
     link: 'http://yellowdotgroup.com/'
   },
-  description: `Development of WordPress site with custom design
-    for Stella & Ruby jewelry.`,
+  description: 'Development of custom designed WordPress site.',
   link: 'http://stellaandruby.com/'
 });
 
@@ -309,7 +306,7 @@ projects.push({
     name: 'Boston Web Developer',
     link: 'http://www.bostonwebdeveloper.com/'
   },
-  description: 'Updates and improvements to custom made C# .NET CMS System'
+  description: 'Updates and improvements to custom made C# .NET CMS System.'
 });
 
 projects.push({
@@ -326,8 +323,7 @@ projects.push({
   },
   type: [Type.SINGLE, Type.OPENSOURCE, Type.SMALL],
   technologies: [Tech.JAVASCRIPT, Tech.HTML, Tech.CSS],
-  description: 'Hobby project. Development of HTML/JS games',
-  duties: 'Creator'
+  description: 'Development of HTML/JS games as a hobby.'
 });
 
 projects.push({
@@ -353,7 +349,7 @@ projects.push({
     English Learners they serve. Ellevation offers educators a detailed look at
     English Learners. Using Ellevation, educators can review a student's
     proficiency level, accommodations and more, and monitor current,
-    reclassified, and exited students`,
+    reclassified, and exited students.`,
   duties: 'Working directly with client own development team and management.',
   link: 'https://www.npmjs.com/package/wiggle.js'
 });
@@ -379,12 +375,13 @@ projects.push({
   description: `Development of new business application for Zagreb Municipal Transit System or ZET.
     WPF Application is used by the employees of the ZET to sold E-tickets and other public
     transportation related services. Development of the SOAP based service used by new application
-    and by existing applications in kiosks around Zagreb`,
-  duties: 'Developing of new features, deploying to production and fixing issues in production'
+    and by existing applications in kiosks around Zagreb.`,
+  duties: 'Developing of new features, deploying to production and fixing issues in production.'
 });
 
 projects.push({
   title: 'Netgiro',
+  summary: 'PhoneGap mobile application',
   images: {
     folder: 'netgiro',
     total: 5
@@ -396,9 +393,8 @@ projects.push({
   type: [Type.SINGLE, Type.MEDIUM, Type.FRONTEND],
   technologies: [Tech.JAVASCRIPT, Tech.ANGULAR1, Tech.PHONEGAP,
     Tech.HTML, Tech.CSS],
-  description: `Development of the JavaScript angular mobile application
-    that allows NetGiro payment system clients to explore their account
-    on mobile device`,
+  description: `Development of the JavaScript mobile application for displaying account
+    informations of NetGiro payment system clients.`,
   client: {
     name: 'Program 5',
     link: 'http://program5.hr/'
@@ -407,9 +403,9 @@ projects.push({
 });
 
 projects.push({
-  title: 'Harvard Inovation Lab',
+  title: 'Harvard Innovation Lab',
   images: {
-    folder: 'hardvard-inovation-lab',
+    folder: 'hardvard-innovation-lab',
     total: 6
   },
   period: {
@@ -418,13 +414,10 @@ projects.push({
   },
   type: [Type.TEAM, Type.MEDIUM, Type.FULLSTACK],
   technologies: [Tech.PHP, Tech.JAVASCRIPT, Tech.JQUERY, Tech.HTML, Tech.CSS],
-  description: `Development of web application and integration with existing
-    iLab site. Application is conceived as a link between Harvard students and
-    advisors. Advisors have options to login to system and to manage their
-    profiles. Students have ability to search and to make connection
-    with advisors. `,
+  description: `Development of web application that acts as mediator between Harvard students and
+    advisors. Students can search for and make connection with advisors through platform.`,
   client: {
-    name: 'Harvard Inovation Lab',
+    name: 'Harvard Innovation Lab',
     link: 'http://i-lab.harvard.edu/'
   },
   link: 'http://i-lab.harvard.edu/expert-resourcing/advisor-tool/become_advisor'
@@ -453,9 +446,9 @@ projects.push({
     The LogPad App collects patient-reported and clinician-completed
     questionnaires, and transfers all eSource data to the
     PHT StudyWorks online portal where it can be viewed in real-time
-    by sites and study teams`,
+    by sites and study teams.`,
   duties: `Developing new core features for LogPad App.
-    Writing extensive unit test and documentation`
+    Writing extensive unit test and documentation.`
 });
 
 projects.push({
@@ -498,7 +491,7 @@ projects.push({
   },
   description: `Development of web portal for accurate timely and business critical data.
     FSG was my first big project after graduating from collage and a month of training
-    in company on smaller projects`
+    in company on smaller projects.`
 });
 
 projects.push({
@@ -519,7 +512,7 @@ projects.push({
     link: 'http://www.manas.hr/'
   },
   description: `Design and implementation of REST web service and database
-    for real-estate CMS system`
+    for real-estate CMS system.`
 });
 
 projects.push({
@@ -535,11 +528,10 @@ projects.push({
   type: [Type.SINGLE, Type.MEDIUM, Type.FULLSTACK],
   technologies: [Tech.CSHARP, Tech.ADONET, Tech.JAVASCRIPT,
     Tech.HTML, Tech.CSS],
-  description: `Virtual navigation application is a part of my Master degree
+  description: `Virtual navigation application is a part of my Master's Degree
     thesis. Application is consist of two parts: Publicly accessible web pages
-    for viewing virtual navigations and administration web pages for creating
-    modifing or deleting web navigations.
-    Application is built using 3-tier architecture principles.`
+    for viewing virtual navigations and administration web pages for managing and creating
+    new virtual navigations.`
 });
 
 projects.push({
@@ -554,7 +546,7 @@ projects.push({
   },
   type: [Type.SINGLE, Type.MEDIUM],
   technologies: [Tech.PHP, Tech.HTML, Tech.CSS],
-  description: 'Application build as part of my Bachelor degree thesis.'
+  description: 'Application is build as part of my Bachelor\'s Degree thesis.'
 });
 
 
