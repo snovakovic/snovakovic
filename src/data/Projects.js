@@ -99,7 +99,7 @@ projects.push({
   summary: 'Logging Occurrences of Advertisements on Radio and Television',
   images: {
     folder: 'ad-kontrol',
-    total: 4,
+    total: 5,
     extension: 'png'
   },
   period: {
@@ -373,7 +373,7 @@ projects.push({
     link: 'http://www.zet.hr/'
   },
   description: `Development of new business application for Zagreb Municipal Transit System or ZET.
-    WPF Application is used by the employees of the ZET to sold E-tickets and other public
+    WPF Application is used by the employees of the ZET to sold e-tickets and other public
     transportation related services. Development of the SOAP based service used by new application
     and by existing applications in kiosks around Zagreb.`,
   duties: 'Developing of new features, deploying to production and fixing issues in production.'
