@@ -12,7 +12,7 @@ export default [{
   company: extensionEngine,
   summary: `As a senior developer my key roles are to make decisions on technologies
     to be used on new projects, to mentor junior team members, to ensure code
-    quality that is enforced through required code reviews and off course, to
+    quality that is enforced through required code reviews and of course, to
     develop cool new features. Main projects:
     <ul class="in-content">
       <li>A dashboard for Notre Dame online Master’s Degree program.</li>
@@ -47,9 +47,9 @@ export default [{
   position: 'Jr. Software Developer',
   period: 'Sept 2011 - Jan 2014',
   company: extensionEngine,
-  summary: `Fresh from collage and was thrown in fire of large international projects,
-    learned a lot in the first 2 years of my professional career. The most
-    prominent project form that period was to work in core team for PHT
-    (currently ERT) on development of new LogPad app used by
+  summary: `Fresh from college and was thrown into the fire of large international projects,
+    learned a lot in the first two years of my professional career. The most
+    prominent project from that period was to work in core team for PHT
+    (currently ERT) on the development of new LogPad app used by
     pharmaceutical companies for clinical researches.`
 }];

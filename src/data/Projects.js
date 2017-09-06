@@ -24,10 +24,10 @@ projects.push({
     link: 'https://www.nd.edu/'
   },
   description: `Learner dashboard allows easy collaboration between students and professors
-    through chat, sharing of resources, events and live notifications.
-    All content on dashboard is live updated with WebSockets and immediately available to students.
+    through chat, sharing of resources, events and live notifications. All content on the dashboard
+    is live updated with WebSockets and immediately available to students.
     Center piece of learner dashboard is timeline that combines all student relevant data in
-    chronological order. Dashboard is internationalized and WCAG 2.0 accessible.`,
+    chronological order. The dashboard is internationalized and WCAG 2.0 accessible.`,
   duties: `As a senior developer my role was to make decisions on technologies
     to be used on the project, to guide junior team member and to ensure code
     quality that is enforced through required code reviews.`
@@ -47,8 +47,8 @@ projects.push({
   },
   type: [Type.FEATURED, Type.SINGLE, Type.SMALL, Type.OPENSOURCE],
   technologies: [Tech.JAVASCRIPT, Tech.ES6, Tech.NODE],
-  description: `Collection of useful modules/utilities that can be used in NODE and in browser.
-    Library is published on npm where you can find more information on it.`,
+  description: `Collection of useful modules/utilities that can be used in NODE and browser.
+    The library is published on NPM where you can find more information on it.`,
   duties: 'Creator of the library.',
   link: 'https://www.npmjs.com/package/js-flock'
 });
@@ -68,7 +68,7 @@ projects.push({
   type: [Type.SINGLE, Type.SMALL, Type.OPENSOURCE],
   technologies: [Tech.JAVASCRIPT],
   description: `Small wrapper around matchMedia to easily react on changes
-    in page layout. Library is published on npm where you can find more information on it.`,
+    in page layout. The library is published on NPM where you can find more information on it.`,
   duties: 'Creator of the library.',
   link: 'https://www.npmjs.com/package/wiggle.js'
 });
@@ -91,7 +91,7 @@ projects.push({
     name: 'Manas',
     link: 'http://www.manas.hr/'
   },
-  description: 'Creating platform for managing accommodation reviews in one place.'
+  description: 'Creating a platform for managing accommodation reviews in one place.'
 });
 
 projects.push({
@@ -141,7 +141,7 @@ projects.push({
   },
   description: `Worked in one of many teams inside of QSF with main focus on developing
     Document Management System. The system is very similar to online version of Dropbox combined
-    with specific QSF business logic and integrated with internal QSF applications.`,
+    with particular QSF business logic and integrated with internal QSF applications.`,
   duties: `Working directly with client own development team writing high
     quality code with required code reviews and unit testing.`
 });
@@ -237,10 +237,10 @@ projects.push({
   description: `Platform allows administrator to define any data template
     (People, Places, Companies...) and to define custom validations for each of template.
     Sellers can upload data by manually typing information in platform or by uploading CSV
-    file with data. Each data upload are auto validated based on define validation in template.
+    file with data. Each data upload is auto validated based on define validation in the template.
     Buyers can search for data and buy it using build it payment system (Authorize.NET).`,
-  duties: `Only developer working on platform from ground up. Development of platform have been
-    stopped after 6 months of development due to financial reasons.`
+  duties: `Only developer working on the platform from the ground up. Development of platform
+    has been stopped after six months of development due to financial reasons.`
 });
 
 projects.push({
@@ -261,7 +261,7 @@ projects.push({
     link: 'http://www.bostonwebdeveloper.com/'
   },
   description: `Development of custom designed page for The Partnership
-    Resource. Page is build on top of custom made C#(.NET) CMS.`,
+    Resource. The page is build on top of a custom-made C#(.NET) CMS.`,
   link: 'http://thepartnershipresource.com/'
 });
 
@@ -415,7 +415,7 @@ projects.push({
   type: [Type.TEAM, Type.MEDIUM, Type.FULLSTACK],
   technologies: [Tech.PHP, Tech.JAVASCRIPT, Tech.JQUERY, Tech.HTML, Tech.CSS],
   description: `Development of web application that acts as mediator between Harvard students and
-    advisors. Students can search for and make connection with advisors through platform.`,
+    advisors. Students can search for and make connection with advisors through the platform.`,
   client: {
     name: 'Harvard Innovation Lab',
     link: 'http://i-lab.harvard.edu/'
@@ -465,7 +465,7 @@ projects.push({
   type: [Type.SINGLE, Type.SMALL],
   technologies: [Tech.JAVASCRIPT, Tech.JQUERY],
   description: `Developing of SalesForce widget to access client own system options
-    from inside of Sales Force`,
+    from inside of Sales Force.`,
   client: {
     name: 'Frontier Strategy Group',
     link: 'http://frontierstrategygroup.com/'
@@ -491,8 +491,8 @@ projects.push({
     link: 'http://frontierstrategygroup.com/'
   },
   description: `Development of web portal for accurate timely and business critical data.
-    FSG was my first big project after graduating from collage and a month of training
-    in company on smaller projects.`
+    FSG was my first big project after graduating from college and a month of training
+    in the company with smaller projects.`
 });
 
 projects.push({

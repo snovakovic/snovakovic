@@ -13,13 +13,13 @@
     </p>
     <p>
       I'm <b>passionate</b> about <b>full-stack JavaScript</b> development
-      which is my main focus at the moment. I also have lot of experience in C# (.NET) but in
+      which is my primary focus at the moment. I also have lot of experience in C# (.NET) but in
       recent years that part has been neglected in favor of JavaScript.
     </p>
     <p>
       <b>Do you want to see my work in action?</b> Take a peek at my
-      <a :href="profile.github">github</a> account, my open source projects on
-      <a :href="profile.npm">npm</a> or at any of my contributions to open source projects
+      <a :href="profile.github">Github</a> account, my open source projects on
+      <a :href="profile.npm">NPM</a> or at any of my contributions to open source projects
       which became my passion in recent time. I believe it's time to give back to community after
       all these years of using great open source projects in every day development.
     </p>
