@@ -1,8 +1,6 @@
 @import 'constants';
 
-/**********
-* Positions
-***********/
+// POSITIONS
 
 .pull-left {
   float: left;
@@ -32,9 +30,7 @@
   position: relative;
 }
 
-/**********
-* Display
-***********/
+// DISPLAY
 
 .hide {
   display: none;
@@ -90,10 +86,7 @@
   }
 }
 
-
-/**********
-* Text
-***********/
+// TEXT
 
 .upper {
   text-transform: uppercase;
@@ -133,9 +126,7 @@
   text-transform: lowercase;
 }
 
-/**********
-* Behaviour
-***********/
+// BEHAVIOUR
 
 .unselectable {
   -moz-user-select: none;
@@ -148,9 +139,7 @@
   max-height: 100%;
 }
 
-/**********
-* Clearfix (http://nicolasgallagher.com/micro-clearfix-hack/)
-***********/
+// CLEARFIX (http://nicolasgallagher.com/micro-clearfix-hack/)
 
 .cf:before,
 .cf:after {
