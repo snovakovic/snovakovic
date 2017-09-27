@@ -34,6 +34,7 @@
   }
 </style>
 
+
 <style lang="scss" scoped>
   @import '~styles/constants';
   @import '~styles/mixins';

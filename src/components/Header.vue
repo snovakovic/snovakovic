@@ -13,6 +13,7 @@
   </header>
 </template>
 
+
 <style lang="scss" scoped>
   @import '~styles/constants.scss';
   @import '~styles/mixins.scss';

@@ -1,6 +1,6 @@
 <template>
   <card class="education">
-    <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+    <h2><i class="fa fa-graduation-cap"></i>Education</h2>
     <div class="item" v-for="study in education" :key="study.title">
       <h4 class="title">{{ study.title }}</h4>
       <p class="institution">
