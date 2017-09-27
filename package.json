@@ -9,12 +9,12 @@
     "deploy": "npm run build && surge -p dist -d snovakovic.surge.sh"
   },
   "dependencies": {
-    "js-flock": "^2.1.2",
+    "js-flock": "^2.4.2",
     "normalize.css": "^7.0.0",
     "siema": "^1.4.6",
-    "vue": "^2.4.2",
-    "vuex": "^2.3.1",
-    "wiggle.js": "^1.2.1"
+    "vue": "^2.4.4",
+    "vuex": "^2.4.0",
+    "wiggle.js": "^1.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
