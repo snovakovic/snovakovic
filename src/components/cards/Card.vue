@@ -10,7 +10,7 @@
 
   .card {
     background-color: white;
-    padding: 30px 25px;
+    padding: 20px 25px 30px 25px;
     margin-bottom: 30px;
     box-shadow: -2px 3px 5px $dark-bg-color;
     border: 1px solid $dark-bg-color;
