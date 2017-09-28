@@ -4,12 +4,12 @@
     <span v-if="typeFilter" class="tag"
       title="Click to remove filter"
       @click="clearTypeFilter" >
-      <i class="fa fa-times"></i>{{ typeFilter }}
+      {{ typeFilter }}<i class="fa fa-times"></i>
     </span>
     <span v-if="technologyFilter" class="tag"
       title="Click to remove filter"
       @click="clearTechnologyFilter" >
-      <i class="fa fa-times" ></i>{{ technologyFilter }}
+      {{ technologyFilter }}<i class="fa fa-times" ></i>
     </span>
   </section>
 </template>
@@ -34,9 +34,9 @@
       margin-left: 7px;
 
       i {
-        margin-right: 2px;
-        top: -2px;
-        font-size: 12px;
+        top: -3px;
+        left: 6px;
+        font-size: 10px;
       }
     }
   }
