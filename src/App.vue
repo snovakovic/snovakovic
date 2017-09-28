@@ -14,7 +14,7 @@
           <skills></skills>
           <education></education>
           <testimonials></testimonials>
-          <music></music>
+          <open-source></open-source>
           <books></books>
         </aside>
       </div>
@@ -27,6 +27,7 @@
         <skills></skills>
         <education></education>
         <testimonials></testimonials>
+        <open-source></open-source>
       </div>
     </div>
   </div>
@@ -86,7 +87,7 @@
   import Skills from './components/cards/Skills.vue';
   import Education from './components/cards/Education.vue';
   import Testimonials from './components/cards/Testimonials.vue';
-  import Music from './components/cards/Music.vue';
+  import OpenSource from './components/cards/OpenSource.vue';
   import Books from './components/cards/Books.vue';
 
   export default {
@@ -103,7 +104,7 @@
       Skills,
       Education,
       Testimonials,
-      Music,
+      OpenSource,
       Books
     }
   };
