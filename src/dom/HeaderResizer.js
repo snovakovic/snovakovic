@@ -3,12 +3,12 @@ const settings = {
 };
 
 const elem = {
-  header: undefined,
-  profilePicture: undefined,
-  name: undefined,
-  desc: undefined,
-  socialWrapper: undefined,
-  socialIcons: undefined
+  header: null,
+  profilePicture: null,
+  name: null,
+  desc: null,
+  socialWrapper: null,
+  socialIcons: null
 };
 
 const getSize = function(min, max) {
